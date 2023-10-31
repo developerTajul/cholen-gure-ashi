@@ -567,6 +567,18 @@ input.theme-btn {
   }
 }
 
+.routehaven-bg-lightgray {
+  background-color: #FAFAFA;
+}
+
+.routehaven-bg-lightpurple {
+  background-color: #F9F8F7;
+}
+
+.routehaven-bg-gray {
+  background-color: #E7E7E7;
+}
+
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {
