@@ -4336,10 +4336,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   cursor: default;
 }
 
-.about-us-area.style-2 {
-  background-color: #ffffff;
-}
-
 .about-us-info-card-wrapper {
   display: flex;
   gap: 70px;
@@ -5279,7 +5275,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .location-area.style-2 {
   position: relative;
-  background-color: #F9F8F7;
 }
 .location-area.style-2 .bg-bottom-shape {
   position: absolute;
@@ -5360,9 +5355,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 20px;
 }
 
-.why-choose-us-area.style-1 {
-  background: #F9F8F7;
-}
 .why-choose-us-area .section-title {
   margin-top: 16px;
   flex-direction: column;
@@ -5414,9 +5406,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin: 0;
 }
 
-.why-choose-us-area.style-2 {
-  background-color: #F9F8F7;
-}
 .why-choose-us-area.style-2 .sec-btn {
   margin: 0 !important;
 }
@@ -5604,10 +5593,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-right: 116px;
 }
 
-.latest-posts-area {
-  background-color: #FAFAFA;
-}
-
 .latest-post-card {
   display: flex;
   flex-direction: column;
@@ -5727,9 +5712,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 
-.video-modal-area {
-  background-color: #FAFAFA;
-}
 .video-modal-area .section-title {
   gap: 202px;
   margin-bottom: 34px;
@@ -10243,7 +10225,6 @@ ul.children {
 
 .about-us-area.style-1 {
   position: relative;
-  border-color: #E7E7E7;
 }
 .about-us-area.style-1 .shape-1 {
   position: absolute;
