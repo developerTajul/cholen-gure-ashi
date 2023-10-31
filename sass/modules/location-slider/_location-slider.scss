@@ -1,12 +1,5 @@
 .location-slider-area{
     &.style-1{
-        padding: 120px 0;
-        @include md{
-            padding: 100px 0;
-        }
-        @include sm{
-            padding: 80px 0;
-        }
         .slick-track{
             .slick-slide{
                 margin-top: 0;
