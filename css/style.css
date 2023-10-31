@@ -531,6 +531,42 @@ input.theme-btn {
   color: #041126;
 }
 
+@media (min-width: 1992px) {
+  .py-120 {
+    padding: 120px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .py-md-100 {
+    padding: 100px 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .py-sm-80 {
+    padding: 80px 0 !important;
+  }
+}
+
+@media (min-width: 1992px) {
+  .pb-120 {
+    padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pb-md-100 {
+    padding-bottom: 100px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .pb-sm-80 {
+    padding-bottom: 80px !important;
+  }
+}
+
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {
@@ -4035,20 +4071,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   cursor: pointer;
 }
 
-.about-us-area {
-  padding: 120px 0;
-  position: relative;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-us-area {
-    padding: 100px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-us-area {
-    padding: 80px 0;
-  }
-}
 .about-us-area.style-1 {
   background-position: center;
   background-repeat: no-repeat;
@@ -5243,27 +5265,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   box-shadow: none;
 }
 
-.location-area {
-  padding: 120px 0;
-  overflow: hidden;
-  position: relative;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .location-area {
-    padding: 100px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .location-area {
-    padding: 80px 0;
-  }
-}
-.location-area .section-title {
-  margin-bottom: 47px;
-}
-
 .location-area.style-2 {
-  padding: 120px 0;
   position: relative;
   background-color: #F9F8F7;
 }
@@ -5272,16 +5274,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   bottom: 0;
   left: 0;
   right: 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .location-area.style-2 {
-    padding: 100px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .location-area.style-2 {
-    padding: 80px 0;
-  }
 }
 .location-area.style-2 .sec-btn {
   margin-top: 56px;
@@ -5356,19 +5348,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 20px;
 }
 
-.why-choose-us-area {
-  padding: 120px 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .why-choose-us-area {
-    padding: 100px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .why-choose-us-area {
-    padding: 80px 0;
-  }
-}
 .why-choose-us-area.style-1 {
   background: #F9F8F7;
 }
@@ -5463,17 +5442,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .process-step-area {
   position: relative;
-  padding: 120px 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .process-step-area {
-    padding: 100px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .process-step-area {
-    padding: 80px 0;
-  }
 }
 .process-step-area .bg-shape {
   position: absolute;
@@ -5625,18 +5593,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .latest-posts-area {
-  padding: 120px 0;
   background-color: #FAFAFA;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .latest-posts-area {
-    padding: 100px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .latest-posts-area {
-    padding: 80px 0;
-  }
 }
 
 .latest-post-card {
@@ -5760,17 +5717,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .video-modal-area {
   background-color: #FAFAFA;
-  padding: 120px 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .video-modal-area {
-    padding: 100px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .video-modal-area {
-    padding: 80px 0;
-  }
 }
 .video-modal-area .section-title {
   gap: 202px;
@@ -7396,21 +7342,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #FE712A;
 }
 
-.testimonial-slider-area {
-  position: relative;
-  padding: 120px 0;
-  overflow: hidden;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-slider-area {
-    padding: 100px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-slider-area {
-    padding: 80px 0;
-  }
-}
 .testimonial-slider-area.style-1 .testimonial-content-wrapper {
   margin-left: 88px;
 }
