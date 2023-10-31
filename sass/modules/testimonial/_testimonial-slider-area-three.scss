@@ -3,14 +3,6 @@
         background-repeat: no-repeat;
         background-color: $black-3;
         position: relative;
-        padding: 0;
-        padding-bottom: 120px;
-        @include md{
-            padding-bottom: 100px;
-        }
-        @include sm{
-            padding-bottom: 80px;
-        }
         .process-step-slider-wrapper{
             .process-step-slider{
                 .slick-list{
