@@ -10460,20 +10460,6 @@ ul.children {
   margin-top: 0 !important;
 }
 
-.contact-info-area {
-  padding: 120px;
-}
-@media (max-width: 991px) {
-  .contact-info-area {
-    padding: 100px 0;
-  }
-}
-@media (max-width: 767px) {
-  .contact-info-area {
-    padding: 80px 0;
-  }
-}
-
 .contact-title {
   text-align: center;
 }
@@ -10501,18 +10487,7 @@ ul.children {
 }
 
 .contact-form-area {
-  padding: 120px 0;
   background-color: #FAFAFA;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact-form-area {
-    padding: 100px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .contact-form-area {
-    padding: 80px 0;
-  }
 }
 .contact-form-area .comment-respond {
   margin-top: 0px;

@@ -1,11 +1,4 @@
 .contact-info-area {
-    padding: 120px;
-    @include rmaxwd(991) {
-        padding: 100px 0;
-    }
-    @include rmaxwd(767) {
-        padding: 80px 0;
-    }
 
 }
 
@@ -33,14 +26,8 @@
 
 //Contact Form
 .contact-form-area{
-    padding: 120px 0;
     background-color: $black-3;
-    @include md{
-        padding: 100px 0;
-    }
-    @include sm{
-        padding: 80px 0;
-    }
+   
     .comment-respond{
         margin-top: 0px;
         margin-left: 24px;
