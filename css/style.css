@@ -4816,7 +4816,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   min-height: 370px;
 }
 .location-card.style-1 .image-wrapper .image-inner {
-  position: relative;
   z-index: 2;
   overflow: hidden;
   transition: 1s;
