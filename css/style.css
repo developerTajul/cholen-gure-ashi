@@ -5112,7 +5112,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 100%;
   overflow: hidden;
   position: relative;
+  width: 182px;
+  height: 182px;
   transition: all 0.5s ease-out;
+}
+.location-image-card .img-wrapper img {
+  width: 182px;
+  height: 182px;
 }
 .location-image-card .img-wrapper:before {
   position: absolute;

@@ -20,7 +20,13 @@
         border-radius: 100%;
         overflow: hidden;
         position: relative;
+        width: 182px;
+        height: 182px;
         @include transition;
+        img{
+            width: 182px;
+            height: 182px;
+        }
          &:before {
             position: absolute;
             top: 0;
