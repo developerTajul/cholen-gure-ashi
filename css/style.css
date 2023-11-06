@@ -4186,7 +4186,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 284px;
   bottom: 0;
   margin-left: 66px;
-  margin-bottom: 5px;
 }
 @media (max-width: 1400px) {
   .about-us-image-wrapper-1 .image-wrapper.style-1 {
@@ -4224,7 +4223,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   bottom: 0;
   right: 0;
   margin-bottom: -33px;
-  margin-right: 148px;
+  margin-right: 63px;
   animation: flipInX 2s linear infinite alternate;
 }
 @media (max-width: 1400px) {
@@ -4253,7 +4252,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   top: 0;
   right: 0;
   margin-top: 33px;
-  margin-left: 85px;
+  margin-right: -80px;
 }
 @media (max-width: 1400px) {
   .about-us-image-wrapper-1 .image-wrapper.style-3 {
