@@ -11,6 +11,30 @@
     align-items: flex-start;
     gap: 40px;
   }
+  &.left {
+    justify-content: flex-start; /* This aligns content to the left */
+    text-align: left; /* This aligns text to the left */
+    align-items: flex-start; /* This aligns items to the left */
+  }
+
+  &.center {
+      justify-content: center; /* This centers content horizontally */
+      text-align: center; /* This centers text horizontally */
+      align-items: center; /* This centers items vertically */
+  }
+
+  &.right {
+      justify-content: flex-end; /* This aligns content to the right */
+      text-align: right; /* This aligns text to the right */
+      align-items: flex-end; /* This aligns items to the right */
+  }
+
+  &.justify {
+      justify-content: space-between; /* This justifies content with equal space between items */
+      text-align: justify; /* This justifies text */
+      align-items: center; /* This centers items vertically */
+  }
+
   .sec-content {
     display: flex;
     gap: 0px;

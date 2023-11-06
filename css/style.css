@@ -8605,6 +8605,26 @@ body.admin-bar .header-menu-area.sticky_menu {
     gap: 40px;
   }
 }
+.section-title.left {
+  justify-content: flex-start; /* This aligns content to the left */
+  text-align: left; /* This aligns text to the left */
+  align-items: flex-start; /* This aligns items to the left */
+}
+.section-title.center {
+  justify-content: center; /* This centers content horizontally */
+  text-align: center; /* This centers text horizontally */
+  align-items: center; /* This centers items vertically */
+}
+.section-title.right {
+  justify-content: flex-end; /* This aligns content to the right */
+  text-align: right; /* This aligns text to the right */
+  align-items: flex-end; /* This aligns items to the right */
+}
+.section-title.justify {
+  justify-content: space-between; /* This justifies content with equal space between items */
+  text-align: justify; /* This justifies text */
+  align-items: center; /* This centers items vertically */
+}
 .section-title .sec-content {
   display: flex;
   gap: 0px;
