@@ -391,9 +391,9 @@
             speed: 1500,
             rtl: false,
             prevArrow:
-                "<button type='button' class='location-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='location-arrow-btn prev-btn'><i class='fa-solid fa-arrow-left'></i></button>",
             nextArrow:
-                "<button type='button' class='location-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='location-arrow-btn next-btn'><i class='fa-solid fa-arrow-right'></i></button>",
             responsive: [
                 {
                     breakpoint: 1200,
