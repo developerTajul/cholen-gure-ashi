@@ -5930,6 +5930,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 120%;
   letter-spacing: -0.96px;
   margin: 0px;
+  display: flex;
+  gap: 0px;
   cursor: default;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
