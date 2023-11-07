@@ -5574,6 +5574,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   justify-content: center;
   align-items: center;
 }
+.process-card .img-wrapper {
+  width: 325px;
+  height: 284px;
+}
+.process-card .img-wrapper img {
+  width: 324.837px;
+  height: 284px;
+}
 .process-card .content-wrapper {
   display: flex;
   flex-direction: column;
