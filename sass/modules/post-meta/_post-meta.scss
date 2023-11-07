@@ -10,6 +10,12 @@
             overflow: hidden;
             width: 30px;
             height: 30px;
+            img{
+                border-radius: 100%;
+                overflow: hidden;
+                width: 30px;
+                height: 30px;
+            }
         }
         .name{
             font-family: $body-font;

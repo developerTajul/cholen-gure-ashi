@@ -5975,6 +5975,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 30px;
   height: 30px;
 }
+.post-meta .user-info .image-wrapper img {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+}
 .post-meta .user-info .name {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #041126;
