@@ -4888,8 +4888,15 @@ body.admin-bar .header-menu-area.sticky_menu {
   box-shadow: 0px 24px 64px 0px rgba(199, 206, 218, 0.25);
   transition: all 0.5s ease-out;
 }
+.location-card.style-2 .image-wrapper {
+  height: 268px;
+}
 .location-card.style-2 .image-wrapper .image-inner {
+  height: 268px;
   border-radius: 16px 16px 0 0;
+}
+.location-card.style-2 .image-wrapper .image-inner img {
+  height: 268px;
 }
 .location-card.style-2 .image-wrapper .image-inner:before {
   position: absolute;
