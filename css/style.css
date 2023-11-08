@@ -10581,6 +10581,15 @@ ul.children {
   margin-top: -10px;
   transition: all 0.5s ease-out;
 }
+.popular-destination-two .location-card.style-1:hover .image-wrapper {
+  height: 404px;
+}
+.popular-destination-two .location-card.style-1:hover .image-wrapper .image-inner {
+  height: 404px;
+}
+.popular-destination-two .location-card.style-1:hover .image-wrapper .image-inner img {
+  height: 404px;
+}
 .popular-destination-two .location-card.style-1:hover .image-wrapper .image-inner:before {
   -webkit-animation: shine 1s;
   animation: shine 1s;

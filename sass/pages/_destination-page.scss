@@ -39,7 +39,12 @@
                 margin-top: -10px;
                 @include transition;
                 .image-wrapper{
+                    height: 404px;
                     .image-inner{
+                        height: 404px;
+                        img{
+                            height: 404px;
+                        }
                         &:before{
                             -webkit-animation: shine 1s;
                             animation: shine 1s;
