@@ -4675,7 +4675,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .location-card .image-wrapper .image-inner img {
   width: 100%;
-  height: 100%;
+  height: 370px;
   transition: all 0.5s ease-out;
 }
 .location-card .image-wrapper .favourite-icon {
