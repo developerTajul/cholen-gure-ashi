@@ -10587,7 +10587,6 @@ ul.children {
   z-index: 20;
 }
 .popular-destination-two .location-card.style-1:hover {
-  margin-top: -10px;
   transition: all 0.5s ease-out;
 }
 .popular-destination-two .location-card.style-1:hover .image-wrapper .image-inner:before {

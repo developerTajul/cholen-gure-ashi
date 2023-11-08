@@ -44,7 +44,6 @@
              }
             
             &:hover{
-                margin-top: -10px;
                 @include transition;
                 .image-wrapper{
                     .image-inner{
