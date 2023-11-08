@@ -5210,6 +5210,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .location-slider-area.style-1 .location-card .image-wrapper {
   height: 370px;
 }
+.location-slider-area.similar-destination .slick-dots {
+  display: none !important;
+}
 .location-slider-area .slick-track {
   margin: unset;
 }

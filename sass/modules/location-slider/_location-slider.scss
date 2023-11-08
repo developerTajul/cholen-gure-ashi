@@ -34,6 +34,11 @@
             }
         }
     }
+    &.similar-destination{
+        .slick-dots{
+            display: none !important;
+        }
+    }
     .slick-track{
         margin: unset;
     }
