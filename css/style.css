@@ -286,7 +286,7 @@ code {
   color: rgb(255, 103, 49);
 }
 
-.theme-btn, .tour-area .location-area.style-1 .portfolio-filter li,
+.theme-btn, .isotope-tour .portfolio-filter li,
 .wp-block-loginout a,
 input.theme-btn {
   display: inline-flex;
@@ -309,13 +309,13 @@ input.theme-btn {
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .theme-btn, .tour-area .location-area.style-1 .portfolio-filter li,
+  .theme-btn, .isotope-tour .portfolio-filter li,
   .wp-block-loginout a,
   input.theme-btn {
     padding: 12px 20px;
   }
 }
-.theme-btn:after, .tour-area .location-area.style-1 .portfolio-filter li:after,
+.theme-btn:after, .isotope-tour .portfolio-filter li:after,
 .wp-block-loginout a:after,
 input.theme-btn:after {
   position: absolute;
@@ -329,7 +329,7 @@ input.theme-btn:after {
   z-index: -1;
   color: #ffffff;
 }
-.theme-btn:before, .tour-area .location-area.style-1 .portfolio-filter li:before,
+.theme-btn:before, .isotope-tour .portfolio-filter li:before,
 .wp-block-loginout a:before,
 input.theme-btn:before {
   content: "";
@@ -343,13 +343,13 @@ input.theme-btn:before {
   position: absolute;
   animation: bubbles 5s linear infinite both;
 }
-.theme-btn.style-2, .tour-area .location-area.style-1 .portfolio-filter li.style-2,
+.theme-btn.style-2, .isotope-tour .portfolio-filter li.style-2,
 .wp-block-loginout a.style-2,
 input.theme-btn.style-2 {
   background-color: #ffffff;
   color: #041126;
 }
-.theme-btn.style-2:before, .tour-area .location-area.style-1 .portfolio-filter li.style-2:before,
+.theme-btn.style-2:before, .isotope-tour .portfolio-filter li.style-2:before,
 .wp-block-loginout a.style-2:before,
 input.theme-btn.style-2:before {
   content: "";
@@ -363,18 +363,18 @@ input.theme-btn.style-2:before {
   position: absolute;
   animation: bubbles 5s linear infinite both;
 }
-.theme-btn:hover, .tour-area .location-area.style-1 .portfolio-filter li:hover,
+.theme-btn:hover, .isotope-tour .portfolio-filter li:hover,
 .wp-block-loginout a:hover,
 input.theme-btn:hover {
   color: #ffffff;
 }
-.theme-btn:hover:after, .tour-area .location-area.style-1 .portfolio-filter li:hover:after,
+.theme-btn:hover:after, .isotope-tour .portfolio-filter li:hover:after,
 .wp-block-loginout a:hover:after,
 input.theme-btn:hover:after {
   height: 100%;
   transition: all 0.5s ease-out;
 }
-.theme-btn:hover.style-2:before, .tour-area .location-area.style-1 .portfolio-filter li:hover.style-2:before,
+.theme-btn:hover.style-2:before, .isotope-tour .portfolio-filter li:hover.style-2:before,
 .wp-block-loginout a:hover.style-2:before,
 input.theme-btn:hover.style-2:before {
   background: radial-gradient(circle at 20% 35%, transparent 0, transparent 2px, #ffffff 3px, #ffffff 4px, transparent 4px), radial-gradient(circle at 75% 44%, transparent 0, transparent 2px, #ffffff 3px, #ffffff 4px, transparent 4px), radial-gradient(circle at 31% 22%, transparent 0, transparent 2px, #ffffff 3px, #ffffff 4px, transparent 4px), radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, #ffffff 5px, #ffffff 6px, transparent 6px);
@@ -3788,7 +3788,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 700;
   color: #041126;
 }
-.search-form-wrapper .search-form-inner .search-form .search-form-input .theme-btn, .search-form-wrapper .search-form-inner .search-form .search-form-input .tour-area .location-area.style-1 .portfolio-filter li, .tour-area .location-area.style-1 .portfolio-filter .search-form-wrapper .search-form-inner .search-form .search-form-input li {
+.search-form-wrapper .search-form-inner .search-form .search-form-input .theme-btn, .search-form-wrapper .search-form-inner .search-form .search-form-input .isotope-tour .portfolio-filter li, .isotope-tour .portfolio-filter .search-form-wrapper .search-form-inner .search-form .search-form-input li {
   border-radius: 16px;
 }
 .search-form-wrapper .search-form-inner .search-form .search-form-input button.submit-search-btn {
@@ -10403,7 +10403,7 @@ ul.children {
   }
 }
 
-.tour-area .location-area.style-1 .portfolio-filter {
+.isotope-tour .portfolio-filter {
   margin-top: 17px;
   margin-bottom: 60px;
   display: flex;
@@ -10412,29 +10412,35 @@ ul.children {
   gap: 20px;
 }
 @media (max-width: 992px) {
-  .tour-area .location-area.style-1 .portfolio-filter {
+  .isotope-tour .portfolio-filter {
     flex-wrap: wrap;
     justify-content: start;
     align-items: start;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .tour-area .location-area.style-1 .portfolio-filter {
+  .isotope-tour .portfolio-filter {
     gap: 6px;
   }
 }
-.tour-area .location-area.style-1 .portfolio-filter li {
+.isotope-tour .portfolio-filter li {
   cursor: pointer;
 }
-.tour-area .location-area.style-1 .portfolio-filter li.active {
+.isotope-tour .portfolio-filter li.active {
   background-color: #3B71FE !important;
 }
-.tour-area .location-area.style-1 .portfolio-filter li:hover:after {
+.isotope-tour .portfolio-filter li:hover:after {
   height: 0 !important;
 }
-.tour-area .location-area.style-1 .basic-pagination {
+.isotope-tour .basic-pagination {
   margin-top: 64px;
   margin-bottom: 0px;
+}
+.isotope-tour .location-card.style-2 .image-wrapper {
+  height: 272px;
+}
+.isotope-tour .location-card.style-2 .image-wrapper img {
+  height: 272px;
 }
 
 .tour-details .single-post-item {
