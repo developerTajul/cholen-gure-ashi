@@ -74,41 +74,44 @@
         
     }
     .slick-arrow{
-    // display: none !important;
-    position: absolute;
-    margin-top: -104px;
-    width: 56px;
-    height: 56px;
-    border-radius: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &.prev-btn, &.next-btn{
+        // display: none !important;
+        position: absolute;
+        margin-top: -104px;
+        width: 56px;
+        height: 56px;
+        border-radius: 100%;
         overflow: hidden;
-        @include transition;
-            &:before {
-                position: absolute;
-                width: 0;
-                height: 100%;
-                left: 0;
-                top: 0;
-                background-color: $primary-color;
-                content: "";
-                @include transition;
-                color: $white;
-            }
-            &:hover{
-                &:before{
-                    width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include rmaxwd(767){
+            display: none !important;
+        }
+        &.prev-btn, &.next-btn{
+            overflow: hidden;
+            @include transition;
+                &:before {
+                    position: absolute;
+                    width: 0;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background-color: $primary-color;
+                    content: "";
                     @include transition;
-                }
-                i{
                     color: $white;
-                    @include transition;
                 }
-            }
-    }
+                &:hover{
+                    &:before{
+                        width: 100%;
+                        @include transition;
+                    }
+                    i{
+                        color: $white;
+                        @include transition;
+                    }
+                }
+        }
         &.next-btn{
             top: 0;
             right: 0;
