@@ -4282,9 +4282,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .meta-wrapper {
-  margin-top: 35px;
-  padding-top: 40px;
-  border-top: 1px solid #E7E7E7;
   display: flex;
   align-items: center;
 }
