@@ -5443,14 +5443,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 .why-choose-us-area .section-title .bottom-shape {
   width: 272px;
 }
-.why-choose-us-area .image-wrapper {
-  border-radius: 16px;
-  overflow: hidden;
-  animation: MoveLeftRight 2s linear infinite alternate;
-}
-.why-choose-us-area .image-wrapper img {
-  width: 100%;
-}
 .why-choose-us-area .info-wrapper {
   margin-left: 10px;
 }
@@ -5480,6 +5472,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .why-choose-us-area .info-wrapper .info-card .content .desc {
   margin: 0;
+}
+
+.image-wrapper.leftRighAnimation {
+  border-radius: 16px;
+  overflow: hidden;
+  animation: MoveLeftRight 2s linear infinite alternate;
+}
+.image-wrapper.leftRighAnimation img {
+  width: 100%;
 }
 
 .why-choose-us-area.style-2 .sec-btn {

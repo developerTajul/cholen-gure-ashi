@@ -13,14 +13,7 @@
             width: 272px;
         }
     }
-    .image-wrapper{
-        border-radius: 16px;
-        overflow: hidden;
-        animation: MoveLeftRight 2s linear infinite alternate;
-        img{
-            width: 100%;
-        }
-    }
+    
     .info-wrapper{
         margin-left: 10px;
         @include rmaxwd(1400){
@@ -49,5 +42,16 @@
             }
         }
         
+    }
+}
+
+.image-wrapper{
+    &.leftRighAnimation{
+        border-radius: 16px;
+        overflow: hidden;
+        animation: MoveLeftRight 2s linear infinite alternate;
+        img{
+            width: 100%;
+        }
     }
 }
