@@ -1,82 +1,127 @@
 .footer {
-  &.style-two {
-    .footer-sec {
-      padding-top: 225px;
-      @include sm {
-        padding-top: 180px;
+  &.style-2 {
+    .footer-widget{
+      &.top-footer-widget{
+        border-right: 1px solid #273447;
+        padding-right: 64px;
+        display: flex;
+        justify-content: space-between;
+        @include rmaxwd(1200){
+          border: none;
+          padding-right: 0;
+        }
+        @include sm{
+          flex-direction: column;
+          gap: 30px;
+        }
       }
-    }
-    // Subscribe Form
-    .subscribe-form-wrapper {
-      p {
-        color: $white-100;
-        margin-bottom: 30px;
+      .footer-widget-title{
+        &.social-title{
+          font-family: $body-font;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 36.4px;
+          color: $white;
+          width: 250px;
+          margin-bottom: 0;
+        }
       }
-      .subscribe-form-widget {
-        border-radius: 6px;
-
-        .single-field {
-          input {
-            height: 60px;
+      .footer-widget-social{
+        .social-profile{
+          a{
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            background-color: $primary-color;
+          }
+        }
+      }
+      .footer-widget-logo{
+        .desc{
+          font-family: $body-font;
+          color: $white;
+          font-size: 16px;
+          font-weight: 400;
+          margin-top: 24px;
+          width: 340px;
+          @include rmaxwd(1200){
+            width: 100%;
           }
         }
       }
     }
-  }
-}
-
-.footer-triangle-image-wrapper {
-  position: absolute;
-  width: 730px;
-  top: 0;
-  height: 100%;
-  left: 0;
-  z-index: -1;
-
-  @media only screen and (min-width: 781px) and (max-width: 991px){
-    width: 120%;
-  }
-  @include rmaxwd(780) {
-    width: 100%;
-  }
-}
-.footer-triangle-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
-
-  @media only screen and (min-width: 781px) and (max-width: 991px){
-    -webkit-clip-path: polygon(0 0, 100% 0, 57% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 57% 100%, 0 100%);
-  }
-  @include rmaxwd(780) {
-    clip-path: none;
-  }
-
-
-  &:before {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: $primary-color;
-    opacity: 0.90;
-    z-index: 1;
-  }
-
-  img {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    height: 100%;
+    .footer-widget-menu-wrapper{
+      padding-left: 0;
+      gap: 148px;
+    }
+    .subscribe-form-wrapper{
+      display: flex;
+      justify-content: space-between;
+      padding-left: 46px;
+      @include rmaxwd(992){
+        padding-left: 0;
+      }
+      @include sm{
+        flex-direction: column;
+        gap: 30px;
+      }
+      .title{
+          font-family: $body-font;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 36.4px;
+          color: $white;
+          width: 250px;
+      }
+      .subscribe-form-widget{
+        .mc4wp-form-fields{
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #273447;
+        }
+        .single-field{
+          input{
+            height: 60px;
+            padding: 16px 24px;
+            border-radius: 0px;
+            background-color: #273447;
+          }
+        }
+        .submit-btn {
+          width: 48px;
+          height: 48px;
+          border-radius: 8px;
+          margin-right: 8px;
+          flex-shrink: 0;
+          background-color: $primary-color;
+          color: $white; 
+          background: $primary-color !important;
+          -webkit-background-clip: unset; 
+          -webkit-text-fill-color: unset;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i{
+            color: $white;
+            @include transition;
+          }
+          &:hover{
+            i{
+              margin-right: -12px;
+              @include transition;
+            }
+          }
+        }
+        
+      }
+    }
+    .divider{
+      @include md{
+        margin-top: 50px;
+      } 
+    }
   }
 }
 

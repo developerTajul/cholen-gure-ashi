@@ -11263,82 +11263,120 @@ ul.children {
   border-radius: 12px;
 }
 
-.footer.style-two .footer-sec {
-  padding-top: 225px;
+.footer.style-2 .footer-widget.top-footer-widget {
+  border-right: 1px solid #273447;
+  padding-right: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .footer.style-2 .footer-widget.top-footer-widget {
+    border: none;
+    padding-right: 0;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .footer.style-two .footer-sec {
-    padding-top: 180px;
+  .footer.style-2 .footer-widget.top-footer-widget {
+    flex-direction: column;
+    gap: 30px;
   }
 }
-.footer.style-two .subscribe-form-wrapper p {
-  color: #c7cdda;
-  margin-bottom: 30px;
+.footer.style-2 .footer-widget .footer-widget-title.social-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36.4px;
+  color: #ffffff;
+  width: 250px;
+  margin-bottom: 0;
 }
-.footer.style-two .subscribe-form-wrapper .subscribe-form-widget {
-  border-radius: 6px;
+.footer.style-2 .footer-widget .footer-widget-social .social-profile a {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: #3B71FE;
 }
-.footer.style-two .subscribe-form-wrapper .subscribe-form-widget .single-field input {
-  height: 60px;
+.footer.style-2 .footer-widget .footer-widget-logo .desc {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 24px;
+  width: 340px;
 }
-
-.footer-triangle-image-wrapper {
-  position: absolute;
-  width: 730px;
-  top: 0;
-  height: 100%;
-  left: 0;
-  z-index: -1;
-}
-@media only screen and (min-width: 781px) and (max-width: 991px) {
-  .footer-triangle-image-wrapper {
-    width: 120%;
-  }
-}
-@media (max-width: 780px) {
-  .footer-triangle-image-wrapper {
+@media (max-width: 1200px) {
+  .footer.style-2 .footer-widget .footer-widget-logo .desc {
     width: 100%;
   }
 }
-
-.footer-triangle-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
+.footer.style-2 .footer-widget-menu-wrapper {
+  padding-left: 0;
+  gap: 148px;
 }
-@media only screen and (min-width: 781px) and (max-width: 991px) {
-  .footer-triangle-image {
-    -webkit-clip-path: polygon(0 0, 100% 0, 57% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 57% 100%, 0 100%);
+.footer.style-2 .subscribe-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 46px;
+}
+@media (max-width: 992px) {
+  .footer.style-2 .subscribe-form-wrapper {
+    padding-left: 0;
   }
 }
-@media (max-width: 780px) {
-  .footer-triangle-image {
-    clip-path: none;
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer.style-2 .subscribe-form-wrapper {
+    flex-direction: column;
+    gap: 30px;
   }
 }
-.footer-triangle-image:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+.footer.style-2 .subscribe-form-wrapper .title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36.4px;
+  color: #ffffff;
+  width: 250px;
+}
+.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .mc4wp-form-fields {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #273447;
+}
+.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .single-field input {
+  height: 60px;
+  padding: 16px 24px;
+  border-radius: 0px;
+  background-color: #273447;
+}
+.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .submit-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  margin-right: 8px;
+  flex-shrink: 0;
   background-color: #3B71FE;
-  opacity: 0.9;
-  z-index: 1;
+  color: #ffffff;
+  background: #3B71FE !important;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer-triangle-image img {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  height: 100%;
+.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .submit-btn i {
+  color: #ffffff;
+  transition: all 0.5s ease-out;
+}
+.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .submit-btn:hover i {
+  margin-right: -12px;
+  transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer.style-2 .divider {
+    margin-top: 50px;
+  }
 }
 
 .footer.style-three .footer-sec {
