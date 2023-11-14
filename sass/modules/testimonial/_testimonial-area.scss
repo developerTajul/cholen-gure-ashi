@@ -1,7 +1,7 @@
 .testimonial-slider-area{
     &.style-1{
         .testimonial-content-wrapper{
-            margin-left: 88px;
+            // margin-left: 88px;
             @include rmaxwd(992){
                 margin-left: 0px;
             }

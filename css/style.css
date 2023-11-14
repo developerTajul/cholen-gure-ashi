@@ -7398,9 +7398,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #FE712A;
 }
 
-.testimonial-slider-area.style-1 .testimonial-content-wrapper {
-  margin-left: 88px;
-}
 @media (max-width: 992px) {
   .testimonial-slider-area.style-1 .testimonial-content-wrapper {
     margin-left: 0px;
