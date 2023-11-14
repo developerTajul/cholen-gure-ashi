@@ -5633,6 +5633,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   right: -5.5%;
   animation: MoveUpDown 3s linear infinite alternate;
 }
+@media (max-width: 1024px) {
+  .cta-area .image-wrapper .top-circle {
+    display: none;
+  }
+}
 .cta-area .image-wrapper .bottom-circle {
   position: absolute;
   bottom: 9.6%;
@@ -5649,10 +5654,20 @@ body.admin-bar .header-menu-area.sticky_menu {
     left: -7%;
   }
 }
+@media (max-width: 1024px) {
+  .cta-area .image-wrapper .bottom-circle {
+    display: none;
+  }
+}
 .cta-area .image-wrapper .side-img {
   position: relative;
   margin-top: 50px;
   margin-left: 254px;
+}
+@media (max-width: 1024px) {
+  .cta-area .image-wrapper .side-img {
+    margin-left: 0;
+  }
 }
 
 .latest-post-card {

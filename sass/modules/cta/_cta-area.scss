@@ -30,6 +30,9 @@
     }
     .image-wrapper{
         position: relative;
+        @include rmaxwd(1024){
+            // display: none;
+        }
         // margin-top: 51px;
         @include sm{
             display: none;
@@ -44,6 +47,9 @@
             top: 24.8%;
             right: -5.5%;
             animation: MoveUpDown 3s linear infinite alternate;
+            @include rmaxwd(1024){
+                display: none;
+            }
         }
         .bottom-circle{
             position: absolute;
@@ -56,11 +62,17 @@
             @include rmaxwd(1200){
                 left: -7%;
             }
+            @include rmaxwd(1024){
+                display: none;
+            }
         }
         .side-img{
             position: relative;
             margin-top: 50px;
             margin-left: 254px;
+            @include rmaxwd(1024){
+                margin-left: 0;
+            }
         }
     }
 }
