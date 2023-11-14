@@ -13,7 +13,7 @@
         flex-direction: column;
         gap: 7px;
         @include rmaxwd(992){
-            width: 44%;
+            // width: 44%;
             justify-content: start;
             align-items: start;
         }
