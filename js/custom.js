@@ -862,8 +862,8 @@
                 // Prevent the click event from propagating to the document
                 e.stopPropagation();
             });
-            var minSlider = document.getElementById('min');
-            var maxSlider = document.getElementById('max');
+            var minSlider = document.getElementById('min-price');
+            var maxSlider = document.getElementById('max-price');
 
             var outputMin = document.getElementById('min-value');
             var outputMax = document.getElementById('max-value');
