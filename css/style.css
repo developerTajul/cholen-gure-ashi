@@ -5833,6 +5833,12 @@ body.admin-bar .header-menu-area.sticky_menu {
     border-radius: 12px;
   }
 }
+.video-modal-card.style-2 {
+  height: 601px;
+}
+.video-modal-card.style-2 .image-wrapper {
+  height: 601px;
+}
 
 .popup-video-wrapper {
   position: absolute;
