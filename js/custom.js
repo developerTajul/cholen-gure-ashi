@@ -559,7 +559,7 @@
 
 
          // Process Step Slider
-         $("#testimonial_one").slick({
+         $(".testimonial_one").slick({
             slidesToShow: 1,
             infinite: true,
             autoplay: true,
@@ -591,7 +591,7 @@
             slidesToShow: 2,
             loop: false,
             infinite: false,
-            asNavFor: '#testimonial_one',
+            asNavFor: '.testimonial_one',
             dots: false,
             centerMode: true,
             focusOnSelect: true,
