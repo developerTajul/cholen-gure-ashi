@@ -22,6 +22,9 @@
     }
     &.style-2{
         height: 625px !important;
+        @include rmaxwd(767){
+            height: 500px !important;
+        }
         .image-wrapper{
             height: 100%;
         }

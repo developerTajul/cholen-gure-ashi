@@ -5836,6 +5836,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .video-modal-card.style-2 {
   height: 625px !important;
 }
+@media (max-width: 767px) {
+  .video-modal-card.style-2 {
+    height: 500px !important;
+  }
+}
 .video-modal-card.style-2 .image-wrapper {
   height: 100%;
 }
