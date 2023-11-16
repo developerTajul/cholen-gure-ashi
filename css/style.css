@@ -10100,7 +10100,6 @@ ul.children {
   border-radius: 18px;
   position: relative;
   box-shadow: 0px 24px 64px 0px rgba(199, 206, 218, 0.25);
-  margin-top: 25px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .comment-respond {
