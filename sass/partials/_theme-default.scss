@@ -309,6 +309,10 @@ input.theme-btn {
       background-color: $primary-color;
       color: #fff;
       font-size: 16px;
+      right: 4px;
+      left: unset;
+      top: 50%;
+      transform: translate(-0%, -50%);
     }
   }
 }

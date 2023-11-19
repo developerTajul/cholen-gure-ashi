@@ -34,9 +34,9 @@
     }
 
     &:hover {
-      background: $orange-color !important;
+      background: $primary-color !important;
       color: $white;
-      border-color: $orange-color;
+      border-color: $primary-color;
       @include transition;
     }
   }

@@ -395,6 +395,10 @@ input.theme-btn:hover.style-2:before {
   background-color: #3B71FE;
   color: #fff;
   font-size: 16px;
+  right: 4px;
+  left: unset;
+  top: 50%;
+  transform: translate(0%, -50%);
 }
 
 .contact-form-btn {
@@ -9059,9 +9063,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .comment-navigation .wp-block-query-pagination-next:hover,
 .comment-navigation .nav-next a:hover,
 .comment-navigation .nav-previous a:hover {
-  background: rgb(255, 103, 49) !important;
+  background: #3B71FE !important;
   color: #ffffff;
-  border-color: rgb(255, 103, 49);
+  border-color: #3B71FE;
   transition: all 0.5s ease-out;
 }
 
