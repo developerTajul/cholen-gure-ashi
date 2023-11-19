@@ -265,7 +265,7 @@
 .post-comments-form {
   margin-top: 60px;
   .contacts-message {
-    // margin-top: 20px;
+    margin-top: 10px;
   }
 }
 /*Comment Input Filed*/
@@ -315,6 +315,11 @@
     margin: 0;
   }
 
+  .contacts-email,
+  .contacts-name,
+  .single-input-field {
+    margin-bottom: 12px;
+  }
   .contacts-email{
     // margin-left: 24px;
     @include sm{
