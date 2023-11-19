@@ -10124,6 +10124,9 @@ ul.children {
 .comment-respond p {
   margin: 0;
 }
+.comment-respond .logged-in-as {
+  margin: 20px 0;
+}
 .comment-respond .contacts-email,
 .comment-respond .contacts-name,
 .comment-respond .single-input-field {
