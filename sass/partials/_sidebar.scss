@@ -236,14 +236,13 @@
     display: flex;
     gap: 12px;
     button {
-      width: 62px;
-      height: 62px;
+      width: auto;
+      height: auto;
       color: $white;
       position: relative;
       right: 0;
       background-color: $black;
       top: 0;
-      border-radius: 12px;
       line-height: 0;
       border: 0;
       margin-left: 0 !important;
@@ -295,6 +294,7 @@
     .wp-block-search__inside-wrapper {
       display: flex;
       padding: 0 !important;
+      
     }
     label {
       font-size: 24px;
@@ -302,8 +302,8 @@
       line-height: 28px;
       font-weight: 700;
       margin-bottom: 30px;
-      color: $secondary-color;
-      font-family: $heading-font;
+      color: $black;
+      font-family: $body-font;
     }
     input {
       background-color: $white;
@@ -315,7 +315,6 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 180%;
-      border-radius: 12px;
       border: 1px solid $gray-2;
       @include sm{
         height: 50px;

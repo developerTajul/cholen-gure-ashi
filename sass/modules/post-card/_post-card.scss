@@ -152,7 +152,7 @@
   }
   .post-content-wrapper {
     // padding: 45px 47px 41px 47px;
-    margin-top: 32px;
+    // margin-top: 32px;
     @include sm {
       margin-top: 0px;
       // padding: 35px;
@@ -373,6 +373,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 16px;
+    margin-bottom: 32px;
     img {
       width: 100%;
       transform: scale(1);

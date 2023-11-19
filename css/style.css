@@ -5939,7 +5939,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .post-meta {
-  margin-top: 22px;
   display: flex;
   gap: 15px;
 }
@@ -7957,9 +7956,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   justify-content: center;
   font-size: 10px;
 }
-.single-post-item .post-content-wrapper {
-  margin-top: 32px;
-}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .single-post-item .post-content-wrapper {
     margin-top: 0px;
@@ -8141,6 +8137,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
+  margin-bottom: 32px;
 }
 .single-post-item .post-thumbnail img,
 .single-post-item .post-video img {
@@ -9367,14 +9364,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 12px;
 }
 .widget.widget_search button {
-  width: 62px;
-  height: 62px;
+  width: auto;
+  height: auto;
   color: #ffffff;
   position: relative;
   right: 0;
   background-color: #041126;
   top: 0;
-  border-radius: 12px;
   line-height: 0;
   border: 0;
   margin-left: 0 !important;
@@ -9429,8 +9425,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 28px;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #FE712A;
-  font-family: "Fasthand", sans-serif;
+  color: #041126;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .widget .wp-block-search input,
 .widget .search-form input {
@@ -9443,7 +9439,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 18px;
   font-weight: 400;
   line-height: 180%;
-  border-radius: 12px;
   border: 1px solid #E7E7E7;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
