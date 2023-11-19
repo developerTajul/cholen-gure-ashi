@@ -369,6 +369,15 @@
   .comment-form-cookies-consent {
     display: none;
   }
+  .post-comments-title{
+    #cancel-comment-reply-link{
+      float: right;
+      font-size: 19px;
+      &:hover{
+        color: #ff6731;
+      }
+    }
+  }
   input[type="number"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;

@@ -10174,6 +10174,13 @@ ul.children {
 .comment-respond .comment-form-cookies-consent {
   display: none;
 }
+.comment-respond .post-comments-title #cancel-comment-reply-link {
+  float: right;
+  font-size: 19px;
+}
+.comment-respond .post-comments-title #cancel-comment-reply-link:hover {
+  color: #ff6731;
+}
 .comment-respond input[type=number] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
