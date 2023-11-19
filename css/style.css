@@ -10177,8 +10177,6 @@ ul.children {
 .comment-respond .post-comments-title #cancel-comment-reply-link {
   float: right;
   font-size: 19px;
-}
-.comment-respond .post-comments-title #cancel-comment-reply-link:hover {
   color: #ff6731;
 }
 .comment-respond input[type=number] {
