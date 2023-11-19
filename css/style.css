@@ -8015,6 +8015,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item.sticky .post-content p {
   margin-bottom: 0;
 }
+.single-post-item.format-video .post-meta {
+  margin-top: 12px;
+}
 .single-post-item .post-title {
   font-size: 32px;
   line-height: 48px;
@@ -10070,6 +10073,10 @@ ul.children {
 .post-comments-form {
   margin-top: 60px;
 }
+.post-comments-form .contacts-message {
+  margin-top: 10px;
+}
+
 /*Comment Input Filed*/
 .post-comments-title .sub-title {
   font-size: 18px;
@@ -10116,6 +10123,11 @@ ul.children {
 }
 .comment-respond p {
   margin: 0;
+}
+.comment-respond .contacts-email,
+.comment-respond .contacts-name,
+.comment-respond .single-input-field {
+  margin-bottom: 12px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .comment-respond .contacts-email {
