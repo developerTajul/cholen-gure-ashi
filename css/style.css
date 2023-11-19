@@ -8154,7 +8154,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .single-post-item .post-thumbnail img,
 .single-post-item .post-video img {
-  width: 100%;
+  border-radius: 16px;
   transform: scale(1);
   transition: all 0.5s ease-out;
 }
