@@ -8059,9 +8059,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .single-post-item .single-post-meta {
   display: inline-flex;
-  align-items: center;
   justify-content: space-between;
   padding-top: 15px;
+  flex-direction: column;
   width: 100%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
