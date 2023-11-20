@@ -213,6 +213,13 @@
       margin-top: 12px;
     }
   }
+  &.post-24{
+    .wp-block-button{
+      a{
+        color: $white;
+      }
+    }
+  }
 
   .post-title {
     font-size: 32px;
@@ -273,6 +280,9 @@
     .post-cat-list{
       display: inline-block;
       margin-left: 12px;
+      span{
+        margin-left: 8px;
+      }
     }
   }
   // Social Share
@@ -524,7 +534,7 @@
   .wp-block-comments{
     p{
       &:last-child{
-        margin-bottom: 20px;
+        margin-bottom: 20px !important;
       }
     }
   }

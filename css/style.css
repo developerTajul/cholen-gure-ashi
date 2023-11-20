@@ -8016,6 +8016,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item.format-video .post-meta {
   margin-top: 12px;
 }
+.single-post-item.post-24 .wp-block-button a {
+  color: #ffffff;
+}
 .single-post-item .post-title {
   font-size: 32px;
   line-height: 48px;
@@ -8066,6 +8069,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item .single-post-meta .post-cat-list {
   display: inline-block;
   margin-left: 12px;
+}
+.single-post-item .single-post-meta .post-cat-list span {
+  margin-left: 8px;
 }
 .single-post-item .social-share {
   display: flex;
@@ -8284,7 +8290,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 .single-post-item .wp-block-comments p:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .blog-post-nav {
