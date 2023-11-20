@@ -130,12 +130,12 @@ ul {
 }
 
 ::-moz-selection {
-  background: $sky-color;
+  background: $primary-color;
   text-shadow: none;
   color: #fff;
 }
 ::selection {
-  background: $sky-color;
+  background: $primary-color;
   text-shadow: none;
   color: #fff;
 }

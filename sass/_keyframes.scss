@@ -236,7 +236,7 @@
   background: linear-gradient(to right, #041126 50%, #041126 50%, #3B71FE);
   background-size: 200%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: unset;
   transition: 0.5s ease-out;
   color: $black;
 }
