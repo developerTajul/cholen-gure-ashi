@@ -343,6 +343,20 @@
       cursor: default;
     }
   }
+  // Post cat
+  .blog-post-cat{
+    span{
+      float: left;
+      margin-right: 30px;
+      margin-top: 2px;
+    }
+    .post-cat-list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+  }
   // Post Tags
   .blog-post-tag {
     display: inline-block;
