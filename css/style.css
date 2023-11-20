@@ -8444,7 +8444,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
   height: 522px;
 }
-.blog-details-wrapper .single-post-item.format-gallery .post-meta, .blog-details-wrapper .single-post-item.format-image .post-meta {
+.blog-details-wrapper .single-post-item.format-gallery .post-meta, .blog-details-wrapper .single-post-item.format-image .post-meta, .blog-details-wrapper .single-post-item.format-audio .post-meta {
   margin-top: 20px;
 }
 .blog-details-wrapper .single-post-item .post-meta {
