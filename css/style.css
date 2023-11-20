@@ -368,12 +368,6 @@ input.theme-btn.style-2:before {
 input.theme-btn:hover {
   color: #ffffff;
 }
-.theme-btn:hover:after, .isotope-tour .portfolio-filter li:hover:after,
-.wp-block-loginout a:hover:after,
-input.theme-btn:hover:after {
-  height: 100%;
-  transition: all 0.5s ease-out;
-}
 .theme-btn:hover.style-2:before, .isotope-tour .portfolio-filter li:hover.style-2:before,
 .wp-block-loginout a:hover.style-2:before,
 input.theme-btn:hover.style-2:before {
@@ -392,7 +386,7 @@ input.theme-btn:hover.style-2:before {
   width: 44px;
   height: 44px;
   border-radius: 6px;
-  background-color: #3B71FE;
+  background-color: transparent;
   color: #fff;
   font-size: 16px;
   right: 4px;
@@ -8288,6 +8282,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item .post-meta span a:hover i {
   color: #3B71FE;
   transition: all 0.5s ease-out;
+}
+.single-post-item .wp-block-comments p:last-child {
+  margin-bottom: 20px;
 }
 
 .blog-post-nav {

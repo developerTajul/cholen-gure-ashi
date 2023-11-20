@@ -277,10 +277,6 @@ input.theme-btn {
   }
   &:hover{
     color: $white;
-    &:after{
-      height: 100%;
-      @include transition;
-    }
     &.style-2{
       &:before {
         background:
@@ -306,7 +302,7 @@ input.theme-btn {
       width: 44px;
       height: 44px;
       border-radius: 6px;
-      background-color: $primary-color;
+      background-color: transparent;
       color: #fff;
       font-size: 16px;
       right: 4px; 

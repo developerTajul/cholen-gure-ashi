@@ -521,6 +521,13 @@
       }
     }
   }
+  .wp-block-comments{
+    p{
+      &:last-child{
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 // Author
