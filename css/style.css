@@ -2498,6 +2498,9 @@ blockquote {
     padding-left: 30px;
   }
 }
+blockquote.is-style-large cite {
+  margin-bottom: 20px;
+}
 blockquote p {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 18px;
