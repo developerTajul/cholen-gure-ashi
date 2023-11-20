@@ -26,7 +26,8 @@
       width: 100%;
       height: 522px;
     }
-    &.format-gallery{
+    &.format-gallery,
+    &.format-image {
       .post-meta{
         margin-top: 20px;
       }
