@@ -8124,7 +8124,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item .blog-post-cat > span {
   float: left;
   margin-right: 30px;
-  margin-top: 2px;
 }
 .single-post-item .blog-post-cat .post-cat-list {
   display: flex;
