@@ -8069,6 +8069,10 @@ body.admin-bar .header-menu-area.sticky_menu {
     flex-direction: column;
   }
 }
+.single-post-item .single-post-meta .post-cat-list {
+  display: inline-block;
+  margin-left: 12px;
+}
 .single-post-item .social-share {
   display: flex;
   gap: 17px;
@@ -8935,7 +8939,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 0;
   padding-left: 0;
   display: inline-flex;
-  gap: 0 25px;
+  gap: 0 8px;
 }
 @media (max-width: 375px) {
   .breadcrumb-list ul {
@@ -8945,7 +8949,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .breadcrumb-list ul li {
   list-style: none;
   display: inline-flex;
-  gap: 0 25px;
+  gap: 0 8px;
   align-items: center;
   color: #ffffff;
 }

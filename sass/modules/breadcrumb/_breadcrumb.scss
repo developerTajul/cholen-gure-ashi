@@ -63,7 +63,7 @@
     margin-bottom: 0;
     padding-left: 0;
     display: inline-flex;
-    gap:0 25px;
+    gap:0 8px;
 
     @include rmaxwd(375) {
       flex-direction: column;
@@ -71,7 +71,7 @@
     li {
       list-style: none;
       display: inline-flex;
-      gap:0 25px;
+      gap:0 8px;
       align-items: center;
       color: $white;
       &.active {

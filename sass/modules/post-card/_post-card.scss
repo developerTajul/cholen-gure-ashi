@@ -270,6 +270,10 @@
     @include sm{
       flex-direction: column;
     }
+    .post-cat-list{
+      display: inline-block;
+      margin-left: 12px;
+    }
   }
   // Social Share
   .social-share {
