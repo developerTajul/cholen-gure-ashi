@@ -8124,13 +8124,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item .blog-post-tag span {
   font-size: 16px;
   font-weight: 700;
-  display: inline-block;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #FE712A;
   margin-bottom: 0;
   margin-right: 30px;
   text-transform: uppercase;
-  margin-top: 8px;
+  margin-top: 2px;
   float: left;
 }
 .single-post-item .blog-post-tag .post-tag-list {
