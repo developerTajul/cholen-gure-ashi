@@ -193,13 +193,13 @@ ul {
 }
 
 ::-moz-selection {
-  background: #3B71FE;
+  background: #1eae98;
   text-shadow: none;
   color: #fff;
 }
 
 ::selection {
-  background: #3B71FE;
+  background: #1eae98;
   text-shadow: none;
   color: #fff;
 }
