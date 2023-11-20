@@ -8061,7 +8061,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: inline-flex;
   justify-content: space-between;
   padding-top: 15px;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {

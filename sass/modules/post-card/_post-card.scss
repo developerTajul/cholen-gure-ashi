@@ -270,7 +270,7 @@
     display: inline-flex;
     justify-content: space-between;
     padding-top: 15px;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     @include sm{
       flex-direction: column;
