@@ -2597,14 +2597,6 @@ blockquote footer {
   background: #3B71FE !important;
 }
 
-.wp-block-button {
-  margin-bottom: 10px;
-}
-.wp-block-button.is-style-outline .wp-block-button__link {
-  color: #32373c;
-  border-color: #32373c;
-}
-
 .wp-block-archives select,
 .wp-block-categories select {
   height: 50px;
@@ -2874,6 +2866,14 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .error-404.not-found .error-content .error-btn-bh {
   margin-top: 20px;
+}
+
+.wp-block-button {
+  margin-bottom: 10px;
+}
+.wp-block-button.is-style-outline .wp-block-button__link {
+  color: #32373c !important;
+  border-color: #32373c;
 }
 
 @keyframes MovefadeUp {
