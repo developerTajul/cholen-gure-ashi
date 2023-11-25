@@ -4300,6 +4300,7 @@ body.admin-bar .header-menu-area.sticky_menu {
     padding: 20px;
     top: 10px;
     right: 10px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
   }
 }
 .link-card.style-2 {
@@ -4312,9 +4313,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   .link-card.style-2 {
     top: inherit;
     right: inherit;
-    bottom: 10px;
+    bottom: -10px;
     left: 10px;
     padding: 20px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
   }
 }
 .link-card .video-btn a {
