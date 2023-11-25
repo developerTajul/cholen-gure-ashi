@@ -37,6 +37,9 @@
             margin-bottom: 0px;
             line-height: 170%;
             cursor: default;
+            @include sm{
+                text-align: justify;
+            }
         }
     }
     &:hover {

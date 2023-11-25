@@ -6921,6 +6921,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 170%;
   cursor: default;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .info-card .content .desc {
+    text-align: justify;
+  }
+}
 .info-card:hover .icon-wrapper {
   animation: bounce 1s alternate;
 }
