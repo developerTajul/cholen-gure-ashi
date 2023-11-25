@@ -7510,6 +7510,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   overflow: hidden;
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
 }
 .user-meta-info .user-info-inner .content .user-name {
   font-family: "Plus Jakarta Sans", sans-serif;

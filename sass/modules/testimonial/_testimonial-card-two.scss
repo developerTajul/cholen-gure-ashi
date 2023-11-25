@@ -32,6 +32,7 @@
             overflow: hidden;
             width: 60px;
             height: 60px;
+            flex-shrink: 0;
         }
         .content{
             .user-name{
