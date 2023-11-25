@@ -4151,7 +4151,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .meta-wrapper {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     row-gap: 20px;
   }
@@ -4159,6 +4159,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .meta-wrapper .meta-user {
   margin-left: 53px;
   display: inline-flex;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .meta-wrapper .meta-user {
+    margin-left: 0;
+  }
 }
 .meta-wrapper .meta-user .image-inner {
   border-radius: 100%;
@@ -4179,6 +4184,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .counter-wrapper {
   display: flex;
   margin-left: 16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-wrapper {
+    margin-left: 0;
+  }
 }
 .counter-wrapper .counter-inner {
   font-family: "Plus Jakarta Sans", sans-serif;

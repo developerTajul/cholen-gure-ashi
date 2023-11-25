@@ -178,13 +178,16 @@
     display: flex;
     align-items: center;
     @include sm{
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         justify-content: space-between;
         row-gap: 20px;
     }
     .meta-user{
         margin-left: 53px;
         display: inline-flex;
+        @include sm{
+            margin-left: 0;
+        }
         .image-inner{
             border-radius: 100%;
             border: 3px solid $white;
@@ -205,6 +208,9 @@
 .counter-wrapper{
     display: flex;
     margin-left: 16px;
+    @include sm{
+        margin-left: 0;
+    }
     .counter-inner{
         font-family:$body-font;
         color: $black;
