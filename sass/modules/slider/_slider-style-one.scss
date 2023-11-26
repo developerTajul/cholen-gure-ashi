@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    overflow: hidden;
+    @include sm{
+      overflow: inherit !important;
+    }
     .banner-shape-1{
       position: absolute;
       top: 23.4%;
