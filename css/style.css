@@ -5289,6 +5289,16 @@ body.admin-bar .header-menu-area.sticky_menu {
 .location-area.style-5 .location-card .content-wrapper .time-zone {
   gap: 18px;
 }
+@media (max-width: 1280px) {
+  .location-area.style-5 .location-card .content-wrapper .time-zone {
+    gap: 14px;
+  }
+}
+@media (max-width: 1280px) {
+  .location-area.style-5 .location-card .content-wrapper .time-zone {
+    gap: 14px;
+  }
+}
 
 .why-choose-us-area .section-title {
   margin-top: 16px;

@@ -13,6 +13,12 @@
                 }
                 .time-zone{
                     gap: 18px;
+                    @include rmaxwd(1280){
+                        gap: 14px;
+                    }
+                    @include rmaxwd(1280){
+                        gap: 14px;
+                    }
                 }
             }
         }
