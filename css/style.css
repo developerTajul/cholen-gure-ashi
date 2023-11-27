@@ -4305,6 +4305,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 23px 49px 22px 23px;
   animation: MoveUpDown 3s linear infinite alternate;
 }
+@media (max-width: 1024px) {
+  .link-card.style-1 {
+    right: 30%;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .link-card.style-1 {
     padding: 20px;
@@ -4318,6 +4323,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   right: 247px;
   padding: 22px 80px 22px 27px;
   animation: MoveUpDown 2s linear infinite alternate;
+}
+@media (max-width: 1400px) {
+  .link-card.style-2 {
+    right: 230px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .link-card.style-2 {
