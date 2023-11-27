@@ -5793,10 +5793,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-direction: column;
   gap: 7px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .single-counter {
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
   }
 }
 .single-counter .counter-inner {

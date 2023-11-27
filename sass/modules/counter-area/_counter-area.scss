@@ -14,10 +14,10 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
-    @include rmaxwd(992){
+    @include rmaxwd(1024){
         // width: 44%;
-        justify-content: start;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
     }
     .counter-inner{
         font-family: $body-font;
