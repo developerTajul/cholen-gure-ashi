@@ -6615,10 +6615,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media (max-width: 1200px) {
   .slider-area.style-2 .slider-arrow-btn-wrapper {
-    right: unset;
-    left: 10%;
+    right: 5%;
     margin: 0;
-    bottom: 2%;
+    bottom: 5%;
   }
 }
 @media (max-width: 992px) {
