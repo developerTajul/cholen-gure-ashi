@@ -9276,7 +9276,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .widget.widget_search {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
 }
 .widget.widget_search button {
   width: auto;
@@ -9311,6 +9311,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .widget .search-form {
   display: flex !important;
   margin: 0px !important;
+  gap: 12px;
 }
 .widget .search-form button {
   width: 62px;

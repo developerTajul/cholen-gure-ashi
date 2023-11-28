@@ -234,7 +234,8 @@
   /* Search Widget */
    &.widget_search{
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+
     button {
       width: auto;
       height: auto;
@@ -267,7 +268,8 @@
   .search-form {
     display: flex !important;
     margin: 0px !important;
-
+    gap: 12px;
+    
     button {
       width: 62px;
       flex-shrink: 0;
