@@ -52,5 +52,10 @@
         .elementor-column{
             width: auto;
         }
+        .elementor-container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
     }
 }

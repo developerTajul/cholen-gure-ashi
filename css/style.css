@@ -5834,6 +5834,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .elementor-element.elementor-element-d75a764 .elementor-column {
   width: auto;
 }
+.elementor-element.elementor-element-d75a764 .elementor-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
 .counter-area.style-2 {
   justify-content: start;
