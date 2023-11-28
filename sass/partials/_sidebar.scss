@@ -269,10 +269,13 @@
     display: flex !important;
     margin: 0px !important;
     gap: 12px;
-    
+    input{
+      border-radius: 12px;
+    }
     button {
       width: 62px;
       flex-shrink: 0;
+      border-radius: 12px;
     }
   }
   .wp-block-search__no-button {
