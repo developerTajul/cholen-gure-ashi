@@ -9199,7 +9199,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin: 0;
 }
 .widget .social-profile {
-  justify-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .widget .social-profile a {
   width: 60px;
