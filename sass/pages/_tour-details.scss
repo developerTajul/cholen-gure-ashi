@@ -56,21 +56,6 @@
                 letter-spacing: -0.56px;
             }
         }
-        .post-gallery-columns-2{
-            margin-top: 32px;
-            gap: 40px;
-            flex-wrap: wrap;
-            align-items: center;
-            .post-gallery-item{
-                max-width: 50%;
-            }
-            @include rmaxwd(992){
-                gap:20px;
-                .post-gallery-item{
-                    max-width: 47%;
-                }
-            }
-        }
         .list-item-wrapper{
             display: flex;
             justify-content: space-between;
@@ -180,3 +165,14 @@
         transform: rotate(360deg);
     }
 } 
+.post-gallery-columns-2{
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .post-gallery-item{
+        width: 100%;
+    }
+    @include rmaxwd(992){
+        gap:20px;
+    }
+}
