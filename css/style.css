@@ -10489,10 +10489,9 @@ ul.children {
 }
 .tour-details .sidebar .widget_booking_form button span.loading:after {
   content: "";
-  width: 12px;
-  height: 12px;
-  border: 5px solid #FFF;
-  border-bottom-color: transparent;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
