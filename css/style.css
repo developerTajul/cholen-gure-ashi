@@ -10481,6 +10481,24 @@ ul.children {
 .tour-details .sidebar .widget_booking_form button.booked {
   background-color: #3B71FE !important;
 }
+.tour-details .sidebar .widget_booking_form button.loading {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .destination-page .location-card.style-1:hover {
   margin-top: 0 !important;
