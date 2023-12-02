@@ -104,6 +104,12 @@
             }
             .comment-form{
                 margin-top: 22px;
+
+                span{
+                    .error{
+                        color: $primary-color;
+                    }
+                }
             }
             .input-wrapper{
                 display: flex;
