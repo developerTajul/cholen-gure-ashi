@@ -10492,6 +10492,7 @@ ul.children {
   width: 18px;
   height: 18px;
   border: 2px solid #ffffff;
+  border-bottom-color: #FE712A;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
