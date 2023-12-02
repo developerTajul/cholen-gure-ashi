@@ -10447,7 +10447,7 @@ ul.children {
 .tour-details .sidebar .widget_booking_form .comment-form {
   margin-top: 22px;
 }
-.tour-details .sidebar .widget_booking_form .comment-form span.error {
+.tour-details .sidebar .widget_booking_form .comment-form .contacts-name span.error, .tour-details .sidebar .widget_booking_form .comment-form .contacts-email span.error, .tour-details .sidebar .widget_booking_form .comment-form .contacts-phone span.error, .tour-details .sidebar .widget_booking_form .comment-form .contacts-date span.error {
   color: #FE712A;
 }
 .tour-details .sidebar .widget_booking_form .input-wrapper {
@@ -10477,6 +10477,9 @@ ul.children {
   margin-top: 8px;
   display: block;
   width: 100%;
+}
+.tour-details .sidebar .widget_booking_form button.booked {
+  background-color: #3B71FE !important;
 }
 
 .destination-page .location-card.style-1:hover {

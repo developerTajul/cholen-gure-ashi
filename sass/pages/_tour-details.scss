@@ -104,11 +104,14 @@
             }
             .comment-form{
                 margin-top: 22px;
-                span{
-                    &.error{
-                        color: $secondary-color;
+                .contacts-name,.contacts-email,.contacts-phone,.contacts-date{
+                    span{
+                        &.error{
+                            color: $secondary-color;
+                        }
                     }
                 }
+                
             }
             .input-wrapper{
                 display: flex;
@@ -137,6 +140,9 @@
                 margin-top: 8px;
                 display: block;
                 width: 100%;
+                &.booked{
+                    background-color: $primary-color !important;
+                }
             }
         }
     }
