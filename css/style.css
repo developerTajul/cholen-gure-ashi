@@ -10491,16 +10491,16 @@ ul.children {
     transform: rotate(360deg);
   }
 }
-.post-gallery-columns-2 {
+.post-image-gallery {
   gap: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.post-gallery-columns-2 .post-gallery-item {
+.post-image-gallery .post-gallery-item {
   width: 100%;
 }
 @media (max-width: 992px) {
-  .post-gallery-columns-2 {
+  .post-image-gallery {
     gap: 20px;
   }
 }
