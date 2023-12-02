@@ -10482,8 +10482,15 @@ ul.children {
   background-color: #3B71FE !important;
 }
 .tour-details .sidebar .widget_booking_form button span.loading {
-  width: 48px;
-  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.tour-details .sidebar .widget_booking_form button span.loading:after {
+  content: "";
+  width: 12px;
+  height: 12px;
   border: 5px solid #FFF;
   border-bottom-color: transparent;
   border-radius: 50%;
