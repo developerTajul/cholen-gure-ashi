@@ -171,6 +171,12 @@
     grid-template-columns: repeat(2, 1fr);
     .post-gallery-item{
         width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100%;
+        }
     }
     @include rmaxwd(992){
         gap:20px;

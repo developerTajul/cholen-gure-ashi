@@ -10498,6 +10498,12 @@ ul.children {
 }
 .post-image-gallery .post-gallery-item {
   width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.post-image-gallery .post-gallery-item img {
+  width: 100%;
 }
 @media (max-width: 992px) {
   .post-image-gallery {
