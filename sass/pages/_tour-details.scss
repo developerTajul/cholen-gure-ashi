@@ -104,9 +104,8 @@
             }
             .comment-form{
                 margin-top: 22px;
-
                 span{
-                    .error{
+                    &.error{
                         color: $primary-color;
                     }
                 }

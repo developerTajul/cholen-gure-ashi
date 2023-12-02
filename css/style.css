@@ -10447,7 +10447,7 @@ ul.children {
 .tour-details .sidebar .widget_booking_form .comment-form {
   margin-top: 22px;
 }
-.tour-details .sidebar .widget_booking_form .comment-form span .error {
+.tour-details .sidebar .widget_booking_form .comment-form span.error {
   color: #3B71FE;
 }
 .tour-details .sidebar .widget_booking_form .input-wrapper {
