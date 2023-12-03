@@ -10549,6 +10549,14 @@ ul.children {
   }
 }
 
+.tour-booking-btn .success-msg-show {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #3B71FE;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
 .destination-page .location-card.style-1:hover {
   margin-top: 0 !important;
 }
