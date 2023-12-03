@@ -709,7 +709,7 @@
          /*
        Jquery Header Search
        ============================*/
-        $('.search-btn').on('click', function (e) {
+       $('.search-btn').on('click', function (e) {
             e.preventDefault();
             $('body').css('overflow', 'hidden');
 
