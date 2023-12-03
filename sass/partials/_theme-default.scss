@@ -277,6 +277,10 @@ input.theme-btn {
   }
   &:hover{
     color: $white;
+    &:after{
+      height: 100%;
+      @include transition;
+    }
     &.style-2{
       &:before {
         background:

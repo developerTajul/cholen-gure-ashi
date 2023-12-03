@@ -368,6 +368,12 @@ input.theme-btn.style-2:before {
 input.theme-btn:hover {
   color: #ffffff;
 }
+.theme-btn:hover:after, .isotope-tour .portfolio-filter li:hover:after,
+.wp-block-loginout a:hover:after,
+input.theme-btn:hover:after {
+  height: 100%;
+  transition: all 0.5s ease-out;
+}
 .theme-btn:hover.style-2:before, .isotope-tour .portfolio-filter li:hover.style-2:before,
 .wp-block-loginout a:hover.style-2:before,
 input.theme-btn:hover.style-2:before {
