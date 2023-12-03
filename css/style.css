@@ -7587,8 +7587,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: start;
 }
 .accordion-wrapper .accordion-list-item {
+  width: 100%;
   border-radius: 12px;
-  width: 746px;
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0px rgba(199, 206, 218, 0.2);
 }
@@ -10501,6 +10501,7 @@ ul.children {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
+  height: 263px;
 }
 .post-image-gallery .post-gallery-item:before {
   position: absolute;
@@ -10517,7 +10518,30 @@ ul.children {
 }
 .post-image-gallery .post-gallery-item img {
   width: 100%;
+  height: 263px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  position: relative;
+}
+.post-image-gallery .post-gallery-item img:before {
+  position: absolute;
+  top: 0;
+  left: -85%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
   height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+  transform: skewX(-25deg);
+  z-index: 20;
+}
+.post-image-gallery .post-gallery-item:hover:before {
+  animation: shine 1s;
+}
+.post-image-gallery .post-gallery-item:hover img:before {
+  animation: shine 1s;
 }
 @media (max-width: 992px) {
   .post-image-gallery {
