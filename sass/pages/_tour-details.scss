@@ -234,7 +234,12 @@
     }
 }
 .tour-booking-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .success-msg-show{
+        margin-top: 12px;
         font-family: $body-font;
         color: $primary-color;
         text-align: center;
