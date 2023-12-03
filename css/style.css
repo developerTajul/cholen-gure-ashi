@@ -5857,6 +5857,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 15px;
 }
 .post-meta.style-1 {
+  flex-wrap: wrap;
   margin-top: 22px;
 }
 .post-meta .user-info {
