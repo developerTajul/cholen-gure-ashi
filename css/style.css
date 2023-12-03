@@ -5850,6 +5850,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   gap: 15px;
 }
+.post-meta.style-1 {
+  margin-top: 22px;
+}
 .post-meta .user-info {
   display: flex;
   gap: 11px;
