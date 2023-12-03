@@ -7645,6 +7645,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #041126;
   font-weight: 500;
   margin-bottom: 0;
+  margin-left: 0 !important;
 }
 .accordion-wrapper .accordion-list-item .accordion-item-body {
   padding: 0px 28px;
