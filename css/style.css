@@ -583,6 +583,10 @@ input.theme-btn {
   background-color: #E7E7E7;
 }
 
+.wpcf7-not-valid-tip {
+  color: #FE712A !important;
+}
+
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {
