@@ -379,38 +379,38 @@
         /*
        Location Slider
        ============================*/
-        // $("#location-slider-wrapper").slick({
-        //     slidesToShow: 4,
-        //     infinite: true,
-        //     autoplay: true,
-        //     draggable: true,
-        //     arrows: true,
-        //     slidesToScroll: 1,
-        //     loop: true,
-        //     dots: true,
-        //     speed: 1500,
-        //     rtl: false,
-        //     prevArrow:
-        //         "<button type='button' class='location-arrow-btn prev-btn'><i class='fa-solid fa-arrow-left'></i></button>",
-        //     nextArrow:
-        //         "<button type='button' class='location-arrow-btn next-btn'><i class='fa-solid fa-arrow-right'></i></button>",
-        //     responsive: [
-        //         {
-        //             breakpoint: 1200,
-        //             settings: {
-        //                 autoplay: true,
-        //                 slidesToShow: 2,
-        //             },
-        //         },
-        //         {
-        //             breakpoint: 767,
-        //             settings: {
-        //                 autoplay: true,
-        //                 slidesToShow: 1,
-        //             },
-        //         }
-        //     ],
-        // });
+        $("#location-slider-wrapper-similar-post").slick({
+            slidesToShow: 4,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: true,
+            speed: 1500,
+            rtl: false,
+            prevArrow:
+                "<button type='button' class='location-arrow-btn prev-btn'><i class='fa-solid fa-arrow-left'></i></button>",
+            nextArrow:
+                "<button type='button' class='location-arrow-btn next-btn'><i class='fa-solid fa-arrow-right'></i></button>",
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 1,
+                    },
+                }
+            ],
+        });
 
         // $('#trigger_location_prev').on('click', function() {
         //     $('.location-slider-wrapper .prev-btn').trigger('click');
