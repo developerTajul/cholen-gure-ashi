@@ -10685,8 +10685,21 @@ ul.children {
   justify-content: start;
   align-items: center;
 }
+.contact-form-btn-wrapper p .wpcf7-spinner {
+  background-color: transparent !important;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #041126;
+  border-top: 3px dotted #FE712A;
+  border-bottom: 3px dotted #FE712A;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: loadingRotation 1s linear infinite;
+}
 .contact-form-btn-wrapper p .wpcf7-spinner:before {
-  background-color: #FE712A !important;
+  display: none !important;
+  background-color: transparent !important;
 }
 
 .blog-grid-area {
