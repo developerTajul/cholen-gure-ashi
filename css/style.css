@@ -587,6 +587,10 @@ input.theme-btn {
   color: #FE712A !important;
 }
 
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+  padding: 0 13.5px !important;
+}
+
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {

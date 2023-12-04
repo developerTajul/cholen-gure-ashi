@@ -508,3 +508,6 @@ input.theme-btn {
 .wpcf7-not-valid-tip{
   color: $secondary-color !important;
 }
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+  padding: 0 13.5px !important;
+}
