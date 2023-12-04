@@ -601,7 +601,7 @@
         });  
 
         $('#user-slider-arrow').on('click', function() {
-            $('#testimonial_one .next-btn').trigger('click');
+            $('.testimonial_one .next-btn').trigger('click');
         });     
 
         /*
