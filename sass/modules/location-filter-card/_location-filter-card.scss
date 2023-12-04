@@ -40,11 +40,16 @@
       justify-content: center;
       flex-direction: column;
       align-items: start;
-      // width: 130px;
       gap: 8px;
       width: auto;
       input,#priceValue{
         cursor: pointer;
+      }
+      #priceValue{
+        width: 130px;
+        @include rmaxwd(1200){
+          width: auto !important;
+        }
       }
       &.price-range-inner{
         position: relative;

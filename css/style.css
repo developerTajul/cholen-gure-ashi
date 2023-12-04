@@ -6053,6 +6053,14 @@ body.admin-bar .header-menu-area.sticky_menu {
 .location-filter-card form .single-item input, .location-filter-card form .single-item #priceValue {
   cursor: pointer;
 }
+.location-filter-card form .single-item #priceValue {
+  width: 130px;
+}
+@media (max-width: 1200px) {
+  .location-filter-card form .single-item #priceValue {
+    width: auto !important;
+  }
+}
 .location-filter-card form .single-item.price-range-inner {
   position: relative;
 }
