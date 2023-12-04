@@ -3022,7 +3022,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
 }
 
-.animated-text-blue, .latest-comments li .comments-box .comments-text .avatar-name h5, .widget_latest_post ul li .latest-post-desc .latest-post-title a, .author-info .author-text h3, .author-info .author-text a, .blog-post-nav .post-navigation .text h4, .single-post-item .post-title, .icon-card.style-2 .content .info a, .latest-post-card .content-wrapper .post-title a, .location-image-card .content-inner .city a, .location-card.style-3 .content-wrapper .content-inner .title a, .location-card.style-2 .content-wrapper .content-inner .content-title a, .location-card .content-wrapper .content-inner .content-title a, .link-card .content-wrapper .title a {
+.animated-text-blue, .latest-comments li .comments-box .comments-text .avatar-name h5, .widget_latest_post ul li .latest-post-desc .latest-post-title a, .author-info .author-text h3, .author-info .author-text a, .blog-post-nav .post-navigation .text h4, .single-post-item .post-title a, .icon-card.style-2 .content .info a, .latest-post-card .content-wrapper .post-title a, .location-image-card .content-inner .city a, .location-card.style-3 .content-wrapper .content-inner .title a, .location-card.style-2 .content-wrapper .content-inner .content-title a, .location-card .content-wrapper .content-inner .content-title a, .link-card .content-wrapper .title a {
   text-decoration: none;
   background: linear-gradient(to right, #041126 50%, #041126 50%, #3B71FE);
   background-size: 200%;
@@ -7925,9 +7925,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 700;
   margin-bottom: 0;
 }
-.single-post-item .post-title:hover {
-  background-position: -100%;
-}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .single-post-item .post-title {
     font-size: 28px;
@@ -7935,9 +7932,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     margin-top: 5px;
   }
 }
-.single-post-item .post-title:hover a {
-  color: #3B71FE;
-  transition: all 0.5s ease-out;
+.single-post-item .post-title a:hover {
+  color: transparent !important;
+  background-position: -100% !important;
 }
 .single-post-item .post-content p {
   margin-top: 17px;
@@ -9713,6 +9710,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title a:hover {
+  color: transparent !important;
   background-position: -100%;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-meta {

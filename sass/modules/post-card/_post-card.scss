@@ -227,10 +227,7 @@
     font-weight: 700;
     //margin-bottom: 10px;
     margin-bottom: 0;
-    @extend .animated-text-blue;
-      &:hover{
-        background-position: -100%;
-      }
+    
 
     @include sm {
       font-size: 28px;
@@ -238,13 +235,20 @@
       margin-top: 5px;
       //margin-bottom: 5px;
     }
-
-    &:hover {
-      a {
-        color: $primary-color;
-        @include transition;
+    a{
+      @extend .animated-text-blue;
+      &:hover{
+        color: transparent !important;
+        background-position: -100% !important;
       }
     }
+
+    // &:hover {
+    //   a {
+    //     color: $primary-color;
+    //     @include transition;
+    //   }
+    // }
   }
   .post-content {
     p {
