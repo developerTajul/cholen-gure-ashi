@@ -2,6 +2,9 @@
   &.style-1{
     .header-menu-area{
       position: fixed;
+      @include rmaxwd(992){
+        position: unset !important;
+      }
     }
   }
 }
