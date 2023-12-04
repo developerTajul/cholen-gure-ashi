@@ -56,10 +56,14 @@
             margin-top: 26px;
             margin-bottom: 0px !important;
             cursor: default;
-            @extend .animated-text-blue;
-            &:hover{
-                background-position: -100%;
+            a{
+                @extend .animated-text-blue;
+                &:hover{
+                    background-position: -100%;
+                }
             }
+           
+            
         }
         .duration{
             font-family:$body-font;
