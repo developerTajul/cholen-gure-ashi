@@ -45,7 +45,7 @@
       input,#priceValue{
         cursor: pointer;
       }
-      #priceValue{
+      &.price-range-inner{
         width: 130px;
         @include rmaxwd(1200){
           width: auto !important;
