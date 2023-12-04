@@ -50,19 +50,21 @@
             margin-top: 16px;
             a{
                 font-family: $body-font;
-                color: $black;
+                // color: $black;
                 font-size: 28px;
                 font-weight: 700;
                 line-height: 130%; 
                 letter-spacing: -0.56px;
                 margin: 0px;
+                @extend .animated-text-blue;
                 @include rmaxwd(1400){
                     font-size: 22px;
                 }
                 &:hover{
-                    @extend .animated-text-blue;
+                    color: transparent !important;
                     background-position: -100%;
                 }
+                
             }
         }
     }
