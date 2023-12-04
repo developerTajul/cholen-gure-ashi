@@ -3893,6 +3893,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .menu-sidebar-area .menu-sidebar-close .menu-sidebar-close-btn:hover {
   background-color: #041126;
+  color: #ffffff;
 }
 .menu-sidebar-area .menu-sidebar-content .menu-sidebar-single-widget {
   display: inline-block;
