@@ -59,7 +59,8 @@
             a{
                 @extend .animated-text-blue;
                 &:hover{
-                    background-position: -100%;
+                    color: transparent !important;
+                    background-position: -100% !important;
                 }
             }
            

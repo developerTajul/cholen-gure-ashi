@@ -5041,7 +5041,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   cursor: default;
 }
 .location-image-card .content-inner .city a:hover {
-  background-position: -100%;
+  color: transparent !important;
+  background-position: -100% !important;
 }
 .location-image-card .content-inner .duration {
   font-family: "Plus Jakarta Sans", sans-serif;
