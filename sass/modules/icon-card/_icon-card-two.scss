@@ -41,8 +41,10 @@
                 }
                 a{
                     @extend .animated-text-blue;
+                    cursor: pointer;
                     &:hover{
-                        background-position: -100%;
+                        color: transparent !important;
+                        background-position: -100% !important;
                     }
                 }
                 span,.address-desc{
@@ -52,6 +54,7 @@
                     font-weight: 400;
                     line-height: 170%;
                     text-align: center;
+                    cursor: default;
                     @include rmaxwd(1400){
                         br{
                             display: none;

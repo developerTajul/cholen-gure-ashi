@@ -7118,8 +7118,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 .icon-card.style-2 .content .info a, .icon-card.style-2 .content .info span, .icon-card.style-2 .content .info .desc {
   color: #585866;
 }
+.icon-card.style-2 .content .info a {
+  cursor: pointer;
+}
 .icon-card.style-2 .content .info a:hover {
-  background-position: -100%;
+  color: transparent !important;
+  background-position: -100% !important;
 }
 .icon-card.style-2 .content .info span, .icon-card.style-2 .content .info .address-desc {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -7128,6 +7132,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 400;
   line-height: 170%;
   text-align: center;
+  cursor: default;
 }
 @media (max-width: 1400px) {
   .icon-card.style-2 .content .info span br, .icon-card.style-2 .content .info .address-desc br {
