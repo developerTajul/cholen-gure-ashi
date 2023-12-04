@@ -354,10 +354,11 @@
               > a {
                 position: relative;
                 z-index: 2;
-                color: $black;
-                &:hover{
-                  color: $white !important;
-                }
+                color: $white;
+                background-color: $primary-color;
+                // &:hover{
+                //   color: $white !important;
+                // }
 
                 //&:before {
                 //  border-color: $white;

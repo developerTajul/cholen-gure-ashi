@@ -3479,10 +3479,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 .main-menu ul li ul.submenu li.active > a {
   position: relative;
   z-index: 2;
-  color: #041126;
-}
-.main-menu ul li ul.submenu li.active > a:hover {
-  color: #ffffff !important;
+  color: #ffffff;
+  background-color: #3B71FE;
 }
 .main-menu ul li ul.submenu li.active > a:after {
   height: 100%;
