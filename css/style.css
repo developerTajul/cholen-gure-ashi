@@ -6040,7 +6040,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 400;
   line-height: 170%;
   margin: 0px;
-  cursor: pointer;
 }
 .location-filter-card form .single-item {
   position: relative;
@@ -6048,13 +6047,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   justify-content: center;
   flex-direction: column;
   align-items: start;
-  width: 130px;
   gap: 8px;
+  width: auto;
 }
-@media (max-width: 1200px) {
-  .location-filter-card form .single-item {
-    width: auto;
-  }
+.location-filter-card form .single-item input, .location-filter-card form .single-item #priceValue {
+  cursor: pointer;
 }
 .location-filter-card form .single-item.price-range-inner {
   position: relative;
@@ -6120,7 +6117,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 400;
   line-height: 170%;
   margin: 0px;
-  cursor: default;
+  cursor: pointer;
 }
 .location-filter-card form .single-item .datepicker {
   position: relative;
@@ -6132,7 +6129,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 400;
   line-height: 170%;
   margin: 0px;
-  cursor: default;
+  cursor: pointer;
 }
 .location-filter-card form button {
   border-radius: 12px;
