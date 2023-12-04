@@ -3481,6 +3481,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   z-index: 2;
   color: #041126;
 }
+.main-menu ul li ul.submenu li.active > a:hover {
+  color: #ffffff !important;
+}
 .main-menu ul li ul.submenu li.active > a:after {
   height: 100%;
   top: 0;
