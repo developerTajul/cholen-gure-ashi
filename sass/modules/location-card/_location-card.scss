@@ -95,8 +95,9 @@
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 140%;
+                    @extend .animated-text-blue;
                     &:hover{
-                        @extend .animated-text-blue;
+                       
                         background-position: -100%;
                     }
                 }
