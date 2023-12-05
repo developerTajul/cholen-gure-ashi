@@ -4585,6 +4585,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
   height: 370px;
   transition: all 0.5s ease-out;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .location-card .image-wrapper .favourite-icon {
   position: absolute;
@@ -4719,9 +4721,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 .location-card:hover .content-wrapper .content-inner .content-title {
   background-position: -100%;
 }
-.location-card.style-1 .image-wrapper {
-  min-height: 370px;
-}
 .location-card.style-1 .image-wrapper .image-inner {
   z-index: 2;
   overflow: hidden;
@@ -4730,6 +4729,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .location-card.style-1 .image-wrapper .image-inner img {
   min-height: 370px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .rating {
@@ -4796,7 +4797,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   box-shadow: 0px 24px 64px 0px rgba(199, 206, 218, 0.25);
   transition: all 0.5s ease-out;
 }
-.location-card.style-2 .image-wrapper .image-inner {
+.location-card.style-2 .image-wrapper {
   width: 100%;
   height: 268px;
   border-radius: 16px 16px 0 0;
@@ -7630,6 +7631,16 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
+  position: relative;
+}
+.user-meta-info .user-info-inner .img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .user-meta-info .user-info-inner .content .user-name {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -8083,6 +8094,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item .blog-post-cat > span {
   float: left;
   margin-right: 30px;
+  color: #041126;
 }
 .single-post-item .blog-post-cat .post-cat-list {
   display: flex;
@@ -8097,7 +8109,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 16px;
   font-weight: 700;
   font-family: "Plus Jakarta Sans", sans-serif;
-  color: #FE712A;
+  color: #041126;
   margin-bottom: 0;
   margin-right: 30px;
   text-transform: uppercase;
@@ -8111,7 +8123,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: center;
 }
 .single-post-item .blog-post-tag .post-tag-list a {
-  color: #5e6f92;
+  color: #3B71FE;
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
