@@ -591,6 +591,30 @@ input.theme-btn {
   padding: 0 13.5px !important;
 }
 
+.gx-6 {
+  --bs-gutter-x: 2.5rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .gx-6 {
+    --bs-gutter-x: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gx-6 {
+    --bs-gutter-x: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gx-6 {
+    --bs-gutter-x: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .gx-6 {
+    --bs-gutter-x: 2rem;
+  }
+}
+
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {
@@ -6046,7 +6070,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .location-filter-wrapper {
     position: unset;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
 }
 
@@ -6054,6 +6078,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
   display: inline-flex;
   gap: 104px;
+  width: 100%;
 }
 @media (max-width: 1200px) {
   .location-filter-card form {
@@ -6061,6 +6086,14 @@ body.admin-bar .header-menu-area.sticky_menu {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .location-filter-card form {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
   }
 }
 .location-filter-card form input {
@@ -6193,6 +6226,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .location-filter-card form button.style-1 {
   width: 64px;
   height: 64px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .location-filter-card form button.style-1 {
+    width: 100%;
+  }
 }
 .location-filter-card form button:hover i {
   transition: all 0.5s ease-out;

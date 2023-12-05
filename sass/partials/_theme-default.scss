@@ -511,3 +511,18 @@ input.theme-btn {
 .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
   padding: 0 13.5px !important;
 }
+.gx-6 {
+  --bs-gutter-x: 2.5rem;
+  @include sm {
+      --bs-gutter-x: 1rem;
+  }
+  @include md {
+      --bs-gutter-x: 1rem;
+  }
+  @include lg {
+      --bs-gutter-x: 1rem;
+  }
+  @include xl {
+      --bs-gutter-x: 2rem;
+  }
+}
