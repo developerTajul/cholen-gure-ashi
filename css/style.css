@@ -8237,6 +8237,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item.post-24 .wp-block-button a {
   color: #ffffff;
 }
+.single-post-item.post-1786 .post-title {
+  margin-bottom: 12px;
+}
 .single-post-item .post-title {
   font-size: 32px;
   line-height: 48px;
