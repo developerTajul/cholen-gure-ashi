@@ -9300,7 +9300,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin: 0;
 }
 .widget .social-profile {
-  justify-content: space-between;
+  justify-content: start;
+  align-items: start;
   flex-wrap: wrap;
 }
 .widget .social-profile a {
@@ -11356,7 +11357,7 @@ ul.children {
 .social-profile {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 .social-profile a {
   width: 36px;

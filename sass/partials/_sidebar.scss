@@ -135,7 +135,8 @@
   }
   /* Social Widget */
   .social-profile {
-    justify-content: space-between;
+    justify-content: start;
+    align-items: start;
     flex-wrap: wrap;
 
     a {
