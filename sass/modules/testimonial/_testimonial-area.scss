@@ -13,8 +13,14 @@
 }
 .testimonial-slider-image-wrapper{
     position: relative;
-    @include rmaxwd(1200){
-        display: none;
+    width: 636px;
+    height: 514px;
+    @include rmaxwd(992){
+        width: 100%;
+        height: 380px;
+    }
+    @include sm{
+        display: none !important;
     }
     .single-img-wrapper {
         position: absolute;
@@ -68,6 +74,10 @@
                     width: 280px;
                     height: 280px;
                 }
+                @include rmaxwd(1024){
+                    width: 200px;
+                    height: 200px;
+                }
                 img{
                     position: absolute;
                     top: 0;
@@ -84,6 +94,15 @@
             top: 0;
             left: 0;
             transform: translate(178%, 244%);
+            @include rmaxwd(1400){
+                transform: translate(115%, 217%);
+            }
+            @include rmaxwd(1024){
+                transform: translate(40%, 244%);
+            }
+            @include rmaxwd(992){
+                transform: translate(200%, 160%);
+            }
             .image{
                 width: 139px;
                 height: 139px;
@@ -103,12 +122,22 @@
             right: 0;
             transform: translate(2%, 91%);
             @include rmaxwd(1400){
-                transform: translate(2%, 44%);
+                transform: translate(-50%, 44%);
+            }
+            @include rmaxwd(1024){
+                transform: translate(-120%, 82%);
+            }
+            @include rmaxwd(992){
+                transform: translate(0%, 0%);
             }
             .image{
                 width: 218px;
                 height: 218px;
                 position: relative;
+                @include rmaxwd(1024){
+                    width: 180px;
+                    height: 180px;
+                }
                 img{
                     position: absolute;
                     top: 0;

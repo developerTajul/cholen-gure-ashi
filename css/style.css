@@ -7360,10 +7360,18 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .testimonial-slider-image-wrapper {
   position: relative;
+  width: 636px;
+  height: 514px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .testimonial-slider-image-wrapper {
-    display: none;
+    width: 100%;
+    height: 380px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-slider-image-wrapper {
+    display: none !important;
   }
 }
 .testimonial-slider-image-wrapper .single-img-wrapper {
@@ -7423,6 +7431,12 @@ body.admin-bar .header-menu-area.sticky_menu {
     height: 280px;
   }
 }
+@media (max-width: 1024px) {
+  .testimonial-slider-image-wrapper .single-img-wrapper.style-1 .image {
+    width: 200px;
+    height: 200px;
+  }
+}
 .testimonial-slider-image-wrapper .single-img-wrapper.style-1 .image img {
   position: absolute;
   top: 0;
@@ -7438,6 +7452,21 @@ body.admin-bar .header-menu-area.sticky_menu {
   top: 0;
   left: 0;
   transform: translate(178%, 244%);
+}
+@media (max-width: 1400px) {
+  .testimonial-slider-image-wrapper .single-img-wrapper.style-2 {
+    transform: translate(115%, 217%);
+  }
+}
+@media (max-width: 1024px) {
+  .testimonial-slider-image-wrapper .single-img-wrapper.style-2 {
+    transform: translate(40%, 244%);
+  }
+}
+@media (max-width: 992px) {
+  .testimonial-slider-image-wrapper .single-img-wrapper.style-2 {
+    transform: translate(200%, 160%);
+  }
 }
 .testimonial-slider-image-wrapper .single-img-wrapper.style-2 .image {
   width: 139px;
@@ -7460,13 +7489,29 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media (max-width: 1400px) {
   .testimonial-slider-image-wrapper .single-img-wrapper.style-3 {
-    transform: translate(2%, 44%);
+    transform: translate(-50%, 44%);
+  }
+}
+@media (max-width: 1024px) {
+  .testimonial-slider-image-wrapper .single-img-wrapper.style-3 {
+    transform: translate(-120%, 82%);
+  }
+}
+@media (max-width: 992px) {
+  .testimonial-slider-image-wrapper .single-img-wrapper.style-3 {
+    transform: translate(0%, 0%);
   }
 }
 .testimonial-slider-image-wrapper .single-img-wrapper.style-3 .image {
   width: 218px;
   height: 218px;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .testimonial-slider-image-wrapper .single-img-wrapper.style-3 .image {
+    width: 180px;
+    height: 180px;
+  }
 }
 .testimonial-slider-image-wrapper .single-img-wrapper.style-3 .image img {
   position: absolute;
