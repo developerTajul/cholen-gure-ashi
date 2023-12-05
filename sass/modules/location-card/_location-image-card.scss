@@ -23,6 +23,10 @@
         width: 182px;
         height: 182px;
         @include transition;
+        @include rmaxwd(1024){
+            width: 150px;
+            height: 150px;
+        }
         img{
             position: absolute;
             top: 0;

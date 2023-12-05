@@ -5028,6 +5028,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: 182px;
   transition: all 0.5s ease-out;
 }
+@media (max-width: 1024px) {
+  .location-image-card .img-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+}
 .location-image-card .img-wrapper img {
   position: absolute;
   top: 0;
