@@ -58,12 +58,6 @@
             left: 20.4%;
             animation: MoveUpDown 2s linear infinite alternate;
             @include rmaxwd(1400){
-                left: 7%;
-            }
-            @include rmaxwd(1200){
-                left: -7%;
-            }
-            @include rmaxwd(1024){
                 display: none;
             }
         }
