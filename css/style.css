@@ -6038,6 +6038,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 16px;
   top: 66.6%;
 }
+@media (max-width: 1024px) {
+  .location-filter-wrapper {
+    padding: 36px 60px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .location-filter-wrapper {
     position: unset;
@@ -6282,6 +6287,13 @@ body.admin-bar .header-menu-area.sticky_menu {
     left: 1%;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-1 .banner-shape-1 {
+    top: 3%;
+    left: 3%;
+    animation: none !important;
+  }
+}
 .slider-area.style-1 .banner-shape-2 {
   position: absolute;
   bottom: 0;
@@ -6303,6 +6315,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   top: 25%;
   right: 0;
   animation: fadeInLeft 5s alternate infinite;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-1 .banner-shape-3 {
+    display: none !important;
+  }
 }
 .slider-area.style-1 .banner-shape-4 {
   position: absolute;
