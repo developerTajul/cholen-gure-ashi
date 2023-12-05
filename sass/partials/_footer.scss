@@ -21,6 +21,9 @@
         margin: 0px;
         margin-bottom: 50px;
       }
+      &.style-2{
+        margin-bottom: 0;
+      }
     }
   }
   //footer Background
@@ -372,8 +375,8 @@
     // padding: 30px 0;
   }
   .footer-bottom-wrapper{
-    margin-top: 64px;
-    border-top: 1px solid $black-5;
+    // margin-top: 64px;
+    // border-top: 1px solid $black-5;
     padding: 24px 0;
     @include rmaxwd(991){
       margin-top: 0px;

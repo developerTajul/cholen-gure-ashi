@@ -11160,6 +11160,9 @@ ul.children {
     margin-bottom: 50px;
   }
 }
+.footer .footer-sec .divider.style-2 {
+  margin-bottom: 0;
+}
 .footer .footer-bg {
   position: absolute;
   bottom: 30px;
@@ -11462,8 +11465,6 @@ ul.children {
 }
 
 .footer-bottom-area .footer-bottom-wrapper {
-  margin-top: 64px;
-  border-top: 1px solid rgb(39, 52, 71);
   padding: 24px 0;
 }
 @media (max-width: 991px) {
