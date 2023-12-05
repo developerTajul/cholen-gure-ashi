@@ -9446,6 +9446,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
   transition: all 0.5s ease-out;
 }
+.basic-pagination .page-numbers:hover i,
+.basic-pagination .post-page-numbers:hover i,
+.page-links .page-numbers:hover i,
+.page-links .post-page-numbers:hover i,
+.wp-block-query-pagination-numbers .page-numbers:hover i,
+.wp-block-query-pagination-numbers .post-page-numbers:hover i {
+  color: #ffffff;
+}
 .basic-pagination .page-numbers.current,
 .basic-pagination .post-page-numbers.current,
 .page-links .page-numbers.current,
