@@ -11358,6 +11358,16 @@ ul.children {
   line-height: 170%;
   cursor: default;
 }
+@media (max-width: 1024px) {
+  .footer-bottom-area .copyright-text p {
+    text-align: end;
+  }
+}
+@media (max-width: 992px) {
+  .footer-bottom-area .copyright-text p {
+    text-align: start;
+  }
+}
 .footer-bottom-area .copyright-text p a {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Plus Jakarta Sans", sans-serif;

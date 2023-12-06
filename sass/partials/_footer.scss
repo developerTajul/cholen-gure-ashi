@@ -394,6 +394,12 @@
       font-weight: 400;
       line-height: 170%;
       cursor: default;
+      @include rmaxwd(1024){
+        text-align: end;
+      }
+      @include rmaxwd(992){
+        text-align: start;
+      }
       a {
         color: $gray-5;
         font-family: $body-font;
