@@ -3715,6 +3715,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .search-form-wrapper .search-form-inner .search-form .search-form-input button.submit-search-btn {
   padding: 15px 24px !important;
 }
+.search-form-wrapper .search-form-inner .search-form input {
+  width: 100%;
+}
 .search-form-wrapper .search-form-inner .search-form input[type=search] {
   margin-top: 0 !important;
   background: transparent !important;

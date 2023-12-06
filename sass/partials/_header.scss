@@ -623,7 +623,9 @@
           }
         }
       }
-
+      input{
+        width: 100%;
+      }
       input[type="search"] {
         margin-top: 0 !important;
         background: transparent !important;
