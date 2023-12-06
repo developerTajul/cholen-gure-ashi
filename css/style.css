@@ -9873,6 +9873,11 @@ body.admin-bar .header-menu-area.sticky_menu {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .widget_latest_post ul li {
+    flex-direction: row;
+  }
+}
 .widget_latest_post ul li:hover .latest-post-thumb img {
   transform: scale(1.2);
   transition: all 0.5s ease-out;
@@ -9908,6 +9913,18 @@ body.admin-bar .header-menu-area.sticky_menu {
   .widget_latest_post ul li .latest-post-thumb {
     width: 100%;
     height: 150px;
+  }
+  .widget_latest_post ul li .latest-post-thumb img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .widget_latest_post ul li .latest-post-thumb {
+    width: 102px;
+    height: 102px;
   }
   .widget_latest_post ul li .latest-post-thumb img {
     width: 100%;

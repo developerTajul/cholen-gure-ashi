@@ -616,6 +616,9 @@
       @include rmaxwd(1024){
         flex-direction: column;
       }
+      @include md{
+        flex-direction: row;
+      }
       &:hover {
         .latest-post-thumb {
           img {
@@ -652,6 +655,15 @@
         @include rmaxwd(1024){
           width: 100%;
           height: 150px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        @include md{
+          width: 102px;
+          height: 102px;
           img{
             width: 100%;
             height: 100%;
