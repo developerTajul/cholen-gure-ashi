@@ -8104,6 +8104,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item.post-1786 .post-title {
   margin-bottom: 12px;
 }
+.single-post-item.post-1778 .post-content p {
+  line-height: 170%;
+}
 .single-post-item .post-title {
   font-size: 32px;
   line-height: 48px;
@@ -8565,8 +8568,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-details-wrapper .single-post-item .post-gallery img,
 .blog-details-wrapper .single-post-item .postbox-audio img,
 .blog-details-wrapper .single-post-item .wp-block-post-featured-image img {
-  width: 100%;
-  height: 385px;
   transform: scale(1);
   transition: all 0.5s ease-out;
 }
@@ -9269,6 +9270,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 .wp-block-query-pagination-numbers .page-numbers:hover,
 .wp-block-query-pagination-numbers .post-page-numbers:hover {
   background: #3B71FE !important;
+  color: #ffffff;
+  transition: all 0.5s ease-out;
+}
+.basic-pagination .page-numbers:hover i,
+.basic-pagination .post-page-numbers:hover i,
+.page-links .page-numbers:hover i,
+.page-links .post-page-numbers:hover i,
+.wp-block-query-pagination-numbers .page-numbers:hover i,
+.wp-block-query-pagination-numbers .post-page-numbers:hover i {
   color: #ffffff;
   transition: all 0.5s ease-out;
 }
@@ -10947,6 +10957,9 @@ ul.children {
     margin-bottom: 50px;
   }
 }
+.footer .footer-sec .divider.style-2 {
+  margin-bottom: 0;
+}
 .footer .footer-bg {
   position: absolute;
   bottom: 30px;
@@ -11249,8 +11262,6 @@ ul.children {
 }
 
 .footer-bottom-area .footer-bottom-wrapper {
-  margin-top: 64px;
-  border-top: 1px solid rgb(39, 52, 71);
   padding: 24px 0;
 }
 @media (max-width: 991px) {
