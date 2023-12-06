@@ -3698,8 +3698,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 .search-form-wrapper .search-form-inner .search-form .search-form-input {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .search-form-wrapper .search-form-inner .search-form .search-form-input .search-icon {
+  display: none !important;
   display: flex;
 }
 .search-form-wrapper .search-form-inner .search-form .search-form-input .search-icon i {
