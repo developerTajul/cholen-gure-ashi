@@ -258,32 +258,32 @@
          /*
        Brand Slider
        ============================*/
-        $(".brand-slider-wrapper").slick({
-            slidesToShow: 5,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            rtl: false,
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 4,
-                    },
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-            ],
-        });
+        // $(".brand-slider-wrapper").slick({
+        //     slidesToShow: 5,
+        //     infinite: true,
+        //     autoplay: true,
+        //     draggable: true,
+        //     arrows: false,
+        //     slidesToScroll: 1,
+        //     loop: true,
+        //     dots: false,
+        //     speed: 1500,
+        //     rtl: false,
+        //     responsive: [
+        //         {
+        //             breakpoint: 992,
+        //             settings: {
+        //                 slidesToShow: 4,
+        //             },
+        //         },
+        //         {
+        //             breakpoint: 768,
+        //             settings: {
+        //                 slidesToShow: 2,
+        //             },
+        //         },
+        //     ],
+        // });
 
         /*
        Testimonial Slider
