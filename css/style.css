@@ -5701,7 +5701,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-direction: row;
   gap: 24px;
 }
-@media (max-width: 992px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .latest-post-card.style-2 {
     flex-direction: column;
     gap: 0px;
@@ -5720,7 +5720,7 @@ body.admin-bar .header-menu-area.sticky_menu {
     height: 230px;
   }
 }
-@media (max-width: 992px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .latest-post-card.style-2 .img-wrapper {
     width: 100%;
   }

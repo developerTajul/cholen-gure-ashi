@@ -2,7 +2,7 @@
     &.style-2{
         flex-direction: row;
         gap: 24px;
-        @include rmaxwd(992){
+        @include sm{
             flex-direction: column;
             gap: 0px;
         }
@@ -16,7 +16,10 @@
                 width: 230px;
                 height: 230px;
             }
-            @include rmaxwd(992){
+            // @include rmaxwd(992){
+            //     width: 100%;
+            // }
+            @include sm{
                 width: 100%;
             }
 
