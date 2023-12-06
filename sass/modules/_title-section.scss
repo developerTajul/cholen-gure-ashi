@@ -76,7 +76,9 @@
       background-image: url("../images/shape/bottom-bar.png");
       height: auto;
       z-index: 10;
-
+    }
+    @include rmaxwd(1280){
+      font-size: 42px;
     }
 
 

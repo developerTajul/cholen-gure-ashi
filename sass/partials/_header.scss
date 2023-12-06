@@ -3,7 +3,12 @@
     .header-menu-area{
       position: fixed;
       @include rmaxwd(992){
-        position: unset !important;
+        position: relative;
+      }
+      &.sticky_menu{
+        @include md{
+          position: fixed;
+        }
       }
     }
   }

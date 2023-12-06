@@ -3237,7 +3237,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media (max-width: 992px) {
   .header-area.style-1 .header-menu-area {
-    position: unset !important;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-area.style-1 .header-menu-area.sticky_menu {
+    position: fixed;
   }
 }
 
@@ -8776,6 +8781,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-image: url("../images/shape/bottom-bar.png");
   height: auto;
   z-index: 10;
+}
+@media (max-width: 1280px) {
+  .section-title .title {
+    font-size: 42px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title .title {
