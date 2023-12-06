@@ -557,6 +557,15 @@
         font-size: 24px;
       }
   }
+  .theme-btn{
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      gap: 12px;
+    }
+  }
 
 }
 

@@ -3658,6 +3658,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
   font-size: 24px;
 }
+.header-btn .theme-btn a, .header-btn .isotope-tour .portfolio-filter li a, .isotope-tour .portfolio-filter .header-btn li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  gap: 12px;
+}
 
 .search-form-wrapper {
   position: fixed;
