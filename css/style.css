@@ -6711,43 +6711,18 @@ body.admin-bar .header-menu-area.sticky_menu {
   border: none !important;
 }
 .slider-area.style-2 .slider-arrow-btn {
-  display: none !important;
-}
-.slider-area.style-2 .slider-arrow-btn-wrapper {
   position: absolute;
+  z-index: 20;
   bottom: 0;
   right: 0;
-  margin-right: 200px;
-  margin-bottom: 56px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  z-index: 20;
-}
-@media (max-width: 1200px) {
-  .slider-area.style-2 .slider-arrow-btn-wrapper {
-    right: 5%;
-    margin: 0;
-    bottom: 5%;
-  }
-}
-@media (max-width: 992px) {
-  .slider-area.style-2 .slider-arrow-btn-wrapper {
-    display: none;
-  }
-}
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn {
   border-radius: 100%;
   width: 56px;
   height: 56px;
   overflow: hidden;
+  margin-bottom: 55px;
+  margin-right: 107px;
 }
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn i {
-  position: relative;
-  z-index: 10;
-}
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.prev-btn:before, .slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.next-btn:before {
+.slider-area.style-2 .slider-arrow-btn.prev-btn:before, .slider-area.style-2 .slider-arrow-btn.next-btn:before {
   position: absolute;
   width: 0;
   height: 100%;
@@ -6759,38 +6734,39 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
   color: #ffffff;
 }
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.prev-btn {
+.slider-area.style-2 .slider-arrow-btn.prev-btn i, .slider-area.style-2 .slider-arrow-btn.next-btn i {
+  position: relative;
+  z-index: 20;
+}
+.slider-area.style-2 .slider-arrow-btn.prev-btn {
   background-color: transparent;
   color: #ffffff;
-  position: relative;
+  margin-right: 180px;
   border: 1px solid #E7E7E7;
 }
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.prev-btn:hover {
+.slider-area.style-2 .slider-arrow-btn.prev-btn:hover {
   border-color: transparent;
 }
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.prev-btn:hover:before {
+.slider-area.style-2 .slider-arrow-btn.prev-btn:hover:before {
   width: 100%;
   transition: all 0.5s ease-out;
 }
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.prev-btn:hover i {
-  color: #ffffff;
-  transition: all 0.5s ease-out;
-}
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.next-btn {
+.slider-area.style-2 .slider-arrow-btn.next-btn {
   background-color: #E7E7E7;
   color: #041126;
-  position: relative;
   border: 1px solid transparent;
 }
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.next-btn:hover {
+.slider-area.style-2 .slider-arrow-btn.next-btn:hover {
   background-color: transparent;
   border-color: transparent !important;
 }
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.next-btn:hover:before {
+.slider-area.style-2 .slider-arrow-btn.next-btn:hover:before {
   width: 100%;
   transition: all 0.5s ease-out;
 }
-.slider-area.style-2 .slider-arrow-btn-wrapper .header-slider-arrow-btn.next-btn:hover i {
+.slider-area.style-2 .slider-arrow-btn.next-btn:hover i {
+  position: relative;
+  z-index: 20;
   color: #ffffff;
   transition: all 0.5s ease-out;
 }
