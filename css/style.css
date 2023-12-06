@@ -6722,6 +6722,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 55px;
   margin-right: 107px;
 }
+@media (max-width: 992px) {
+  .slider-area.style-2 .slider-arrow-btn {
+    display: none !important;
+  }
+}
 .slider-area.style-2 .slider-arrow-btn.prev-btn:before, .slider-area.style-2 .slider-arrow-btn.next-btn:before {
   position: absolute;
   width: 0;

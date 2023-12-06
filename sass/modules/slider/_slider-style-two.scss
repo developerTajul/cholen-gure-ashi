@@ -76,6 +76,9 @@
       overflow: hidden;
       margin-bottom: 55px;
       margin-right: 107px;
+      @include rmaxwd(992){
+        display: none !important;
+      }
       &.prev-btn,&.next-btn{
         &:before{
           position: absolute;
