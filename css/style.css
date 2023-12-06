@@ -6700,7 +6700,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin: 0 103px;
   border-radius: 32px;
   overflow: hidden;
-  background-color: red;
 }
 @media (max-width: 1600px) {
   .slider-area.style-2 {

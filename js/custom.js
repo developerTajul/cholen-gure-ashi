@@ -155,32 +155,32 @@
         /*
        Slider
        ============================*/
-        $("#slider-wrapper").slick({
-            slidesToShow: 1,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            rtl: false,
-            vertical: true,
-            prevArrow:
-                "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='slider-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                        vertical: false,
-                    },
-                },
-            ],
-        });
+        // $("#slider-wrapper").slick({
+        //     slidesToShow: 1,
+        //     infinite: true,
+        //     autoplay: true,
+        //     draggable: true,
+        //     arrows: true,
+        //     slidesToScroll: 1,
+        //     loop: true,
+        //     dots: false,
+        //     speed: 1500,
+        //     rtl: false,
+        //     vertical: true,
+        //     prevArrow:
+        //         "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+        //     nextArrow:
+        //         "<button type='button' class='slider-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+        //     responsive: [
+        //         {
+        //             breakpoint: 767,
+        //             settings: {
+        //                 autoplay: true,
+        //                 vertical: false,
+        //             },
+        //         },
+        //     ],
+        // });
 
         $('#trigger_header_slider_prev').on('click', function() {
             console.log("Slider clicked");
