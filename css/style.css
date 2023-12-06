@@ -4362,7 +4362,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media (max-width: 992px) {
   .link-card.style-1 {
-    right: 12%;
+    right: 0;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
