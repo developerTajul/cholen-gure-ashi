@@ -38,7 +38,7 @@
             line-height: 170%;
             cursor: default;
             @include sm{
-                text-align: justify;
+                text-align: start;
             }
         }
     }

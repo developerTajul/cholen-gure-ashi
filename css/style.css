@@ -7063,7 +7063,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .info-card .content .desc {
-    text-align: justify;
+    text-align: start;
   }
 }
 .info-card:hover .icon-wrapper {
