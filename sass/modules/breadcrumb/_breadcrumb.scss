@@ -55,6 +55,12 @@
   @include rmaxwd(1199) {
     padding: 0;
   }
+  @include sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
 }
 .breadcrumb-list {
   text-align: center;

@@ -9019,6 +9019,14 @@ body.admin-bar .header-menu-area.sticky_menu {
     padding: 0;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .breadcrumb-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
 
 .breadcrumb-list {
   text-align: center;
