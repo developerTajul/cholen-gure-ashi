@@ -10244,6 +10244,22 @@ ul.children {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #3B71FE;
 }
+.post-comments-title h2 {
+  color: #041126;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 47px;
+  display: flex;
+  justify-content: space-between;
+  cursor: default;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .post-comments-title h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
 
 .comment-respond {
   background-color: #ffffff;

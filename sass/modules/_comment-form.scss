@@ -300,6 +300,21 @@
       color: $primary-color;
     }
   }
+  h2{
+    color: $black;
+    font-family: $body-font;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px; 
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+
+    @include sm {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  }
 }
 .comment-respond {
   background-color: $white;
