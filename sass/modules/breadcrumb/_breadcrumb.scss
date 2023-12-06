@@ -83,6 +83,9 @@
       gap:0 8px;
       align-items: center;
       color: $white;
+      @include sm{
+        align-items: start;
+      }
       &.active {
         // color: $orange-color;
       }

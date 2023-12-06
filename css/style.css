@@ -9054,6 +9054,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: center;
   color: #ffffff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .breadcrumb-list ul li {
+    align-items: start;
+  }
+}
 .breadcrumb-list ul li a {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
