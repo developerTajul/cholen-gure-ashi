@@ -9884,6 +9884,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 .widget_latest_post ul li a {
   padding-left: 0;
 }
+@media (max-width: 1024px) {
+  .widget_latest_post ul li a {
+    width: 100%;
+    height: 100%;
+  }
+}
 .widget_latest_post ul li a:before {
   display: none;
 }
