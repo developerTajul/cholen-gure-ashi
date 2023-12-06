@@ -70,6 +70,9 @@
     padding-left: 0;
     display: inline-flex;
     gap:0 8px;
+    @include sm{
+      text-align: start;
+    }
 
     @include rmaxwd(375) {
       flex-direction: column;

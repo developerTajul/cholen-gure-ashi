@@ -9037,6 +9037,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: inline-flex;
   gap: 0 8px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .breadcrumb-list ul {
+    text-align: start;
+  }
+}
 @media (max-width: 375px) {
   .breadcrumb-list ul {
     flex-direction: column;
