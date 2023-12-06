@@ -613,6 +613,9 @@
       margin-bottom: 32px;
       border-bottom   : 1px solid $gray-2;
       padding-top: 0;
+      @include sm{
+        flex-direction: column;
+      }
       &:hover {
         .latest-post-thumb {
           img {
@@ -642,6 +645,19 @@
         img {
           transform: scale(1);
           @include transition;
+        }
+        @include sm{
+          width: 100%;
+          height: 150px;
+          position: relative;
+          img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
       .latest-post-desc {
