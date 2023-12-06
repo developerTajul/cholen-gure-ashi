@@ -11315,11 +11315,12 @@ ul.children {
   display: flex;
   gap: 0 30px;
   align-items: center;
+  justify-content: flex-end;
   margin-bottom: 0;
   padding-left: 0;
   flex-wrap: wrap;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .footer-bottom-menu ul {
     justify-content: flex-start;
   }
