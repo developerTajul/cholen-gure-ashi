@@ -661,6 +661,9 @@
             text-transform: capitalize;
             @include transition;
             font-family: $body-font;
+            @include rmaxwd(1024){
+              font-size: 16px
+            }
             @extend .animated-text-blue;
               &:hover{
                 color: transparent !important;

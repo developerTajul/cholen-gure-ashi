@@ -9892,6 +9892,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+@media (max-width: 1024px) {
+  .widget_latest_post ul li .latest-post-desc .latest-post-title a {
+    font-size: 16px;
+  }
+}
 .widget_latest_post ul li .latest-post-desc .latest-post-title a:hover {
   color: transparent !important;
   background-position: -100%;
