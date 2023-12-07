@@ -5793,6 +5793,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 12px;
   background-color: #ffffff;
   overflow: hidden;
+  padding-bottom: 0;
 }
 .video-modal-card .image-wrapper img {
   border-radius: 24px;
