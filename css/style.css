@@ -254,7 +254,8 @@ input:focus {
 }
 
 .blog-area {
-  padding: 120px 0;
+  padding: 106px 0;
+  padding-bottom: 120px;
 }
 
 @media (max-width: 991px) {
@@ -5800,6 +5801,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .video-modal-card .image-wrapper {
