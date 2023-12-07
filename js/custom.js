@@ -807,6 +807,11 @@
             }
         });
 
+        var element = document.getElementById('yourElementId');
+        if (element !== null) {
+            // Access the 'value' property
+            var value = element.value;
+        }
 
          /*
         Scroll To Top Js
