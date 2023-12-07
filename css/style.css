@@ -8168,7 +8168,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: inline-block;
   margin-left: 12px;
 }
-.single-post-item .single-post-meta .post-cat-list span {
+.single-post-item .single-post-meta .post-cat-list > span {
   margin-left: 8px;
 }
 .single-post-item .single-post-meta .post-cat-list span a {

@@ -294,8 +294,10 @@
     .post-cat-list{
       display: inline-block;
       margin-left: 12px;
-      span{
+      >span{
         margin-left: 8px;
+      }
+      span{
         a{
           color: $primary-color;
           display: inline-block;
