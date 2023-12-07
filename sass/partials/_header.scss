@@ -201,6 +201,11 @@
           a {
             padding: 30px 18px;
             @include transition;
+            &:last-child{
+              @include rmaxwd(1280){
+                padding-right: 0;
+              }
+            }
           }
           ul {
             li {
@@ -395,6 +400,11 @@
         font-family: $body-font;
         font-size: 16px;
         font-weight: 500;
+        &:last-child{
+          @include rmaxwd(1280){
+            padding-right: 0;
+          }
+        }
         //&:before {
         //  position: absolute;
         //  content: "";
