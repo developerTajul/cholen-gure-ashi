@@ -8179,6 +8179,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
   background-color: #E6EFFF;
 }
+.single-post-item .single-post-meta .post-cat-list span a:hover {
+  background-color: #3B71FE;
+  color: #fff;
+}
 .single-post-item .social-share {
   display: flex;
   gap: 17px;

@@ -305,6 +305,10 @@
           border-radius: 50px;
           @include transition;
           background-color: $sky-2;
+          &:hover{
+            background-color: #3B71FE;
+            color: #fff;
+          }
         }
       }
     }
