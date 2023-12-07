@@ -559,50 +559,50 @@
 
 
          // Process Step Slider
-         $(".testimonial_one").slick({
-            slidesToShow: 1,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1600,
-            asNavFor: '.testimonial-user-wrapper',
-            prevArrow:
-                "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
-            nextArrow:
-                "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
-                responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                        arrows: false,
-                    },
-                },
-            ],
-        });
+        //  $(".testimonial_one").slick({
+        //     slidesToShow: 1,
+        //     infinite: true,
+        //     autoplay: true,
+        //     draggable: true,
+        //     arrows: true,
+        //     slidesToScroll: 1,
+        //     loop: true,
+        //     dots: false,
+        //     speed: 1600,
+        //     asNavFor: '.testimonial-user-wrapper',
+        //     prevArrow:
+        //         "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
+        //     nextArrow:
+        //         "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
+        //         responsive: [
+        //         {
+        //             breakpoint: 767,
+        //             settings: {
+        //                 autoplay: true,
+        //                 slidesToShow: 1,
+        //                 arrows: false,
+        //             },
+        //         },
+        //     ],
+        // });
 
         // Process Step Slider Tab
-        $('.testimonial-user-wrapper').slick({
-            slidesToShow: 2,
-            loop: false,
-            infinite: false,
-            asNavFor: '.testimonial_one',
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true,
-            arrows:false,
-            draggable: true,
-            autoplay: true,
-        });  
+        // $('.testimonial-user-wrapper').slick({
+        //     slidesToShow: 2,
+        //     loop: false,
+        //     infinite: false,
+        //     asNavFor: '.testimonial_one',
+        //     dots: false,
+        //     centerMode: true,
+        //     focusOnSelect: true,
+        //     arrows:false,
+        //     draggable: true,
+        //     autoplay: true,
+        // });  
 
-        $('#user-slider-arrow').on('click', function() {
-            $('.testimonial_one .next-btn').trigger('click');
-        });     
+        // $('#user-slider-arrow').on('click', function() {
+        //     $('.testimonial_one .next-btn').trigger('click');
+        // });     
 
         /*
        Post Gallery Slider
