@@ -8232,6 +8232,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   float: left;
   margin-right: 8px;
   color: #041126;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .single-post-item .blog-post-cat .post-cat-list {
   display: flex;
