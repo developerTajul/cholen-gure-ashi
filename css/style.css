@@ -6098,6 +6098,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   .location-filter-wrapper {
     position: unset;
     margin-bottom: 80px;
+    padding: 60px;
   }
 }
 
