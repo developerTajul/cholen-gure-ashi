@@ -164,6 +164,9 @@
                     font-weight: 500;
                     line-height: 140%;
                     margin: 0px !important;
+                    @include sm{
+                        font-size: 22px;
+                    }
                 }
             }
         }

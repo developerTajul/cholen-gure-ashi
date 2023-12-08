@@ -7771,6 +7771,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 140%;
   margin: 0px !important;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-slider-wrapper .testimonial-card .content-wrapper .content .text {
+    font-size: 22px;
+  }
+}
 .testimonial-slider-wrapper .testimonial-card .user-rating {
   margin-top: 33px;
   display: flex;
