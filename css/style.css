@@ -250,11 +250,8 @@ input:focus {
 }
 
 .page-area {
-  padding: 120px;
-}
-
-.page-id-703 .page-area {
-  padding-top: 112px;
+  padding: 120px p;
+  padding-margin-top: -8px;
 }
 
 .blog-area {
