@@ -8363,6 +8363,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item.format-audio .post-content a:hover {
   color: #3B71FE;
 }
+.single-post-item.category-block .wp-block-pullquote blockquote {
+  background-color: unset;
+}
+.single-post-item.post-1780 .wp-block-button {
+  margin-top: 10px;
+}
+.single-post-item.has-post-thumbnail .wp-block-gallery {
+  gap: 0;
+}
 .single-post-item .post-title {
   font-size: 32px;
   line-height: 48px;

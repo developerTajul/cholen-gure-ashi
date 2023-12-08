@@ -299,6 +299,23 @@
       }
     }
   }
+  &.category-block{
+    .wp-block-pullquote{
+      blockquote{
+        background-color: unset;
+      }
+    }
+  }
+  &.post-1780{
+    .wp-block-button{
+      margin-top: 10px;
+    }
+  }
+  &.has-post-thumbnail{
+    .wp-block-gallery{
+      gap: 0;
+    }
+  }
 
   .post-title {
     font-size: 32px;
