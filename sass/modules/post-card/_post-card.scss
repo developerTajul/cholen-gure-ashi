@@ -76,6 +76,7 @@
           flex-shrink: 0;
           position: relative;
           overflow: hidden;
+          border-radius: 12px;
           @include transition;
           @include sm{
             width: 50px;
