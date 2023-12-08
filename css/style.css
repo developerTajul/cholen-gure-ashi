@@ -7962,6 +7962,58 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-area ul li {
   padding-top: 7px;
 }
+.blog-area.no-results .search-form {
+  display: flex !important;
+  margin: 0px !important;
+  gap: 12px;
+}
+.blog-area.no-results .search-form input {
+  background-color: #ffffff;
+  padding: 15px 24px;
+  height: 62px;
+  width: auto;
+  color: #5e6f92;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 180%;
+  border: 1px solid #E7E7E7;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-area.no-results .search-form input {
+    height: 50px;
+  }
+}
+.blog-area.no-results .search-form button {
+  width: auto;
+  height: auto;
+  color: #ffffff;
+  position: relative;
+  right: 0;
+  background-color: #041126;
+  top: 0;
+  line-height: 0;
+  border: 0;
+  margin-left: 0 !important;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-area.no-results .search-form button {
+    width: 50px;
+    height: 50px;
+  }
+}
+.blog-area.no-results .search-form button:hover {
+  background-color: #3B71FE;
+  transition: all 0.5s ease-out;
+}
+.blog-area.no-results .search-form button:hover i {
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-out;
+}
 
 .single-post-item {
   background-color: #ffffff;
@@ -8012,6 +8064,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   overflow: hidden;
   max-width: 50%;
   position: relative;
+  width: 100%;
 }
 .single-post-item .post-gallery-columns-2 .post-gallery-item:before {
   position: absolute;
@@ -8880,7 +8933,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 16px;
   font-weight: 400;
   font-family: "Plus Jakarta Sans", sans-serif;
-  color: #5e6f92;
+  color: #585866;
   margin-bottom: 0;
   line-height: 170%;
   cursor: default;
