@@ -112,7 +112,7 @@ button {
   @include transition;
 
   &:hover {
-    color: #ff6731;
+    color: $primary-color;
     @include transition;
   }
 }
