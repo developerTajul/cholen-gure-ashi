@@ -209,6 +209,8 @@
         @include transition;
         background-color: $black;
         color: $white;
+        background: $primary-color;
+        border-color: $primary-color;
       }
     }
   }

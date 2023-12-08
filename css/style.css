@@ -8956,6 +8956,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
   background-color: #041126;
   color: #ffffff;
+  background: #3B71FE;
+  border-color: #3B71FE;
 }
 .author-info .author-post a {
   font-size: 16px;
