@@ -9,6 +9,9 @@
         @include md{
           position: fixed;
         }
+        @include sm{
+          position: fixed;
+        }
       }
     }
   }
@@ -202,6 +205,7 @@
             padding: 30px 18px;
             @include transition;
             &:last-child{
+              padding-right: 0;
               @include rmaxwd(1280){
                 padding-right: 0;
               }
