@@ -11645,11 +11645,6 @@ ul.children {
     margin-top: 0px;
   }
 }
-@media (max-width: 767px) {
-  .footer-bottom-area .copyright-text {
-    margin-bottom: 20px;
-  }
-}
 .footer-bottom-area .copyright-text p {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 0;

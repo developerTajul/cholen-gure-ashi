@@ -384,7 +384,7 @@
   }
   .copyright-text {
     @include rmaxwd(767) {
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
     }
     p {
       color: $gray-5;
