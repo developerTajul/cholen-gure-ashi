@@ -188,24 +188,24 @@
     .main-menu {
       ul {
         li {
-          &.active {
-            > a {
-              &:after {
-                // bottom: 20px;
-              }
-            }
-          }
-          &.dropdown{
-            > a {
-              padding-right: 42px;
-              @include transition;
-            }
-          }
+          // &.active {
+          //   > a {
+          //     &:after {
+          //       // bottom: 20px;
+          //     }
+          //   }
+          // }
+          // &.dropdown{
+          //   > a {
+          //     // padding-right: 42px;
+          //     @include transition;
+          //   }
+          // }
           a {
-            padding: 30px 18px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             @include transition;
             &:last-child{
-              padding-right: 0;
               @include rmaxwd(1280){
                 padding-right: 0;
               }

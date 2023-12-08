@@ -3544,16 +3544,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 170px;
   transition: all 0.5s ease-out;
 }
-.header-menu-area.sticky_menu .main-menu ul li.dropdown > a {
-  padding-right: 42px;
-  transition: all 0.5s ease-out;
-}
 .header-menu-area.sticky_menu .main-menu ul li a {
-  padding: 30px 18px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   transition: all 0.5s ease-out;
-}
-.header-menu-area.sticky_menu .main-menu ul li a:last-child {
-  padding-right: 0;
 }
 @media (max-width: 1280px) {
   .header-menu-area.sticky_menu .main-menu ul li a:last-child {
@@ -10606,6 +10600,7 @@ ul.children {
   display: flex;
   justify-content: space-between;
   cursor: default;
+  margin-top: -8px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .post-comments-title h2 {
