@@ -3627,14 +3627,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #3B71FE !important;
 }
 .main-menu ul li.dropdown > a {
-  padding-right: 42px;
+  padding-right: 35px;
 }
 .main-menu ul li.dropdown > a:after {
   position: absolute;
   content: "\f107";
   display: inline-block;
   padding: 1px 3px;
-  right: 18px;
+  right: 14px;
   z-index: 10;
   font-family: "Font Awesome 6 Pro";
   font-size: 14px;
@@ -3674,7 +3674,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .main-menu ul li a {
   display: block;
-  padding: 41px 18px;
+  padding: 41px 19px;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.5s ease-out;
