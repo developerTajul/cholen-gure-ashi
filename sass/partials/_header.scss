@@ -363,7 +363,11 @@
           }
         }
       }
-
+      &:last-child{
+        a{
+          padding-right: 0;
+        }
+      }
       ul {
         &.submenu {
           li {
@@ -405,7 +409,6 @@
         font-size: 16px;
         font-weight: 500;
         &:last-child{
-          padding-right: 0;
           @include rmaxwd(1280){
             padding-right: 0;
           }

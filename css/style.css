@@ -3655,6 +3655,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   right: -20px;
   transition: all 0.5s ease-out;
 }
+.main-menu ul li:last-child a {
+  padding-right: 0;
+}
 .main-menu ul li ul.submenu li.active > a {
   position: relative;
   z-index: 2;
@@ -3680,9 +3683,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
-}
-.main-menu ul li a:last-child {
-  padding-right: 0;
 }
 @media (max-width: 1280px) {
   .main-menu ul li a:last-child {
