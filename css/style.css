@@ -8309,6 +8309,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-wrap: wrap;
   gap: 30px;
 }
+.single-post-item.format-quote {
+  padding: 0;
+  border-color: transparent;
+}
 .single-post-item.format-quote .post-content {
   margin: 0;
 }

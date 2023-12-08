@@ -225,6 +225,8 @@
   }
   /* Quote Format Post */
   &.format-quote {
+    padding: 0;
+    border-color: transparent;
     .post-content {
       margin: 0;
     }
