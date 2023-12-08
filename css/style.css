@@ -8953,11 +8953,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   border: 1px solid #041126;
 }
 .author-info .author-social-profiles a:hover {
-  transition: all 0.5s ease-out;
   background-color: #041126;
   color: #ffffff;
   background: #3B71FE;
   border-color: #3B71FE;
+  transition: all 0.5s ease-out;
 }
 .author-info .author-post a {
   font-size: 16px;
@@ -9306,6 +9306,7 @@ body.admin-bar .header-menu-area.sticky_menu {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    padding: 0 14px;
   }
 }
 
@@ -10877,7 +10878,7 @@ ul.children {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .elementor-section.latest-posts-area.style-1 .section-title {
-    padding: 0 12px;
+    padding: 0 12px !important;
   }
 }
 
@@ -11637,6 +11638,11 @@ ul.children {
 @media (max-width: 1024px) {
   .footer-bottom-menu ul {
     justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer-bottom-menu ul {
+    gap: 0 10px;
   }
 }
 .footer-bottom-menu ul li a {
