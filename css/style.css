@@ -8146,6 +8146,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 400;
   line-height: 180%;
   border: 1px solid #E7E7E7;
+  border-radius: 12px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .blog-area .no-results.not-found .search-form input {
@@ -8153,7 +8154,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 .blog-area .no-results.not-found .search-form button {
-  width: auto;
+  width: 62px;
   height: auto;
   color: #ffffff;
   position: relative;
