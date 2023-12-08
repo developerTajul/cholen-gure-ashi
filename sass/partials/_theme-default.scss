@@ -177,8 +177,10 @@ input:focus {
 
 .page-area {
   padding:120px;
-  >p{
-    margin-top: -8px;
+  .page-content{
+    >p{
+      margin-top: -8px;
+    }
   }
 }
 

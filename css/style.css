@@ -252,7 +252,7 @@ input:focus {
 .page-area {
   padding: 120px;
 }
-.page-area > p {
+.page-area .page-content > p {
   margin-top: -8px;
 }
 
