@@ -8357,6 +8357,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 .single-post-item.post-1778 .post-content p {
   line-height: 170%;
 }
+.single-post-item.format-audio .post-content a {
+  color: #041126;
+}
+.single-post-item.format-audio .post-content a:hover {
+  color: #3B71FE;
+}
 .single-post-item .post-title {
   font-size: 32px;
   line-height: 48px;

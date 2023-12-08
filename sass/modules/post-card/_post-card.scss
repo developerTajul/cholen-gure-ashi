@@ -289,6 +289,16 @@
     }
    }
   }
+  &.format-audio{
+    .post-content{
+      a{
+        color: $black;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+  }
 
   .post-title {
     font-size: 32px;
