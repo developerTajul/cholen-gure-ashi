@@ -583,6 +583,7 @@
 // Header Search Bar
 .search-form-wrapper {
   position: fixed;
+  padding-left: 15px;
   width: 100%;
   height: 100%;
   left: 0;
@@ -596,7 +597,7 @@
   &.active {
     visibility: visible;
     opacity: 1;
-    @include transition;
+    // @include transition;
   }
   .search-form-inner {
     width: 768px;

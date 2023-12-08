@@ -712,12 +712,18 @@
        $('.search-btn').on('click', function (e) {
             e.preventDefault();
             $('body').css('overflow', 'hidden');
+            $('body').css('padding-right', '15px');
+            $('.sticky-header').css('padding-right', '15px');
+            $('.sticky-header').css('transition', 'unset');
+
 
             $('.search-form-wrapper').addClass('active');
         });
         $('.search-close').on('click', function (e) {
             e.preventDefault();
             $('body').css('overflow', 'auto');
+            $('body').css('padding-right', '');
+            $('.sticky-header').css('padding-right', '');
             $('.search-form-wrapper').removeClass('active');
         });
 
@@ -725,6 +731,8 @@
             if( e.target.matches(".search-form-wrapper") ){
                 $('.search-form-wrapper').removeClass('active');
                 $('body').css('overflow', 'auto');
+                $('body').css('padding-right', '');
+                $('.sticky-header').css('padding-right', '');
             }
         }
 
