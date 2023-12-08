@@ -250,8 +250,10 @@ input:focus {
 }
 
 .page-area {
-  padding: 120px p;
-  padding-margin-top: -8px;
+  padding: 120px;
+}
+.page-area > p {
+  margin-top: -8px;
 }
 
 .blog-area {
