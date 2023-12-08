@@ -10873,6 +10873,12 @@ ul.children {
   }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .elementor-section.latest-posts-area.style-1 .section-title {
+    padding: 0 12px;
+  }
+}
+
 .isotope-tour .portfolio-filter {
   margin-top: 17px;
   margin-bottom: 60px;

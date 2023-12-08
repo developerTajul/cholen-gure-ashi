@@ -1,0 +1,11 @@
+.elementor-section{
+    &.latest-posts-area {
+        &.style-1{
+            .section-title{
+                @include sm{
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
+}
