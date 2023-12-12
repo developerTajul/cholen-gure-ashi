@@ -586,7 +586,7 @@
         //     ],
         // });
 
-        // // Process Step Slider Tab
+        // Process Step Slider Tab
         // $('.testimonial-user-wrapper').slick({
         //     slidesToShow: 2,
         //     loop: false,
@@ -600,9 +600,9 @@
         //     autoplay: true,
         // });  
 
-        $('#user-slider-arrow').on('click', function() {
-            $('.testimonial_one .next-btn').trigger('click');
-        });     
+        // $('#user-slider-arrow').on('click', function() {
+        //     $('.testimonial_one .next-btn').trigger('click');
+        // });     
 
         /*
        Post Gallery Slider
@@ -712,12 +712,18 @@
        $('.search-btn').on('click', function (e) {
             e.preventDefault();
             $('body').css('overflow', 'hidden');
+            $('body').css('padding-right', '15px');
+            $('.sticky-header').css('padding-right', '15px');
+            $('.sticky-header').css('transition', 'unset');
+
 
             $('.search-form-wrapper').addClass('active');
         });
         $('.search-close').on('click', function (e) {
             e.preventDefault();
             $('body').css('overflow', 'auto');
+            $('body').css('padding-right', '');
+            $('.sticky-header').css('padding-right', '');
             $('.search-form-wrapper').removeClass('active');
         });
 
@@ -725,6 +731,8 @@
             if( e.target.matches(".search-form-wrapper") ){
                 $('.search-form-wrapper').removeClass('active');
                 $('body').css('overflow', 'auto');
+                $('body').css('padding-right', '');
+                $('.sticky-header').css('padding-right', '');
             }
         }
 
@@ -807,7 +815,6 @@
             }
         });
 
-
          /*
         Scroll To Top Js
         ============================*/
@@ -839,46 +846,91 @@
         });
 
         
+        // $(function () {
+        //     //Price Range
+        //     $(document).on("click", function (e) {
+        //         var priceRangeInner = $(".price-range-inner");
+                
+        //         // Check if the click event target is not #priceLabel, #priceValue, or .price-range-inner
+        //         if (!$(e.target).is(".priceLabel, #priceValue, .price-range-inner")) {
+        //             priceRangeInner.removeClass("active");
+        //         }
+        //     });
+
+        //     $(".priceLabel, #priceValue").on("click", function (e) {
+        //         var priceRangeInner = $(".price-range-inner");
+                
+        //         if (priceRangeInner.hasClass("active")) {
+        //             priceRangeInner.removeClass("active");
+        //         } else {
+        //             priceRangeInner.addClass("active");
+        //         }
+
+        //         // Prevent the click event from propagating to the document
+        //         e.stopPropagation();
+        //     });
+        //     var minSlider = document.getElementById('min-price');
+        //     var maxSlider = document.getElementById('max-price');
+
+        //     var outputMin = document.getElementById('min-value');
+        //     var outputMax = document.getElementById('max-value');
+
+        //     outputMin.innerHTML = minSlider.value;
+        //     outputMax.innerHTML = maxSlider.value;
+
+        //     minSlider.oninput = function(){
+        //     outputMin.innerHTML=this.value;    
+        //     }
+
+        //     maxSlider.oninput = function(){
+        //         outputMax.innerHTML=this.value; 
+        //     }
+        // });
+
         $(function () {
-            //Price Range
+            // Price Range
             $(document).on("click", function (e) {
                 var priceRangeInner = $(".price-range-inner");
-                
+        
                 // Check if the click event target is not #priceLabel, #priceValue, or .price-range-inner
                 if (!$(e.target).is(".priceLabel, #priceValue, .price-range-inner")) {
                     priceRangeInner.removeClass("active");
                 }
             });
-
+        
             $(".priceLabel, #priceValue").on("click", function (e) {
                 var priceRangeInner = $(".price-range-inner");
-                
+        
                 if (priceRangeInner.hasClass("active")) {
                     priceRangeInner.removeClass("active");
                 } else {
                     priceRangeInner.addClass("active");
                 }
-
+        
                 // Prevent the click event from propagating to the document
                 e.stopPropagation();
             });
+        
+            // Check if the sliders and outputs exist before trying to use them
             var minSlider = document.getElementById('min-price');
             var maxSlider = document.getElementById('max-price');
-
             var outputMin = document.getElementById('min-value');
             var outputMax = document.getElementById('max-value');
-
-            outputMin.innerHTML = minSlider.value;
-            outputMax.innerHTML = maxSlider.value;
-
-            minSlider.oninput = function(){
-            outputMin.innerHTML=this.value;    
-            }
-
-            maxSlider.oninput = function(){
-                outputMax.innerHTML=this.value; 
+        
+            if (minSlider && maxSlider && outputMin && outputMax) {
+                outputMin.innerHTML = minSlider.value;
+                outputMax.innerHTML = maxSlider.value;
+        
+                minSlider.oninput = function () {
+                    outputMin.innerHTML = this.value;
+                }
+        
+                maxSlider.oninput = function () {
+                    outputMax.innerHTML = this.value;
+                }
             }
         });
+        
 
         /*
         Preeloader

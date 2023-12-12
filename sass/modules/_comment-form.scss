@@ -309,6 +309,7 @@
     display: flex;
     justify-content: space-between;
     cursor: default;
+    margin-top: -8px;
 
     @include sm {
       font-size: 28px;

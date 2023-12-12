@@ -354,6 +354,9 @@
     @include rmaxwd(1024) {
       justify-content: flex-start;
     }
+    @include sm{
+      gap: 0 10px;
+    }
 
     li {
       a {
@@ -384,7 +387,7 @@
   }
   .copyright-text {
     @include rmaxwd(767) {
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
     }
     p {
       color: $gray-5;

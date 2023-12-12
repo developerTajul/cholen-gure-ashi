@@ -40,6 +40,60 @@
       padding-top: 7px;
     }
   }
+  .no-results{
+    &.not-found{
+      .search-form{
+        display: flex !important;
+        margin: 0px !important;
+        gap: 12px;
+        input{
+          background-color: $white;
+          padding: 15px 24px;
+          height: 62px;
+          width: auto;
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 180%;
+          border: 1px solid $gray-2;
+          border-radius: 12px;
+          @include sm{
+            height: 50px;
+          }
+        }
+        button {
+          width: 62px;
+          height: auto;
+          color: $white;
+          position: relative;
+          right: 0;
+          background-color: $black;
+          top: 0;
+          line-height: 0;
+          border: 0;
+          margin-left: 0 !important;
+          flex-shrink: 0;
+          position: relative;
+          overflow: hidden;
+          border-radius: 12px;
+          @include transition;
+          @include sm{
+            width: 50px;
+            height: 50px;
+          }
+          &:hover{
+            background-color: $primary-color;
+            @include transition;
+            i{
+              transform: rotateY(360deg);
+              @include transition;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Standard Blog Post
@@ -91,6 +145,7 @@
       overflow: hidden;
       max-width: 50%;
       position: relative;
+      width: 100%;
       &:before {
         position: absolute;
         top: 0;
@@ -170,6 +225,8 @@
   }
   /* Quote Format Post */
   &.format-quote {
+    padding: 0;
+    border-color: transparent;
     .post-content {
       margin: 0;
     }
@@ -231,6 +288,33 @@
       line-height: 170%;
     }
    }
+  }
+  &.format-audio{
+    .post-content{
+      a{
+        color: $black;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  &.category-block{
+    .wp-block-pullquote{
+      blockquote{
+        background-color: unset;
+      }
+    }
+  }
+  &.post-1780{
+    .wp-block-button{
+      margin-top: 10px;
+    }
+  }
+  &.has-post-thumbnail{
+    .wp-block-gallery{
+      gap: 0;
+    }
   }
 
   .post-title {
@@ -295,7 +379,21 @@
       display: inline-block;
       margin-left: 12px;
       span{
-        margin-left: 8px;
+        a{
+          color: $primary-color;
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 170%;
+          padding: 4px 12px;
+          border-radius: 50px;
+          @include transition;
+          background-color: $sky-2;
+          &:hover{
+            background-color: $primary-color;
+            color: $white;
+          }
+        }
       }
     }
   }
@@ -364,6 +462,9 @@
       margin-right: 8px;
       // margin-top: 2px;
       color: $black;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: $body-font;
     }
     .post-cat-list{
       display: flex;

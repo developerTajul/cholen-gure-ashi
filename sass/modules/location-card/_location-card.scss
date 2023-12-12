@@ -10,7 +10,7 @@
     
     .image-wrapper{
         position: relative;
-        .image-inner{
+        .image-innerr{
             // position: relative;
             z-index: 2;
             overflow: hidden;
@@ -146,7 +146,7 @@
         }
     }
     &:hover{
-        .image-inner{
+        .image-innerr{
              &:before {
                 height:100%;
                 @include transition;

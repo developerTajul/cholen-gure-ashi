@@ -206,9 +206,11 @@
       border-radius: 50px;
       border: 1px solid $black;
       &:hover {
-        @include transition;
         background-color: $black;
         color: $white;
+        background: $primary-color;
+        border-color: $primary-color;
+        @include transition;
       }
     }
   }

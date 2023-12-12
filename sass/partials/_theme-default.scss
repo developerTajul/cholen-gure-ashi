@@ -107,12 +107,12 @@ a:focus {
 }
 a,
 button {
-  color: $primary-color;
+  color: $black;
   outline: medium none;
   @include transition;
 
   &:hover {
-    color: #ff6731;
+    color: $primary-color;
     @include transition;
   }
 }
@@ -176,8 +176,11 @@ input:focus {
 }
 
 .page-area {
-  padding:120px
+  padding-top: 112px;
+  padding-bottom: 100px;
+  
 }
+
 .blog-area {
   padding: 106px 0;
   padding-bottom: 120px;
@@ -202,7 +205,7 @@ input:focus {
   color: $white-100;
 }
 code {
-  color: $orange-color;
+  color: $primary-color;
 }
 .theme-btn,
 .wp-block-loginout a,
