@@ -600,9 +600,9 @@
         //     autoplay: true,
         // });  
 
-        // $('#user-slider-arrow').on('click', function() {
-        //     $('.testimonial_one .next-btn').trigger('click');
-        // });     
+        $('#user-slider-arrow').on('click', function() {
+            $('.testimonial_one .next-btn').trigger('click');
+        });     
 
         /*
        Post Gallery Slider
