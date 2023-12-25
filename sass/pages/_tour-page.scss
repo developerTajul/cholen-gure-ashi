@@ -111,4 +111,8 @@
 .wpte-booking-area{
     box-shadow: none;
     background-color:$black-3 !important;
+    .wpte-bf-discount-tag{
+        background-color: $secondary-color;
+        border-radius: 4px;
+    }
 }

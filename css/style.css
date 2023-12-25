@@ -10897,6 +10897,10 @@ ul.children {
   box-shadow: none;
   background-color: #FAFAFA !important;
 }
+.wpte-booking-area .wpte-bf-discount-tag {
+  background-color: #FE712A;
+  border-radius: 4px;
+}
 
 .tour-details .single-post-item {
   padding: 0px !important;
