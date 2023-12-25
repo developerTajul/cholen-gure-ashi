@@ -69,7 +69,13 @@
 }
 .category-trips-single-inner-wrap{
     padding: 0 !important;
-    border-radius: 16px;
+    border-radius: 16px !important;
     border: 1px solid $gray-2;
     box-shadow: none !important;
+    overflow: hidden;
+    .category-trip-fig{
+        a{
+            border-radius: 16px !important;
+        }
+    }
 }

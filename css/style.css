@@ -10855,9 +10855,13 @@ ul.children {
 
 .category-trips-single-inner-wrap {
   padding: 0 !important;
-  border-radius: 16px;
+  border-radius: 16px !important;
   border: 1px solid #E7E7E7;
   box-shadow: none !important;
+  overflow: hidden;
+}
+.category-trips-single-inner-wrap .category-trip-fig a {
+  border-radius: 16px !important;
 }
 
 .tour-details .single-post-item {
