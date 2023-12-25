@@ -83,4 +83,19 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    .category-trip-desc{
+        cursor: default;
+    }
+    .category-trip-dur{
+        cursor: default;
+    }
+    .discount-offer{
+        cursor: default;
+    }
+    .actual-price{
+        cursor: default;
+    }
+    .striked-price{
+        cursor: default;
+    }
 }

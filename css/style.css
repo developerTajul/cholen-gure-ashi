@@ -10869,6 +10869,21 @@ ul.children {
   flex-direction: column-reverse;
   justify-content: center;
 }
+.category-trip-content-wrap .category-trip-desc {
+  cursor: default;
+}
+.category-trip-content-wrap .category-trip-dur {
+  cursor: default;
+}
+.category-trip-content-wrap .discount-offer {
+  cursor: default;
+}
+.category-trip-content-wrap .actual-price {
+  cursor: default;
+}
+.category-trip-content-wrap .striked-price {
+  cursor: default;
+}
 
 .tour-details .single-post-item {
   padding: 0px !important;
