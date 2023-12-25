@@ -180,3 +180,14 @@
     }
   }
 }
+.wpte-trip-sfilter-wrapper{
+  border-radius: 16px;
+  .wpte-trip__search-fields{
+    &.horizontal{
+      gap: 30px;
+    }
+    .wpte-trip__adv-field{
+      border-right: 1px solid $gray-2;
+    }
+  }
+}
