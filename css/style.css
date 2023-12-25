@@ -10861,7 +10861,7 @@ ul.children {
   overflow: hidden;
 }
 .category-trips-single-inner-wrap .category-trip-fig a {
-  border-radius: 16px !important;
+  border-radius: 16px 0 0px 16px !important;
 }
 
 .tour-details .single-post-item {
