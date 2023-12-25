@@ -6289,6 +6289,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .wpte-trip-sfilter-wrapper .wpte-trip__search-fields .wpte-trip__adv-field:after {
   right: 14px !important;
 }
+.wpte-trip-sfilter-wrapper .wpte-trip__search-fields .wpte-trip__adv-field .icon {
+  color: #3B71FE;
+}
 .wpte-trip-sfilter-wrapper .wpte-trip__search-fields .wpte-trip__search-submit {
   display: inline-flex;
   color: #ffffff;

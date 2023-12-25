@@ -190,9 +190,11 @@
     .wpte-trip__adv-field{
       border: 1px solid $gray-2 !important;
       border-radius: 8px !important;
-
       &:after{
         right: 14px !important;
+      }
+      .icon {
+        color: $primary-color;
       }
     }
     .wpte-trip__search-submit{
