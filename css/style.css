@@ -10835,15 +10835,18 @@ ul.children {
 
 .trip-content-area {
   padding: 120px 0;
+  padding-bottom: 90px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .trip-content-area {
     padding: 100px 0;
+    padding-bottom: 70px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .trip-content-area {
     padding: 80px 0;
+    padding-bottom: 50px;
   }
 }
 
@@ -10883,6 +10886,10 @@ ul.children {
 }
 .category-trip-content-wrap .striked-price {
   cursor: default;
+}
+
+.clear-search-criteria {
+  color: #3B71FE !important;
 }
 
 .tour-details .single-post-item {
