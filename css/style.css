@@ -10888,8 +10888,9 @@ ul.children {
   cursor: default;
 }
 
-.clear-search-criteria {
+.advanced-search-wrapper .clear-search-criteria {
   color: #3B71FE !important;
+  text-decoration: none !important;
 }
 
 .tour-details .single-post-item {

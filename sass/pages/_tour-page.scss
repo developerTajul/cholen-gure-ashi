@@ -102,6 +102,9 @@
         cursor: default;
     }
 }
-.clear-search-criteria{
-    color: $primary-color !important;
+.advanced-search-wrapper{
+    .clear-search-criteria{
+        color: $primary-color !important;
+        text-decoration: none !important;
+    }
 }
