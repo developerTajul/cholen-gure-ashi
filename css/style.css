@@ -10853,6 +10853,12 @@ ul.children {
   margin-bottom: 40px;
 }
 
+.category-trips-single-inner-wrap {
+  padding: 0 !important;
+  border-radius: 16px;
+  border: 1px solid #E7E7E7;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
