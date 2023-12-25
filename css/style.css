@@ -10893,6 +10893,11 @@ ul.children {
   text-decoration: none !important;
 }
 
+.wpte-booking-area {
+  box-shadow: none;
+  background-color: #FAFAFA !important;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
