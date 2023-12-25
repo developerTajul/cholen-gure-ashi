@@ -299,6 +299,9 @@
           }
           .theme-btn{
             margin-top: 20px;
+            @include sm{
+              margin-bottom: 145px;
+            }
           }
           .slider-btn-wrapper {
             margin-top: 41px;

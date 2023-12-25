@@ -6707,6 +6707,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .slider-area .single-slider .slider-content-wrapper .slider-content .theme-btn, .slider-area .single-slider .slider-content-wrapper .slider-content .isotope-tour .portfolio-filter li, .isotope-tour .portfolio-filter .slider-area .single-slider .slider-content-wrapper .slider-content li {
   margin-top: 20px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area .single-slider .slider-content-wrapper .slider-content .theme-btn, .slider-area .single-slider .slider-content-wrapper .slider-content .isotope-tour .portfolio-filter li, .isotope-tour .portfolio-filter .slider-area .single-slider .slider-content-wrapper .slider-content li {
+    margin-bottom: 145px;
+  }
+}
 .slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper {
   margin-top: 41px;
 }
@@ -10826,6 +10831,20 @@ ul.children {
 }
 .isotope-tour .location-card.style-2 .image-wrapper img {
   height: 272px;
+}
+
+.trip-content-area {
+  padding: 120px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .trip-content-area {
+    padding: 100px 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .trip-content-area {
+    padding: 80px 0;
+  }
 }
 
 .tour-details .single-post-item {
