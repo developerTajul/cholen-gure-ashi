@@ -10857,6 +10857,7 @@ ul.children {
   padding: 0 !important;
   border-radius: 16px;
   border: 1px solid #E7E7E7;
+  box-shadow: none !important;
 }
 
 .tour-details .single-post-item {
