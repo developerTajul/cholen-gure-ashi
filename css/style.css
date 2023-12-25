@@ -10901,6 +10901,9 @@ ul.children {
   background-color: #FE712A;
   border-radius: 4px;
 }
+.wpte-booking-area .wpte-bf-btn {
+  padding: 10px;
+}
 
 .tour-details .single-post-item {
   padding: 0px !important;
