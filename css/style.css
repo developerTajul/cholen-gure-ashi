@@ -4747,6 +4747,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
   transition: all 0.5s ease-out;
 }
+.location-card .content-wrapper .content-inner .icon:hover i {
+  transform: rotate(45deg) !important;
+}
 .location-card .content-wrapper .content-inner .icon i {
   color: #ffffff;
   font-size: 28px;

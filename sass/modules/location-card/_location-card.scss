@@ -133,6 +133,9 @@
                         width: 100%;
                         @include transition;
                     }
+                    i{
+                        transform: rotate(45deg) !important;
+                    }
                 }
                 i{
                     color: $white;
@@ -167,7 +170,7 @@
              @include transition;
              .icon{
                 i{
-                    transform: none;
+                   transform: none;
                     @include transition;
                 }
              }
