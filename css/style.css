@@ -6290,6 +6290,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   right: 14px !important;
 }
 .wpte-trip-sfilter-wrapper .wpte-trip__search-fields .wpte-trip__adv-field .icon {
+  font-size: 18px;
   color: #3B71FE;
 }
 .wpte-trip-sfilter-wrapper .wpte-trip__search-fields .wpte-trip__search-submit {
