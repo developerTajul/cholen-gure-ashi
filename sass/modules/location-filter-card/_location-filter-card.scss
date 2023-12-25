@@ -181,14 +181,14 @@
   }
 }
 .wpte-trip-sfilter-wrapper{
-  
+  border-radius: 16px !important;
   .wpte-trip__search-fields{
-    border-radius: 16px !important;
     &.horizontal{
       gap: 30px;
     }
     .wpte-trip__adv-field{
       border: 1px solid $gray-2 !important;
+      border-radius: 8px !important;
 
       &:after{
         right: 14px !important;

@@ -6275,7 +6275,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   transform: rotateY(360deg);
 }
 
-.wpte-trip-sfilter-wrapper .wpte-trip__search-fields {
+.wpte-trip-sfilter-wrapper {
   border-radius: 16px !important;
 }
 .wpte-trip-sfilter-wrapper .wpte-trip__search-fields.horizontal {
@@ -6283,6 +6283,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .wpte-trip-sfilter-wrapper .wpte-trip__search-fields .wpte-trip__adv-field {
   border: 1px solid #E7E7E7 !important;
+  border-radius: 8px !important;
 }
 .wpte-trip-sfilter-wrapper .wpte-trip__search-fields .wpte-trip__adv-field:after {
   right: 14px !important;
