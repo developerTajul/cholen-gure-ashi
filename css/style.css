@@ -6284,6 +6284,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .wpte-trip-sfilter-wrapper .wpte-trip__search-fields .wpte-trip__adv-field {
   border: 1px solid #E7E7E7 !important;
 }
+.wpte-trip-sfilter-wrapper .wpte-trip__search-fields .wpte-trip__adv-field:after {
+  right: 14px !important;
+}
 
 .location-filter-wrapper.style-2 {
   position: absolute;
