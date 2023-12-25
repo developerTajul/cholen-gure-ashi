@@ -10850,6 +10850,7 @@ ul.children {
 .wp-travel-toolbar {
   border-radius: 8px;
   border: 1px solid #E7E7E7;
+  margin-bottom: 40px;
 }
 
 .tour-details .single-post-item {
