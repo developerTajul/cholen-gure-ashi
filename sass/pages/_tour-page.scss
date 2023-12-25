@@ -79,3 +79,8 @@
         }
     }
 }
+.category-trip-content-wrap{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}

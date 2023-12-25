@@ -10864,6 +10864,12 @@ ul.children {
   border-radius: 16px 0 0px 16px !important;
 }
 
+.category-trip-content-wrap {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
