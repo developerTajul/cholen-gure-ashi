@@ -10861,10 +10861,10 @@ ul.children {
   border-radius: 16px !important;
   border: 1px solid #E7E7E7;
   box-shadow: none !important;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 .category-trips-single-inner-wrap .category-trip-fig a {
-  border-radius: 16px 0 0px 16px !important;
+  border-radius: 0 !important;
 }
 
 .category-trip-content-wrap {
