@@ -10961,6 +10961,9 @@ ul.children {
 .wte_enquiry_contact_form label {
   color: #041126;
 }
+.wte_enquiry_contact_form label .required {
+  color: #FE712A !important;
+}
 
 .tour-details .single-post-item {
   padding: 0px !important;

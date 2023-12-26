@@ -189,5 +189,8 @@
     border-radius: 16px;
     label{
         color: $black;
+        .required{
+            color: $secondary-color !important;
+        }
     }
 }
