@@ -10975,6 +10975,11 @@ ul.children {
   color: #041126;
 }
 
+.wpte-trip-category .wpte-trip-category-img-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
