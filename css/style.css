@@ -10980,6 +10980,10 @@ ul.children {
   overflow: hidden;
 }
 
+.category-main-wrap {
+  width: 100% !important;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
