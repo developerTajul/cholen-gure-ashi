@@ -10968,7 +10968,7 @@ ul.children {
   border-radius: 12px;
 }
 
-.wp-travel-engine-info-field .package_label .required {
+.wp-travel-engine-info-field label .required {
   display: none !important;
 }
 
