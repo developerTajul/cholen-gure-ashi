@@ -10936,6 +10936,25 @@ ul.children {
   line-height: 170%;
 }
 
+.wpte-trip-feat-img-gallery button {
+  width: 48px;
+  height: 48px;
+}
+.wpte-trip-feat-img-gallery button.owl-prev {
+  transition: all 0.5s ease-out;
+}
+.wpte-trip-feat-img-gallery button.next-prev {
+  transition: all 0.5s ease-out;
+}
+.wpte-trip-feat-img-gallery button:hover.owl-prev {
+  margin-left: -8px;
+  transition: all 0.5s ease-out;
+}
+.wpte-trip-feat-img-gallery button:hover.next-prev {
+  margin-right: -8px;
+  transition: all 0.5s ease-out;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;

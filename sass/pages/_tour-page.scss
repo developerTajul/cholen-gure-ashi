@@ -153,3 +153,25 @@
         }
     }
 }
+.wpte-trip-feat-img-gallery {
+    button{
+        width: 48px;
+        height: 48px;
+        &.owl-prev{
+            @include transition;
+        }
+        &.next-prev{
+            @include transition;
+        }
+        &:hover{
+            &.owl-prev{
+                margin-left: -8px;
+                @include transition;
+            }
+            &.next-prev{
+                margin-right: -8px;
+                @include transition;
+            } 
+        }
+    }
+}
