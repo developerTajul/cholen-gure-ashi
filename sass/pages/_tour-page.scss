@@ -120,7 +120,16 @@
     }
 }
 .trip-facts-value{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 32px 32px 40px 32px;
+    background-color: $white;
+    box-shadow: 0px 24px 64px 0px rgba(199, 206, 218, 0.25);
+    border-radius: 16px;
+    gap: 32px;
+    margin-bottom: 40px;
     li{
+        padding: 0;
         .wte-trip-fact-icon-wrapper{
             .icon-holder{
                 font-size: 20px;
