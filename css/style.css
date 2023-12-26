@@ -10869,7 +10869,7 @@ ul.children {
 
 .category-trip-content-wrap {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   padding: 20px;
 }
@@ -10983,6 +10983,9 @@ ul.children {
 
 .category-main-wrap {
   width: 100% !important;
+}
+.category-main-wrap.category-grid .category-trip-content-wrap {
+  flex-direction: column !important;
 }
 
 .tour-details .single-post-item {

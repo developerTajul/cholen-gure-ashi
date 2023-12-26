@@ -84,7 +84,7 @@
 }
 .category-trip-content-wrap{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     padding: 20px;
     .category-trip-desc{
@@ -216,4 +216,9 @@
 }
 .category-main-wrap{
     width: 100% !important;
+    &.category-grid{
+        .category-trip-content-wrap{
+            flex-direction: column !important;
+        }
+    }
 }
