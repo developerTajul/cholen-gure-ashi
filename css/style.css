@@ -10971,6 +10971,9 @@ ul.children {
 .wp-travel-engine-info-field label .required {
   display: none !important;
 }
+.wp-travel-engine-info-field .wp-travel-engine-info {
+  color: #041126;
+}
 
 .tour-details .single-post-item {
   padding: 0px !important;
