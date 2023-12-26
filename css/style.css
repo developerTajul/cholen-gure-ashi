@@ -10955,6 +10955,13 @@ ul.children {
   transition: all 0.5s ease-out;
 }
 
+.wte_enquiry_contact_form {
+  border-radius: 16px;
+}
+.wte_enquiry_contact_form label {
+  color: #041126;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
