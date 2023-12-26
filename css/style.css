@@ -10943,15 +10943,15 @@ ul.children {
 .wpte-trip-feat-img-gallery button.owl-prev:before {
   transition: all 0.5s ease-out;
 }
-.wpte-trip-feat-img-gallery button.owl-next:before {
+.wpte-trip-feat-img-gallery button.owl-next:after {
   transition: all 0.5s ease-out;
 }
 .wpte-trip-feat-img-gallery button:hover.owl-prev:before {
   margin-left: -4px;
   transition: all 0.5s ease-out;
 }
-.wpte-trip-feat-img-gallery button:hover.owl-next:before {
-  margin-left: 4px;
+.wpte-trip-feat-img-gallery button:hover.owl-next:after {
+  margin-right: -4px;
   transition: all 0.5s ease-out;
 }
 

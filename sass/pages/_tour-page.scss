@@ -163,7 +163,7 @@
             }
         }
         &.owl-next{
-            &:before{
+            &:after{
                 @include transition;
             }
 
@@ -177,8 +177,8 @@
                 
             }
             &.owl-next{
-                &:before{
-                    margin-left: 4px;
+                &:after{
+                    margin-right: -4px;
                     @include transition;
                 }
             } 
