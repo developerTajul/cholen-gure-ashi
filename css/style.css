@@ -10943,15 +10943,15 @@ ul.children {
 .wpte-trip-feat-img-gallery button.owl-prev:before {
   transition: all 0.5s ease-out;
 }
-.wpte-trip-feat-img-gallery button.next-prev:before {
+.wpte-trip-feat-img-gallery button.owl-next:before {
   transition: all 0.5s ease-out;
 }
 .wpte-trip-feat-img-gallery button:hover.owl-prev:before {
-  margin-left: -8px;
+  margin-left: -4px;
   transition: all 0.5s ease-out;
 }
-.wpte-trip-feat-img-gallery button:hover.next-prev:before {
-  margin-right: -8px;
+.wpte-trip-feat-img-gallery button:hover.owl-next:before {
+  margin-right: -4px;
   transition: all 0.5s ease-out;
 }
 

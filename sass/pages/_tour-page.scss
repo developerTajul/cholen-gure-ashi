@@ -162,7 +162,7 @@
                 @include transition;
             }
         }
-        &.next-prev{
+        &.owl-next{
             &:before{
                 @include transition;
             }
@@ -171,14 +171,14 @@
         &:hover{
             &.owl-prev{
                 &:before{
-                    margin-left: -8px;
+                    margin-left: -4px;
                     @include transition;
                 }
                 
             }
-            &.next-prev{
+            &.owl-next{
                 &:before{
-                    margin-right: -8px;
+                    margin-right: -4px;
                     @include transition;
                 }
             } 
