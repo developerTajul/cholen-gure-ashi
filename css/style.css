@@ -10964,6 +10964,13 @@ ul.children {
 .wte_enquiry_contact_form label .required {
   color: #FE712A !important;
 }
+.wte_enquiry_contact_form input {
+  border-radius: 12px;
+}
+
+.wp-travel-engine-info-field .package_label .required {
+  display: none !important;
+}
 
 .tour-details .single-post-item {
   padding: 0px !important;

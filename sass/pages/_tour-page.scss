@@ -153,7 +153,7 @@
         }
     }
 }
-.wpte-trip-feat-img-gallery {
+.wpte-trip-feat-img-gallery{
     button{
         width: 48px !important;
         height: 48px !important;
@@ -191,6 +191,16 @@
         color: $black;
         .required{
             color: $secondary-color !important;
+        }
+    }
+    input{
+        border-radius: 12px;
+    }
+}
+.wp-travel-engine-info-field{
+    .package_label{
+        .required{
+            display: none !important;
         }
     }
 }
