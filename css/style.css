@@ -10871,6 +10871,7 @@ ul.children {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
+  padding: 20px;
 }
 .category-trip-content-wrap .category-trip-desc {
   cursor: default;
