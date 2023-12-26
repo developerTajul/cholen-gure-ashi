@@ -10988,6 +10988,10 @@ ul.children {
   flex-direction: column !important;
 }
 
+.category-trips-single {
+  padding: 0 !important;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
