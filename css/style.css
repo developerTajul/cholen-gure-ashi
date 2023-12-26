@@ -10905,17 +10905,17 @@ ul.children {
   padding: 10px;
 }
 
-.rip-facts-value li .wte-trip-fact-icon-wrapper .icon-holder {
+.trip-facts-value li .wte-trip-fact-icon-wrapper .icon-holder {
   font-size: 20px;
 }
-.rip-facts-value li .wte-trip-fact-content-wrapper label {
+.trip-facts-value li .wte-trip-fact-content-wrapper label {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #585866;
   font-size: 16px;
   font-weight: 400;
   line-height: 170%;
 }
-.rip-facts-value li .wte-trip-fact-content-wrapper .value {
+.trip-facts-value li .wte-trip-fact-content-wrapper .value {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #041126;
   font-size: 16px;
