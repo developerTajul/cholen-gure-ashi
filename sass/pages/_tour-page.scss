@@ -155,22 +155,32 @@
 }
 .wpte-trip-feat-img-gallery {
     button{
-        width: 48px;
-        height: 48px;
+        width: 48px !important;
+        height: 48px !important;
         &.owl-prev{
-            @include transition;
+            &:before{
+                @include transition;
+            }
         }
         &.next-prev{
-            @include transition;
+            &:before{
+                @include transition;
+            }
+
         }
         &:hover{
             &.owl-prev{
-                margin-left: -8px;
-                @include transition;
+                &:before{
+                    margin-left: -8px;
+                    @include transition;
+                }
+                
             }
             &.next-prev{
-                margin-right: -8px;
-                @include transition;
+                &:before{
+                    margin-right: -8px;
+                    @include transition;
+                }
             } 
         }
     }

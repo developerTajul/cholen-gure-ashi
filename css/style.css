@@ -10937,20 +10937,20 @@ ul.children {
 }
 
 .wpte-trip-feat-img-gallery button {
-  width: 48px;
-  height: 48px;
+  width: 48px !important;
+  height: 48px !important;
 }
-.wpte-trip-feat-img-gallery button.owl-prev {
+.wpte-trip-feat-img-gallery button.owl-prev:before {
   transition: all 0.5s ease-out;
 }
-.wpte-trip-feat-img-gallery button.next-prev {
+.wpte-trip-feat-img-gallery button.next-prev:before {
   transition: all 0.5s ease-out;
 }
-.wpte-trip-feat-img-gallery button:hover.owl-prev {
+.wpte-trip-feat-img-gallery button:hover.owl-prev:before {
   margin-left: -8px;
   transition: all 0.5s ease-out;
 }
-.wpte-trip-feat-img-gallery button:hover.next-prev {
+.wpte-trip-feat-img-gallery button:hover.next-prev:before {
   margin-right: -8px;
   transition: all 0.5s ease-out;
 }
