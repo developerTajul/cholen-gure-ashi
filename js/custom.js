@@ -38,21 +38,21 @@
         const html = document.documentElement;
         const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 
-        if (100 < $(window).scrollTop()) {
+        if (100 < $(body).scrollTop()) {
             $(".header-menu-area.sticky-header").addClass("sticky_menu");
         }
 
         if( height  > 1400 ) {
             const nav = $(".header-menu-area.sticky-header");
             let scrolled = false;
-            $(window).scroll(function () {
-                if (100 < $(window).scrollTop() && !scrolled) {
+            $(body).scroll(function () {
+                if (100 < $(body).scrollTop() && !scrolled) {
                     nav
                         .addClass("sticky_menu animated fadeIn")
                         .animate({"margin-top": "0px"});
                     scrolled = true;
                 }
-                if (100 > $(window).scrollTop() && scrolled) {
+                if (100 > $(body).scrollTop() && scrolled) {
                     nav.removeClass("sticky_menu animated fadeIn").css("margin-top", "0px");
                     scrolled = false;
                 }
@@ -66,68 +66,7 @@
             return /\u00A0/.test($(this).text());
         }).hide();
 
-        /*
-        Typing animation 
-        ============================*/
         
-    var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #FFFFFF}";
-        document.body.appendChild(css);
-    };
-
-
         /*
         Skill Progress Bar Js
         ============================*/
@@ -152,35 +91,6 @@
             }
         });
 
-        /*
-       Slider
-       ============================*/
-        // $("#slider-wrapper").slick({
-        //     slidesToShow: 1,
-        //     infinite: true,
-        //     autoplay: true,
-        //     draggable: true,
-        //     arrows: true,
-        //     slidesToScroll: 1,
-        //     loop: true,
-        //     dots: false,
-        //     speed: 1500,
-        //     rtl: false,
-        //     vertical: true,
-        //     prevArrow:
-        //         "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-        //     nextArrow:
-        //         "<button type='button' class='slider-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-        //     responsive: [
-        //         {
-        //             breakpoint: 767,
-        //             settings: {
-        //                 autoplay: true,
-        //                 vertical: false,
-        //             },
-        //         },
-        //     ],
-        // });
 
         $('#trigger_header_slider_prev').on('click', function() {
             console.log("Slider clicked");
@@ -255,35 +165,6 @@
             ],
         });
 
-         /*
-       Brand Slider
-       ============================*/
-        // $(".brand-slider-wrapper").slick({
-        //     slidesToShow: 5,
-        //     infinite: true,
-        //     autoplay: true,
-        //     draggable: true,
-        //     arrows: false,
-        //     slidesToScroll: 1,
-        //     loop: true,
-        //     dots: false,
-        //     speed: 1500,
-        //     rtl: false,
-        //     responsive: [
-        //         {
-        //             breakpoint: 992,
-        //             settings: {
-        //                 slidesToShow: 4,
-        //             },
-        //         },
-        //         {
-        //             breakpoint: 768,
-        //             settings: {
-        //                 slidesToShow: 2,
-        //             },
-        //         },
-        //     ],
-        // });
 
         /*
        Testimonial Slider
@@ -555,50 +436,7 @@
             //         },
             //     },
             // ],
-        });
-
-
-         // Process Step Slider
-        //  $(".testimonial_one").slick({
-        //     slidesToShow: 1,
-        //     infinite: true,
-        //     autoplay: true,
-        //     draggable: true,
-        //     arrows: true,
-        //     slidesToScroll: 1,
-        //     loop: true,
-        //     dots: false,
-        //     speed: 1600,
-        //     asNavFor: '.testimonial-user-wrapper',
-        //     prevArrow:
-        //         "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
-        //     nextArrow:
-        //         "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
-        //         responsive: [
-        //         {
-        //             breakpoint: 767,
-        //             settings: {
-        //                 autoplay: true,
-        //                 slidesToShow: 1,
-        //                 arrows: false,
-        //             },
-        //         },
-        //     ],
-        // });
-
-        // Process Step Slider Tab
-        // $('.testimonial-user-wrapper').slick({
-        //     slidesToShow: 2,
-        //     loop: false,
-        //     infinite: false,
-        //     asNavFor: '.testimonial_one',
-        //     dots: false,
-        //     centerMode: true,
-        //     focusOnSelect: true,
-        //     arrows:false,
-        //     draggable: true,
-        //     autoplay: true,
-        // });  
+        }); 
 
         $('#user-slider-arrow').on('click', function() {
             $('.testimonial_one .next-btn').trigger('click');
