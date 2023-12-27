@@ -11240,13 +11240,13 @@ ul.children {
 .popular-destination-two .location-card.style-1 .image-wrapper {
   height: 404px;
 }
-.popular-destination-two .location-card.style-1 .image-wrapper .image-inner {
+.popular-destination-two .location-card.style-1 .image-wrapper .image-innerr {
   height: 404px;
 }
-.popular-destination-two .location-card.style-1 .image-wrapper .image-inner img {
+.popular-destination-two .location-card.style-1 .image-wrapper .image-innerr img {
   height: 404px !important;
 }
-.popular-destination-two .location-card.style-1 .image-wrapper .image-inner:before {
+.popular-destination-two .location-card.style-1 .image-wrapper .image-innerr:before {
   position: absolute;
   top: 0;
   left: -85%;
