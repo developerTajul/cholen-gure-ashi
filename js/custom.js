@@ -40,7 +40,6 @@
 
         if (100 < $(window).scrollTop()) {
             $(".header-menu-area.sticky-header").addClass("sticky_menu");
-            
         }
 
         if( height  > 1400 ) {
@@ -703,7 +702,6 @@
         // $grid.imagesLoaded().progress( function() {
         //     $grid.isotope('layout');
         // });
-
         var $grid = $('.isotope-grid').isotope({
             itemSelector: '.masonry-portfolio-item',
             percentPosition: true,
@@ -718,6 +716,7 @@
         imagesLoaded($grid).on('progress', function () {
             $grid.isotope('layout');
         });
+
 
        
 
