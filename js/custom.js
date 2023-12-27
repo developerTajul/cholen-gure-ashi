@@ -699,7 +699,7 @@
             }
         });
 
-        $grid.imagesLoaded().progress( function() {
+        $.imagesLoaded.progress(function () {
             $grid.isotope('layout');
         });
 
