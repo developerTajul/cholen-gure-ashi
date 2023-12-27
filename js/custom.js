@@ -66,13 +66,130 @@
             return /\u00A0/.test($(this).text());
         }).hide();
 
+        /*
+        Typing animation 
+        ============================*/
         
-        
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
-          /*
-       Jquery Nice Select Js
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #FFFFFF}";
+        document.body.appendChild(css);
+    };
+
+
+        /*
+        Skill Progress Bar Js
+        ============================*/
+        $('.skill-progressbar').one('inview', function(event, isInView) {
+            if (isInView) {
+                $('.progress-inner').each(function() {
+                    $(this).find('.progress-content').animate({
+                        width:$(this).attr('data-percentage')
+                    },2000);
+
+                    $(this).find('.progress-number-count').animate(
+                        {left:$(this).attr('data-percentage')},
+                        {
+                            duration: 2000,
+                            step: function(now) {
+                                let data = Math.round(now);
+                                $(this).find('.progress-percent').html(data + '%');
+                            }
+                        });
+                });
+
+            }
+        });
+
+        /*
+       Slider
        ============================*/
-       $('select.select_option, select.wpcf7-select').niceSelect();
+        // $("#slider-wrapper").slick({
+        //     slidesToShow: 1,
+        //     infinite: true,
+        //     autoplay: true,
+        //     draggable: true,
+        //     arrows: true,
+        //     slidesToScroll: 1,
+        //     loop: true,
+        //     dots: false,
+        //     speed: 1500,
+        //     rtl: false,
+        //     vertical: true,
+        //     prevArrow:
+        //         "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+        //     nextArrow:
+        //         "<button type='button' class='slider-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+        //     responsive: [
+        //         {
+        //             breakpoint: 767,
+        //             settings: {
+        //                 autoplay: true,
+        //                 vertical: false,
+        //             },
+        //         },
+        //     ],
+        // });
+
+        $('#trigger_header_slider_prev').on('click', function() {
+            console.log("Slider clicked");
+            $('#slider-wrapper .prev-btn').trigger('click');
+        });
+        $('#trigger_header_slider_next').on('click', function() {
+            console.log("Slider clicked");
+            $('#slider-wrapper .next-btn').trigger('click');
+        });
 
         /*
        Info Card Slider
@@ -138,6 +255,35 @@
             ],
         });
 
+         /*
+       Brand Slider
+       ============================*/
+        // $(".brand-slider-wrapper").slick({
+        //     slidesToShow: 5,
+        //     infinite: true,
+        //     autoplay: true,
+        //     draggable: true,
+        //     arrows: false,
+        //     slidesToScroll: 1,
+        //     loop: true,
+        //     dots: false,
+        //     speed: 1500,
+        //     rtl: false,
+        //     responsive: [
+        //         {
+        //             breakpoint: 992,
+        //             settings: {
+        //                 slidesToShow: 4,
+        //             },
+        //         },
+        //         {
+        //             breakpoint: 768,
+        //             settings: {
+        //                 slidesToShow: 2,
+        //             },
+        //         },
+        //     ],
+        // });
 
         /*
        Testimonial Slider
@@ -395,7 +541,64 @@
             centerMode: true,
             focusOnSelect: true,
             arrows:false,
-        }); 
+            // responsive: [
+            //     {
+            //         breakpoint: 768,
+            //         settings: {
+            //             slidesToShow: 3,
+            //         },
+            //     },
+            //     {
+            //         breakpoint: 768,
+            //         settings: {
+            //             slidesToShow: 3,
+            //         },
+            //     },
+            // ],
+        });
+
+
+         // Process Step Slider
+        //  $(".testimonial_one").slick({
+        //     slidesToShow: 1,
+        //     infinite: true,
+        //     autoplay: true,
+        //     draggable: true,
+        //     arrows: true,
+        //     slidesToScroll: 1,
+        //     loop: true,
+        //     dots: false,
+        //     speed: 1600,
+        //     asNavFor: '.testimonial-user-wrapper',
+        //     prevArrow:
+        //         "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
+        //     nextArrow:
+        //         "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
+        //         responsive: [
+        //         {
+        //             breakpoint: 767,
+        //             settings: {
+        //                 autoplay: true,
+        //                 slidesToShow: 1,
+        //                 arrows: false,
+        //             },
+        //         },
+        //     ],
+        // });
+
+        // Process Step Slider Tab
+        // $('.testimonial-user-wrapper').slick({
+        //     slidesToShow: 2,
+        //     loop: false,
+        //     infinite: false,
+        //     asNavFor: '.testimonial_one',
+        //     dots: false,
+        //     centerMode: true,
+        //     focusOnSelect: true,
+        //     arrows:false,
+        //     draggable: true,
+        //     autoplay: true,
+        // });  
 
         $('#user-slider-arrow').on('click', function() {
             $('.testimonial_one .next-btn').trigger('click');
@@ -472,86 +675,6 @@
             ],
         });
 
-        /*
-        Counter Js
-        ============================*/
-        $(".counter").counterUp({
-            delay: 10,
-            time: 1000,
-        });
-
-        /*
-       Magnific Popup
-       ============================*/
-        $(".video-play").magnificPopup({
-            disableOn: 700,
-            type: "iframe",
-            mainClass: "mfp-fade",
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false,
-        });
-
-        /*
-        Skill Progress Bar Js
-        ============================*/
-        $('.skill-progressbar').one('inview', function(event, isInView) {
-            if (isInView) {
-                $('.progress-inner').each(function() {
-                    $(this).find('.progress-content').animate({
-                        width:$(this).attr('data-percentage')
-                    },2000);
-
-                    $(this).find('.progress-number-count').animate(
-                        {left:$(this).attr('data-percentage')},
-                        {
-                            duration: 2000,
-                            step: function(now) {
-                                let data = Math.round(now);
-                                $(this).find('.progress-percent').html(data + '%');
-                            }
-                        });
-                });
-
-            }
-        });
-
-
-        $('#trigger_header_slider_prev').on('click', function() {
-            console.log("Slider clicked");
-            $('#slider-wrapper .prev-btn').trigger('click');
-        });
-        $('#trigger_header_slider_next').on('click', function() {
-            console.log("Slider clicked");
-            $('#slider-wrapper .next-btn').trigger('click');
-        });
-
-
-          /*
-        Jquery Wow Js
-        ============================*/
-
-        if ($('.wow').length) {
-            var wow = new WOW(
-                {
-                    boxClass: 'wow',      // animated element css class (default is wow)
-                    animateClass: 'animated', // animation css class (default is animated)
-                    offset: 0,          // distance to the element when triggering the animation (default is 0)
-                    mobile: false,       // trigger animations on mobile devices (default is true)
-                    live: true       // act on asynchronously loaded content (default is true)
-                }
-            );
-            wow.init();
-        }
-
-          /*
-       Jquery Tilt Js
-       ============================*/
-        $('.tilt-animate').tilt({
-            maxTilt: 12,
-            perspective: 1500,
-        })
-
          /*
         Isotope Grid Js
         ============================*/
@@ -576,21 +699,12 @@
             }
         });
 
-        // $grid.imagesLoaded().progress( function() {
-        //     $grid.isotope('layout');
-        // });
-
-
-        // Initialize Select2 on the select element
-        $('#state').select2();
-
-        // Click event handler for the label
-        $('.select-location').click(function() {
-            // Trigger the Select2 dropdown when the label is clicked
-            $('#state').select2('open');
+        $grid.imagesLoaded().progress( function() {
+            $grid.isotope('layout');
         });
 
-        $(".select2-search__field").attr("placeholder", "Your Placeholder Text");
+
+       
 
          /*
        Jquery Header Search
@@ -622,14 +736,70 @@
             }
         }
 
-      
 
-      
+        /*
+        Counter Js
+        ============================*/
+        $(".counter").counterUp({
+            delay: 10,
+            time: 1000,
+        });
+
+        /*
+       Magnific Popup
+       ============================*/
+        $(".video-play").magnificPopup({
+            disableOn: 700,
+            type: "iframe",
+            mainClass: "mfp-fade",
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false,
+        });
+
+        /*
+        Jquery Wow Js
+        ============================*/
+
+	if ($('.wow').length) {
+		var wow = new WOW(
+			{
+				boxClass: 'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset: 0,          // distance to the element when triggering the animation (default is 0)
+				mobile: false,       // trigger animations on mobile devices (default is true)
+				live: true       // act on asynchronously loaded content (default is true)
+			}
+		);
+		wow.init();
+	}
+
+        /*
+       Jquery Nice Select Js
+       ============================*/
+        $('select.select_option, select.wpcf7-select').niceSelect();
+
+        /*
+       Jquery Tilt Js
+       ============================*/
+        $('.tilt-animate').tilt({
+            maxTilt: 12,
+            perspective: 1500,
+        })
 
 
        
 
-        
+                // Initialize Select2 on the select element
+        $('#state').select2();
+
+        // Click event handler for the label
+        $('.select-location').click(function() {
+            // Trigger the Select2 dropdown when the label is clicked
+            $('#state').select2('open');
+        });
+
+        $(".select2-search__field").attr("placeholder", "Your Placeholder Text");
 
         // Date Picker
         $("#datepicker").datepicker({
@@ -674,7 +844,94 @@
                 return false;
             });
         });
+
         
+        // $(function () {
+        //     //Price Range
+        //     $(document).on("click", function (e) {
+        //         var priceRangeInner = $(".price-range-inner");
+                
+        //         // Check if the click event target is not #priceLabel, #priceValue, or .price-range-inner
+        //         if (!$(e.target).is(".priceLabel, #priceValue, .price-range-inner")) {
+        //             priceRangeInner.removeClass("active");
+        //         }
+        //     });
+
+        //     $(".priceLabel, #priceValue").on("click", function (e) {
+        //         var priceRangeInner = $(".price-range-inner");
+                
+        //         if (priceRangeInner.hasClass("active")) {
+        //             priceRangeInner.removeClass("active");
+        //         } else {
+        //             priceRangeInner.addClass("active");
+        //         }
+
+        //         // Prevent the click event from propagating to the document
+        //         e.stopPropagation();
+        //     });
+        //     var minSlider = document.getElementById('min-price');
+        //     var maxSlider = document.getElementById('max-price');
+
+        //     var outputMin = document.getElementById('min-value');
+        //     var outputMax = document.getElementById('max-value');
+
+        //     outputMin.innerHTML = minSlider.value;
+        //     outputMax.innerHTML = maxSlider.value;
+
+        //     minSlider.oninput = function(){
+        //     outputMin.innerHTML=this.value;    
+        //     }
+
+        //     maxSlider.oninput = function(){
+        //         outputMax.innerHTML=this.value; 
+        //     }
+        // });
+
+        $(function () {
+            // Price Range
+            $(document).on("click", function (e) {
+                var priceRangeInner = $(".price-range-inner");
+        
+                // Check if the click event target is not #priceLabel, #priceValue, or .price-range-inner
+                if (!$(e.target).is(".priceLabel, #priceValue, .price-range-inner")) {
+                    priceRangeInner.removeClass("active");
+                }
+            });
+        
+            $(".priceLabel, #priceValue").on("click", function (e) {
+                var priceRangeInner = $(".price-range-inner");
+        
+                if (priceRangeInner.hasClass("active")) {
+                    priceRangeInner.removeClass("active");
+                } else {
+                    priceRangeInner.addClass("active");
+                }
+        
+                // Prevent the click event from propagating to the document
+                e.stopPropagation();
+            });
+        
+            // Check if the sliders and outputs exist before trying to use them
+            var minSlider = document.getElementById('min-price');
+            var maxSlider = document.getElementById('max-price');
+            var outputMin = document.getElementById('min-value');
+            var outputMax = document.getElementById('max-value');
+        
+            if (minSlider && maxSlider && outputMin && outputMax) {
+                outputMin.innerHTML = minSlider.value;
+                outputMax.innerHTML = maxSlider.value;
+        
+                minSlider.oninput = function () {
+                    outputMin.innerHTML = this.value;
+                }
+        
+                maxSlider.oninput = function () {
+                    outputMax.innerHTML = this.value;
+                }
+            }
+        });
+        
+
         /*
         Preeloader
         ============================*/
