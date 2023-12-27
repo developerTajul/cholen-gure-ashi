@@ -21,7 +21,7 @@
                 .image-inner{
                     height: 404px;
                     img{
-                        height: 404px;
+                        height: 404px !important;
                     }
                     &:before {
                         position: absolute;
