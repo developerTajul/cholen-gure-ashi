@@ -11244,7 +11244,7 @@ ul.children {
   height: 404px;
 }
 .popular-destination-two .location-card.style-1 .image-wrapper .image-inner img {
-  height: 404px;
+  height: 404px !important;
 }
 .popular-destination-two .location-card.style-1 .image-wrapper .image-inner:before {
   position: absolute;
