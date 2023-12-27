@@ -10992,6 +10992,10 @@ ul.children {
   padding: 0 !important;
 }
 
+.single-trip .page-breadcrumb-area.page-bg {
+  display: block !important;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;

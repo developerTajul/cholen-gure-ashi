@@ -225,3 +225,10 @@
 .category-trips-single {
     padding: 0 !important;
 }
+.single-trip{
+    .page-breadcrumb-area{
+        &.page-bg{
+            display: block !important;
+        }
+    }
+}
