@@ -40,6 +40,7 @@
 
         if (100 < $(window).scrollTop()) {
             $(".header-menu-area.sticky-header").addClass("sticky_menu");
+            console.log("sticky_menu");
         }
 
         if( height  > 1400 ) {
