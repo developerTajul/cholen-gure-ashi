@@ -637,31 +637,45 @@
          /*
         Isotope Grid Js
         ============================*/
-        $('.portfolio-filter').on('click', 'li', function() {
-            $("li").removeClass("active");
-            $(this).addClass("active");
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: filterValue
-            });
-        });
+        // $('.portfolio-filter').on('click', 'li', function() {
+        //     $("li").removeClass("active");
+        //     $(this).addClass("active");
+        //     var filterValue = $(this).attr('data-filter');
+        //     $grid.isotope({
+        //         filter: filterValue
+        //     });
+        // });
 
-        var $grid = $('.isotope-grid').isotope({
-            itemSelector: '.masonry-portfolio-item',
-            percentPosition: true,
-            masonry: {
-                columnWidth: '.masonry-portfolio-item',
-                columnHeight: '.masonry-portfolio-item',
-                rowWidth: '.masonry-portfolio-item',
-                rowHeight: '.masonry-portfolio-item',
+        // var $grid = $('.isotope-grid').isotope({
+        //     itemSelector: '.masonry-portfolio-item',
+        //     percentPosition: true,
+        //     masonry: {
+        //         columnWidth: '.masonry-portfolio-item',
+        //         columnHeight: '.masonry-portfolio-item',
+        //         rowWidth: '.masonry-portfolio-item',
+        //         rowHeight: '.masonry-portfolio-item',
                 
+        //     }
+        // });
+
+        // $grid.imagesLoaded().progress( function() {
+        //     $grid.isotope('layout');
+        // });
+
+        $('.isotope-grid').isotope({
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows'
+        });
+       var $grid = $('.isotope-grid').isotope({
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows',
+            masonry: {
+                columnWidth: '.isotope-item'
             }
         });
-
         $grid.imagesLoaded().progress( function() {
             $grid.isotope('layout');
         });
-
 
        
 
