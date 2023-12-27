@@ -576,9 +576,9 @@
             }
         });
 
-        $grid.imagesLoaded().progress( function() {
-            $grid.isotope('layout');
-        });
+        // $grid.imagesLoaded().progress( function() {
+        //     $grid.isotope('layout');
+        // });
 
 
         // Initialize Select2 on the select element
