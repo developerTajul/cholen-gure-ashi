@@ -525,21 +525,6 @@
             });
         });
 
-        // var $grid = $('.isotope-grid').isotope({
-        //     itemSelector: '.masonry-portfolio-item',
-        //     percentPosition: true,
-        //     masonry: {
-        //         columnWidth: '.masonry-portfolio-item',
-        //         columnHeight: '.masonry-portfolio-item',
-        //         rowWidth: '.masonry-portfolio-item',
-        //         rowHeight: '.masonry-portfolio-item',
-                
-        //     }
-        // });
-
-        // $grid.imagesLoaded().progress( function() {
-        //     $grid.isotope('layout');
-        // });
         var $grid = $('.isotope-grid').isotope({
             itemSelector: '.masonry-portfolio-item',
             percentPosition: true,
@@ -548,16 +533,13 @@
                 columnHeight: '.masonry-portfolio-item',
                 rowWidth: '.masonry-portfolio-item',
                 rowHeight: '.masonry-portfolio-item',
+                
             }
         });
-        
-        imagesLoaded($grid).on('progress', function () {
+
+        $grid.imagesLoaded().progress( function() {
             $grid.isotope('layout');
         });
-
-
-       
-
          /*
        Jquery Header Search
        ============================*/
