@@ -558,47 +558,6 @@
         });
 
 
-         // Process Step Slider
-        //  $(".testimonial_one").slick({
-        //     slidesToShow: 1,
-        //     infinite: true,
-        //     autoplay: true,
-        //     draggable: true,
-        //     arrows: true,
-        //     slidesToScroll: 1,
-        //     loop: true,
-        //     dots: false,
-        //     speed: 1600,
-        //     asNavFor: '.testimonial-user-wrapper',
-        //     prevArrow:
-        //         "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
-        //     nextArrow:
-        //         "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
-        //         responsive: [
-        //         {
-        //             breakpoint: 767,
-        //             settings: {
-        //                 autoplay: true,
-        //                 slidesToShow: 1,
-        //                 arrows: false,
-        //             },
-        //         },
-        //     ],
-        // });
-
-        // Process Step Slider Tab
-        // $('.testimonial-user-wrapper').slick({
-        //     slidesToShow: 2,
-        //     loop: false,
-        //     infinite: false,
-        //     asNavFor: '.testimonial_one',
-        //     dots: false,
-        //     centerMode: true,
-        //     focusOnSelect: true,
-        //     arrows:false,
-        //     draggable: true,
-        //     autoplay: true,
-        // });  
 
         $('#user-slider-arrow').on('click', function() {
             $('.testimonial_one .next-btn').trigger('click');
@@ -787,34 +746,6 @@
             perspective: 1500,
         })
 
-
-       
-
-        //         // Initialize Select2 on the select element
-        // $('#state').select2();
-
-        // // Click event handler for the label
-        // $('.select-location').click(function() {
-        //     // Trigger the Select2 dropdown when the label is clicked
-        //     $('#state').select2('open');
-        // });
-
-        // $(".select2-search__field").attr("placeholder", "Your Placeholder Text");
-
-        // // Date Picker
-        // $("#datepicker").datepicker({
-        //     dateFormat: "dd M, D", // Date format: "26 Mar, Fri"
-        //     onSelect: function(dateText, inst) {
-        //     // $("#datepicker").text("" + dateText);
-        //     }
-        // });
-        // $("#datepicker2").datepicker({
-        //     dateFormat: "dd M, D", // Date format: "26 Mar, Fri"
-        //     onSelect: function(dateText, inst) {
-        //     // $("#datepicker").text("" + dateText);
-        //     }
-        // });
-
          /*
         Scroll To Top Js
         ============================*/
@@ -844,93 +775,6 @@
                 return false;
             });
         });
-
-        
-        // $(function () {
-        //     //Price Range
-        //     $(document).on("click", function (e) {
-        //         var priceRangeInner = $(".price-range-inner");
-                
-        //         // Check if the click event target is not #priceLabel, #priceValue, or .price-range-inner
-        //         if (!$(e.target).is(".priceLabel, #priceValue, .price-range-inner")) {
-        //             priceRangeInner.removeClass("active");
-        //         }
-        //     });
-
-        //     $(".priceLabel, #priceValue").on("click", function (e) {
-        //         var priceRangeInner = $(".price-range-inner");
-                
-        //         if (priceRangeInner.hasClass("active")) {
-        //             priceRangeInner.removeClass("active");
-        //         } else {
-        //             priceRangeInner.addClass("active");
-        //         }
-
-        //         // Prevent the click event from propagating to the document
-        //         e.stopPropagation();
-        //     });
-        //     var minSlider = document.getElementById('min-price');
-        //     var maxSlider = document.getElementById('max-price');
-
-        //     var outputMin = document.getElementById('min-value');
-        //     var outputMax = document.getElementById('max-value');
-
-        //     outputMin.innerHTML = minSlider.value;
-        //     outputMax.innerHTML = maxSlider.value;
-
-        //     minSlider.oninput = function(){
-        //     outputMin.innerHTML=this.value;    
-        //     }
-
-        //     maxSlider.oninput = function(){
-        //         outputMax.innerHTML=this.value; 
-        //     }
-        // });
-
-        $(function () {
-            // Price Range
-            $(document).on("click", function (e) {
-                var priceRangeInner = $(".price-range-inner");
-        
-                // Check if the click event target is not #priceLabel, #priceValue, or .price-range-inner
-                if (!$(e.target).is(".priceLabel, #priceValue, .price-range-inner")) {
-                    priceRangeInner.removeClass("active");
-                }
-            });
-        
-            $(".priceLabel, #priceValue").on("click", function (e) {
-                var priceRangeInner = $(".price-range-inner");
-        
-                if (priceRangeInner.hasClass("active")) {
-                    priceRangeInner.removeClass("active");
-                } else {
-                    priceRangeInner.addClass("active");
-                }
-        
-                // Prevent the click event from propagating to the document
-                e.stopPropagation();
-            });
-        
-            // Check if the sliders and outputs exist before trying to use them
-            var minSlider = document.getElementById('min-price');
-            var maxSlider = document.getElementById('max-price');
-            var outputMin = document.getElementById('min-value');
-            var outputMax = document.getElementById('max-value');
-        
-            if (minSlider && maxSlider && outputMin && outputMax) {
-                outputMin.innerHTML = minSlider.value;
-                outputMax.innerHTML = maxSlider.value;
-        
-                minSlider.oninput = function () {
-                    outputMin.innerHTML = this.value;
-                }
-        
-                maxSlider.oninput = function () {
-                    outputMax.innerHTML = this.value;
-                }
-            }
-        });
-        
 
         /*
         Preeloader
