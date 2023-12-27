@@ -40,7 +40,7 @@
 
         if (100 < $(window).scrollTop()) {
             $(".header-menu-area.sticky-header").addClass("sticky_menu");
-            console.log("sticky_menu");
+            
         }
 
         if( height  > 1400 ) {
@@ -688,6 +688,22 @@
             });
         });
 
+        // var $grid = $('.isotope-grid').isotope({
+        //     itemSelector: '.masonry-portfolio-item',
+        //     percentPosition: true,
+        //     masonry: {
+        //         columnWidth: '.masonry-portfolio-item',
+        //         columnHeight: '.masonry-portfolio-item',
+        //         rowWidth: '.masonry-portfolio-item',
+        //         rowHeight: '.masonry-portfolio-item',
+                
+        //     }
+        // });
+
+        // $grid.imagesLoaded().progress( function() {
+        //     $grid.isotope('layout');
+        // });
+
         var $grid = $('.isotope-grid').isotope({
             itemSelector: '.masonry-portfolio-item',
             percentPosition: true,
@@ -696,11 +712,10 @@
                 columnHeight: '.masonry-portfolio-item',
                 rowWidth: '.masonry-portfolio-item',
                 rowHeight: '.masonry-portfolio-item',
-                
             }
         });
-
-        $grid.imagesLoaded().progress( function() {
+        
+        imagesLoaded($grid.get(0)).on('progress', function () {
             $grid.isotope('layout');
         });
 
