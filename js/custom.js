@@ -715,10 +715,9 @@
             }
         });
         
-        imagesLoaded($grid.get(0)).on('progress', function () {
+        imagesLoaded($grid).on('progress', function () {
             $grid.isotope('layout');
         });
-
 
        
 
