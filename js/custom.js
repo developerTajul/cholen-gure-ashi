@@ -790,30 +790,30 @@
 
        
 
-                // Initialize Select2 on the select element
-        $('#state').select2();
+        //         // Initialize Select2 on the select element
+        // $('#state').select2();
 
-        // Click event handler for the label
-        $('.select-location').click(function() {
-            // Trigger the Select2 dropdown when the label is clicked
-            $('#state').select2('open');
-        });
+        // // Click event handler for the label
+        // $('.select-location').click(function() {
+        //     // Trigger the Select2 dropdown when the label is clicked
+        //     $('#state').select2('open');
+        // });
 
-        $(".select2-search__field").attr("placeholder", "Your Placeholder Text");
+        // $(".select2-search__field").attr("placeholder", "Your Placeholder Text");
 
-        // Date Picker
-        $("#datepicker").datepicker({
-            dateFormat: "dd M, D", // Date format: "26 Mar, Fri"
-            onSelect: function(dateText, inst) {
-            // $("#datepicker").text("" + dateText);
-            }
-        });
-        $("#datepicker2").datepicker({
-            dateFormat: "dd M, D", // Date format: "26 Mar, Fri"
-            onSelect: function(dateText, inst) {
-            // $("#datepicker").text("" + dateText);
-            }
-        });
+        // // Date Picker
+        // $("#datepicker").datepicker({
+        //     dateFormat: "dd M, D", // Date format: "26 Mar, Fri"
+        //     onSelect: function(dateText, inst) {
+        //     // $("#datepicker").text("" + dateText);
+        //     }
+        // });
+        // $("#datepicker2").datepicker({
+        //     dateFormat: "dd M, D", // Date format: "26 Mar, Fri"
+        //     onSelect: function(dateText, inst) {
+        //     // $("#datepicker").text("" + dateText);
+        //     }
+        // });
 
          /*
         Scroll To Top Js
