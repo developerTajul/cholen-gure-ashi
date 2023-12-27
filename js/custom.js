@@ -67,39 +67,12 @@
         }).hide();
 
         
-        /*
-        Skill Progress Bar Js
-        ============================*/
-        $('.skill-progressbar').one('inview', function(event, isInView) {
-            if (isInView) {
-                $('.progress-inner').each(function() {
-                    $(this).find('.progress-content').animate({
-                        width:$(this).attr('data-percentage')
-                    },2000);
+        
 
-                    $(this).find('.progress-number-count').animate(
-                        {left:$(this).attr('data-percentage')},
-                        {
-                            duration: 2000,
-                            step: function(now) {
-                                let data = Math.round(now);
-                                $(this).find('.progress-percent').html(data + '%');
-                            }
-                        });
-                });
-
-            }
-        });
-
-
-        $('#trigger_header_slider_prev').on('click', function() {
-            console.log("Slider clicked");
-            $('#slider-wrapper .prev-btn').trigger('click');
-        });
-        $('#trigger_header_slider_next').on('click', function() {
-            console.log("Slider clicked");
-            $('#slider-wrapper .next-btn').trigger('click');
-        });
+          /*
+       Jquery Nice Select Js
+       ============================*/
+       $('select.select_option, select.wpcf7-select').niceSelect();
 
         /*
        Info Card Slider
@@ -422,20 +395,6 @@
             centerMode: true,
             focusOnSelect: true,
             arrows:false,
-            // responsive: [
-            //     {
-            //         breakpoint: 768,
-            //         settings: {
-            //             slidesToShow: 3,
-            //         },
-            //     },
-            //     {
-            //         breakpoint: 768,
-            //         settings: {
-            //             slidesToShow: 3,
-            //         },
-            //     },
-            // ],
         }); 
 
         $('#user-slider-arrow').on('click', function() {
@@ -513,6 +472,86 @@
             ],
         });
 
+        /*
+        Counter Js
+        ============================*/
+        $(".counter").counterUp({
+            delay: 10,
+            time: 1000,
+        });
+
+        /*
+       Magnific Popup
+       ============================*/
+        $(".video-play").magnificPopup({
+            disableOn: 700,
+            type: "iframe",
+            mainClass: "mfp-fade",
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false,
+        });
+
+        /*
+        Skill Progress Bar Js
+        ============================*/
+        $('.skill-progressbar').one('inview', function(event, isInView) {
+            if (isInView) {
+                $('.progress-inner').each(function() {
+                    $(this).find('.progress-content').animate({
+                        width:$(this).attr('data-percentage')
+                    },2000);
+
+                    $(this).find('.progress-number-count').animate(
+                        {left:$(this).attr('data-percentage')},
+                        {
+                            duration: 2000,
+                            step: function(now) {
+                                let data = Math.round(now);
+                                $(this).find('.progress-percent').html(data + '%');
+                            }
+                        });
+                });
+
+            }
+        });
+
+
+        $('#trigger_header_slider_prev').on('click', function() {
+            console.log("Slider clicked");
+            $('#slider-wrapper .prev-btn').trigger('click');
+        });
+        $('#trigger_header_slider_next').on('click', function() {
+            console.log("Slider clicked");
+            $('#slider-wrapper .next-btn').trigger('click');
+        });
+
+
+          /*
+        Jquery Wow Js
+        ============================*/
+
+        if ($('.wow').length) {
+            var wow = new WOW(
+                {
+                    boxClass: 'wow',      // animated element css class (default is wow)
+                    animateClass: 'animated', // animation css class (default is animated)
+                    offset: 0,          // distance to the element when triggering the animation (default is 0)
+                    mobile: false,       // trigger animations on mobile devices (default is true)
+                    live: true       // act on asynchronously loaded content (default is true)
+                }
+            );
+            wow.init();
+        }
+
+          /*
+       Jquery Tilt Js
+       ============================*/
+        $('.tilt-animate').tilt({
+            maxTilt: 12,
+            perspective: 1500,
+        })
+
          /*
         Isotope Grid Js
         ============================*/
@@ -540,6 +579,19 @@
         $grid.imagesLoaded().progress( function() {
             $grid.isotope('layout');
         });
+
+
+        // Initialize Select2 on the select element
+        $('#state').select2();
+
+        // Click event handler for the label
+        $('.select-location').click(function() {
+            // Trigger the Select2 dropdown when the label is clicked
+            $('#state').select2('open');
+        });
+
+        $(".select2-search__field").attr("placeholder", "Your Placeholder Text");
+
          /*
        Jquery Header Search
        ============================*/
@@ -570,70 +622,14 @@
             }
         }
 
+      
 
-        /*
-        Counter Js
-        ============================*/
-        $(".counter").counterUp({
-            delay: 10,
-            time: 1000,
-        });
-
-        /*
-       Magnific Popup
-       ============================*/
-        $(".video-play").magnificPopup({
-            disableOn: 700,
-            type: "iframe",
-            mainClass: "mfp-fade",
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false,
-        });
-
-        /*
-        Jquery Wow Js
-        ============================*/
-
-	if ($('.wow').length) {
-		var wow = new WOW(
-			{
-				boxClass: 'wow',      // animated element css class (default is wow)
-				animateClass: 'animated', // animation css class (default is animated)
-				offset: 0,          // distance to the element when triggering the animation (default is 0)
-				mobile: false,       // trigger animations on mobile devices (default is true)
-				live: true       // act on asynchronously loaded content (default is true)
-			}
-		);
-		wow.init();
-	}
-
-        /*
-       Jquery Nice Select Js
-       ============================*/
-        $('select.select_option, select.wpcf7-select').niceSelect();
-
-        /*
-       Jquery Tilt Js
-       ============================*/
-        $('.tilt-animate').tilt({
-            maxTilt: 12,
-            perspective: 1500,
-        })
+      
 
 
        
 
-                // Initialize Select2 on the select element
-        $('#state').select2();
-
-        // Click event handler for the label
-        $('.select-location').click(function() {
-            // Trigger the Select2 dropdown when the label is clicked
-            $('#state').select2('open');
-        });
-
-        $(".select2-search__field").attr("placeholder", "Your Placeholder Text");
+        
 
         // Date Picker
         $("#datepicker").datepicker({
@@ -678,94 +674,7 @@
                 return false;
             });
         });
-
         
-        // $(function () {
-        //     //Price Range
-        //     $(document).on("click", function (e) {
-        //         var priceRangeInner = $(".price-range-inner");
-                
-        //         // Check if the click event target is not #priceLabel, #priceValue, or .price-range-inner
-        //         if (!$(e.target).is(".priceLabel, #priceValue, .price-range-inner")) {
-        //             priceRangeInner.removeClass("active");
-        //         }
-        //     });
-
-        //     $(".priceLabel, #priceValue").on("click", function (e) {
-        //         var priceRangeInner = $(".price-range-inner");
-                
-        //         if (priceRangeInner.hasClass("active")) {
-        //             priceRangeInner.removeClass("active");
-        //         } else {
-        //             priceRangeInner.addClass("active");
-        //         }
-
-        //         // Prevent the click event from propagating to the document
-        //         e.stopPropagation();
-        //     });
-        //     var minSlider = document.getElementById('min-price');
-        //     var maxSlider = document.getElementById('max-price');
-
-        //     var outputMin = document.getElementById('min-value');
-        //     var outputMax = document.getElementById('max-value');
-
-        //     outputMin.innerHTML = minSlider.value;
-        //     outputMax.innerHTML = maxSlider.value;
-
-        //     minSlider.oninput = function(){
-        //     outputMin.innerHTML=this.value;    
-        //     }
-
-        //     maxSlider.oninput = function(){
-        //         outputMax.innerHTML=this.value; 
-        //     }
-        // });
-
-        $(function () {
-            // Price Range
-            $(document).on("click", function (e) {
-                var priceRangeInner = $(".price-range-inner");
-        
-                // Check if the click event target is not #priceLabel, #priceValue, or .price-range-inner
-                if (!$(e.target).is(".priceLabel, #priceValue, .price-range-inner")) {
-                    priceRangeInner.removeClass("active");
-                }
-            });
-        
-            $(".priceLabel, #priceValue").on("click", function (e) {
-                var priceRangeInner = $(".price-range-inner");
-        
-                if (priceRangeInner.hasClass("active")) {
-                    priceRangeInner.removeClass("active");
-                } else {
-                    priceRangeInner.addClass("active");
-                }
-        
-                // Prevent the click event from propagating to the document
-                e.stopPropagation();
-            });
-        
-            // Check if the sliders and outputs exist before trying to use them
-            var minSlider = document.getElementById('min-price');
-            var maxSlider = document.getElementById('max-price');
-            var outputMin = document.getElementById('min-value');
-            var outputMax = document.getElementById('max-value');
-        
-            if (minSlider && maxSlider && outputMin && outputMax) {
-                outputMin.innerHTML = minSlider.value;
-                outputMax.innerHTML = maxSlider.value;
-        
-                minSlider.oninput = function () {
-                    outputMin.innerHTML = this.value;
-                }
-        
-                maxSlider.oninput = function () {
-                    outputMax.innerHTML = this.value;
-                }
-            }
-        });
-        
-
         /*
         Preeloader
         ============================*/
