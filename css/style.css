@@ -11014,6 +11014,10 @@ ul.children {
   margin: 0 !important;
 }
 
+.wp-travel-engine-archive-outer-wrap .page-header {
+  display: none !important;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
@@ -12123,5 +12127,3 @@ ul.children {
     margin-bottom: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
-
-
