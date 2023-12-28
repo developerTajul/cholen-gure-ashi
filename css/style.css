@@ -10878,7 +10878,6 @@ ul.children {
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 24px;
 }
 @media (max-width: 767px) {
   .category-trip-content-wrap {
@@ -10998,6 +10997,7 @@ ul.children {
 }
 .category-main-wrap.category-grid .category-trip-content-wrap {
   flex-direction: column !important;
+  padding-bottom: 24px;
 }
 .category-main-wrap.category-list .category-trip-content-wrap {
   flex-direction: column-reverse !important;
