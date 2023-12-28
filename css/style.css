@@ -11034,12 +11034,24 @@ ul.children {
   margin: 0 !important;
 }
 
-.trip-pagination .page-numbers.current {
+.trip-pagination .nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.trip-pagination .nav-links .page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+}
+.trip-pagination .nav-links .page-numbers.current {
   background-color: #3B71FE !important;
   color: #ffffff !important;
   border-radius: 8px !important;
 }
-.trip-pagination .page-numbers.next {
+.trip-pagination .nav-links .page-numbers.next {
   color: #3B71FE !important;
 }
 
