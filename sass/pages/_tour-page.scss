@@ -89,6 +89,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
    @include rmaxwd(767){
     padding: 20px;
    }

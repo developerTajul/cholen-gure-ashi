@@ -10876,6 +10876,8 @@ ul.children {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (max-width: 767px) {
   .category-trip-content-wrap {
