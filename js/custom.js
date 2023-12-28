@@ -1,6 +1,6 @@
-(function ($) {
+(function($) {
     "use strict";
-    $(document).ready(function () {
+    $(document).ready(function() {
 
         /*
        Jquery Mobile Menu
@@ -14,11 +14,11 @@
         /*
        Jquery Sidebar Toggle
        ============================*/
-        $(".mobile-menu-toggle-btn").on("click", function () {
+        $(".mobile-menu-toggle-btn").on("click", function() {
             $(".menu-sidebar-area").addClass("active");
             $(".body-overlay").addClass("active");
         });
-        $(".menu-sidebar-close-btn").on("click", function () {
+        $(".menu-sidebar-close-btn").on("click", function() {
             $(".menu-sidebar-area").removeClass("active");
             $(".body-overlay").removeClass("active");
         });
@@ -26,7 +26,7 @@
         /*
        Jquery Body Overlay
        ============================*/
-        $(".body-overlay").on("click", function () {
+        $(".body-overlay").on("click", function() {
             $(".menu-sidebar-area").removeClass("active");
             $(".body-overlay").removeClass("active");
         });
@@ -42,14 +42,15 @@
             $(".header-menu-area.sticky-header").addClass("sticky_menu");
         }
 
-        if( height  > 1400 ) {
+        if (height > 1400) {
             const nav = $(".header-menu-area.sticky-header");
             let scrolled = false;
-            $(body).scroll(function () {
+            $(body).scroll(function() {
                 if (100 < $(body).scrollTop() && !scrolled) {
-                    nav
-                        .addClass("sticky_menu animated fadeIn")
-                        .animate({"margin-top": "0px"});
+                    nav.addClass("sticky_menu animated fadeIn")
+                        .animate({
+                        "margin-top": "0px"
+                    });
                     scrolled = true;
                 }
                 if (100 > $(body).scrollTop() && scrolled) {
@@ -69,63 +70,65 @@
         /*
         Typing animation 
         ============================*/
-        
-    var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
 
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+//         var TxtType = function(el, toRotate, period) {
+//             this.toRotate = toRotate;
+//             this.el = el;
+//             this.loopNum = 0;
+//             this.period = parseInt(period, 10) || 2000;
+//             this.txt = '';
+//             this.tick();
+//             this.isDeleting = false;
+//         };
 
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+//         TxtType.prototype.tick = function() {
+//             var i = this.loopNum % this.toRotate.length;
+//             var fullTxt = this.toRotate[i];
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+//             if (this.isDeleting) {
+//                 this.txt = fullTxt.substring(0, this.txt.length - 1);
+//             } else {
+//                 this.txt = fullTxt.substring(0, this.txt.length + 1);
+//             }
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
+//             this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-        if (this.isDeleting) { delta /= 2; }
+//             var that = this;
+//             var delta = 200 - Math.random() * 100;
 
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
+//             if (this.isDeleting) {
+//                 delta /= 2;
+//             }
 
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
+//             if (!this.isDeleting && this.txt === fullTxt) {
+//                 delta = this.period;
+//                 this.isDeleting = true;
+//             } else if (this.isDeleting && this.txt === '') {
+//                 this.isDeleting = false;
+//                 this.loopNum++;
+//                 delta = 500;
+//             }
 
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #FFFFFF}";
-        document.body.appendChild(css);
-    };
+//             setTimeout(function() {
+//                 that.tick();
+//             }, delta);
+//         };
+
+//         window.onload = function() {
+//             var elements = document.getElementsByClassName('typewrite');
+//             for (var i = 0; i < elements.length; i++) {
+//                 var toRotate = elements[i].getAttribute('data-type');
+//                 var period = elements[i].getAttribute('data-period');
+//                 if (toRotate) {
+//                     new TxtType(elements[i], JSON.parse(toRotate), period);
+//                 }
+//             }
+//             // INJECT CSS
+//             var css = document.createElement("style");
+//             css.type = "text/css";
+//             css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #FFFFFF}";
+//             document.body.appendChild(css);
+//         };
 
 
         /*
@@ -135,18 +138,18 @@
             if (isInView) {
                 $('.progress-inner').each(function() {
                     $(this).find('.progress-content').animate({
-                        width:$(this).attr('data-percentage')
-                    },2000);
+                        width: $(this).attr('data-percentage')
+                    }, 2000);
 
-                    $(this).find('.progress-number-count').animate(
-                        {left:$(this).attr('data-percentage')},
-                        {
-                            duration: 2000,
-                            step: function(now) {
-                                let data = Math.round(now);
-                                $(this).find('.progress-percent').html(data + '%');
-                            }
-                        });
+                    $(this).find('.progress-number-count').animate({
+                        left: $(this).attr('data-percentage')
+                    }, {
+                        duration: 2000,
+                        step: function(now) {
+                            let data = Math.round(now);
+                            $(this).find('.progress-percent').html(data + '%');
+                        }
+                    });
                 });
 
             }
@@ -205,24 +208,19 @@
             dots: false,
             speed: 1500,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='info-card-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='info-card-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                    },
+            prevArrow: "<button type='button' class='info-card-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow: "<button type='button' class='info-card-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
                 },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                    },
+            }, {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
                 },
-            ],
+            }, ],
         });
 
         /*
@@ -239,23 +237,20 @@
             dots: true,
             speed: 1500,
             rtl: false,
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                    },
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
                 },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                    },
+            }, {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
                 },
-            ],
+            }, ],
         });
 
-         /*
+        /*
        Brand Slider
        ============================*/
         // $(".brand-slider-wrapper").slick({
@@ -299,19 +294,15 @@
             dots: true,
             speed: 1500,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1023,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                    },
-                }
-            ],
+            prevArrow: "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow: "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    autoplay: true,
+                    slidesToShow: 1,
+                },
+            }],
         });
 
 
@@ -329,19 +320,15 @@
             dots: true,
             speed: 1500,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                    },
-                }
-            ],
+            prevArrow: "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow: "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    autoplay: true,
+                    slidesToShow: 1,
+                },
+            }],
         });
 
         $('#trigger_testimonial_prev').on('click', function() {
@@ -362,18 +349,14 @@
             dots: true,
             speed: 1500,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                    },
+            prevArrow: "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow: "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    autoplay: true,
                 },
-            ],
+            }, ],
         });
 
         /*
@@ -390,26 +373,21 @@
             dots: true,
             speed: 1500,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='location-arrow-btn prev-btn'><i class='fa-solid fa-arrow-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='location-arrow-btn next-btn'><i class='fa-solid fa-arrow-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 2,
-                    },
+            prevArrow: "<button type='button' class='location-arrow-btn prev-btn'><i class='fa-solid fa-arrow-left'></i></button>",
+            nextArrow: "<button type='button' class='location-arrow-btn next-btn'><i class='fa-solid fa-arrow-right'></i></button>",
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    autoplay: true,
+                    slidesToShow: 2,
                 },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                    },
-                }
-            ],
+            }, {
+                breakpoint: 767,
+                settings: {
+                    autoplay: true,
+                    slidesToShow: 1,
+                },
+            }],
         });
 
         // $('#trigger_location_prev').on('click', function() {
@@ -431,29 +409,24 @@
             dots: true,
             speed: 1500,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='location-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='location-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 2,
-                    },
+            prevArrow: "<button type='button' class='location-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow: "<button type='button' class='location-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    autoplay: true,
+                    slidesToShow: 2,
                 },
-                {
-                    breakpoint: 777,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                    },
-                }
-            ],
+            }, {
+                breakpoint: 777,
+                settings: {
+                    autoplay: true,
+                    slidesToShow: 1,
+                },
+            }],
         });
 
-        
+
         $('#trigger_location_prev_2').on('click', function() {
             $('.location-slider-wrapper-2 .prev-btn').trigger('click');
         });
@@ -461,7 +434,7 @@
             $('.location-slider-wrapper-2 .next-btn').trigger('click');
         });
 
-       
+
 
         /*
        Related Portfolio Slider
@@ -477,24 +450,19 @@
             dots: false,
             speed: 1500,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='portfolio-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='portfolio-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                    },
+            prevArrow: "<button type='button' class='portfolio-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow: "<button type='button' class='portfolio-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
                 },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
-                    },
+            }, {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 1,
                 },
-            ],
+            }, ],
         });
 
 
@@ -513,20 +481,16 @@
             dots: false,
             speed: 800,
             asNavFor: '.process-slider-tab',
-            prevArrow:
-                "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
-            nextArrow:
-                "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
-                responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                        arrows: false,
-                    },
+            prevArrow: "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
+            nextArrow: "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    autoplay: true,
+                    slidesToShow: 1,
+                    arrows: false,
                 },
-            ],
+            }, ],
         });
 
         // // Process Step Slider Tab
@@ -540,7 +504,7 @@
             dots: false,
             centerMode: true,
             focusOnSelect: true,
-            arrows:false,
+            arrows: false,
             // responsive: [
             //     {
             //         breakpoint: 768,
@@ -561,7 +525,7 @@
 
         $('#user-slider-arrow').on('click', function() {
             $('.testimonial_one .next-btn').trigger('click');
-        });     
+        });
 
         /*
        Post Gallery Slider
@@ -577,10 +541,8 @@
             dots: false,
             speed: 300,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+            prevArrow: "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+            nextArrow: "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
         });
         /*
        Client Logo Slider
@@ -596,45 +558,37 @@
             dots: false,
             speed: 1500,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 4,
-                    },
+            prevArrow: "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+            nextArrow: "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
                 },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-                    },
+            }, {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
                 },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 3,
-                    },
+            }, {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
                 },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                    },
+            }, {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
                 },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
-                    },
+            }, {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 1,
                 },
-            ],
+            }, ],
         });
 
-         /*
+        /*
         Isotope Grid Js
         ============================*/
         // $('.portfolio-filter').on('click', 'li', function() {
@@ -654,7 +608,7 @@
         //         columnHeight: '.masonry-portfolio-item',
         //         rowWidth: '.masonry-portfolio-item',
         //         rowHeight: '.masonry-portfolio-item',
-                
+
         //     }
         // });
 
@@ -662,27 +616,27 @@
         //     $grid.isotope('layout');
         // });
 
-        $('.isotope-grid').isotope({
-            itemSelector: '.isotope-item',
-            layoutMode: 'fitRows'
-        });
-       var $grid = $('.isotope-grid').isotope({
-            itemSelector: '.isotope-item',
-            layoutMode: 'fitRows',
-            masonry: {
-                columnWidth: '.isotope-item'
-            }
-        });
-        $grid.imagesLoaded().progress( function() {
-            $grid.isotope('layout');
-        });
+//         $('.isotope-grid').isotope({
+//             itemSelector: '.isotope-item',
+//             layoutMode: 'fitRows'
+//         });
+//         var $grid = $('.isotope-grid').isotope({
+//             itemSelector: '.isotope-item',
+//             layoutMode: 'fitRows',
+//             masonry: {
+//                 columnWidth: '.isotope-item'
+//             }
+//         });
+//         $grid.imagesLoaded().progress(function() {
+//             $grid.isotope('layout');
+//         });
 
-       
 
-         /*
+
+        /*
        Jquery Header Search
        ============================*/
-       $('.search-btn').on('click', function (e) {
+        $('.search-btn').on('click', function(e) {
             e.preventDefault();
             $('body').css('overflow', 'hidden');
             $('body').css('padding-right', '15px');
@@ -692,7 +646,7 @@
 
             $('.search-form-wrapper').addClass('active');
         });
-        $('.search-close').on('click', function (e) {
+        $('.search-close').on('click', function(e) {
             e.preventDefault();
             $('body').css('overflow', 'auto');
             $('body').css('padding-right', '');
@@ -700,8 +654,8 @@
             $('.search-form-wrapper').removeClass('active');
         });
 
-        window.onclick = function(e){
-            if( e.target.matches(".search-form-wrapper") ){
+        window.onclick = function(e) {
+            if (e.target.matches(".search-form-wrapper")) {
                 $('.search-form-wrapper').removeClass('active');
                 $('body').css('overflow', 'auto');
                 $('body').css('padding-right', '');
@@ -734,18 +688,16 @@
         Jquery Wow Js
         ============================*/
 
-	if ($('.wow').length) {
-		var wow = new WOW(
-			{
-				boxClass: 'wow',      // animated element css class (default is wow)
-				animateClass: 'animated', // animation css class (default is animated)
-				offset: 0,          // distance to the element when triggering the animation (default is 0)
-				mobile: false,       // trigger animations on mobile devices (default is true)
-				live: true       // act on asynchronously loaded content (default is true)
-			}
-		);
-		wow.init();
-	}
+        if ($('.wow').length) {
+            var wow = new WOW({
+                boxClass: 'wow', // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset: 0, // distance to the element when triggering the animation (default is 0)
+                mobile: false, // trigger animations on mobile devices (default is true)
+                live: true // act on asynchronously loaded content (default is true)
+            });
+            wow.init();
+        }
 
         /*
        Jquery Nice Select Js
@@ -760,14 +712,14 @@
             perspective: 1500,
         })
 
-         /*
+        /*
         Scroll To Top Js
         ============================*/
-        $(function () {
+        $(function() {
             $("#scrollTop").hide();
             var position = $(window).scrollTop();
             var timer;
-            $(window).on('scroll', function () {
+            $(window).on('scroll', function() {
                 var scrollTop = $(window).scrollTop();
                 clearTimeout(timer);
                 if (scrollTop > 100) {
@@ -785,7 +737,9 @@
                 }
             });
             $(".scrollup-btn").click(function() {
-                $("html, body").animate({ scrollTop: 0 }, "slow");
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow");
                 return false;
             });
         });
@@ -793,10 +747,12 @@
         /*
         Preeloader
         ============================*/
-        $(window).on("load", function () {
+        $(window).on("load", function() {
             $("#preloader").fadeOut();
             $("#preloader-status").delay(200).fadeOut("slow");
-            $("body").delay(200).css({"overflow-x": "hidden"});
+            $("body").delay(200).css({
+                "overflow-x": "hidden"
+            });
         });
 
     });
