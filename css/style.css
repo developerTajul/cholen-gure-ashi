@@ -4612,6 +4612,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .location-card {
+  visibility: visible !important;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
