@@ -10866,6 +10866,11 @@ ul.children {
 .category-trips-single-inner-wrap .category-trip-fig a {
   border-radius: 0 !important;
 }
+@media (max-width: 1280px) {
+  .category-trips-single-inner-wrap .category-trip-fig a {
+    padding-top: 100% !important;
+  }
+}
 
 .category-trip-content-wrap {
   display: flex;

@@ -79,6 +79,9 @@
     .category-trip-fig{
         a{
             border-radius:0 !important;
+            @include rmaxwd(1280){
+                padding-top: 100% !important;
+            }
         }
     }
 }
