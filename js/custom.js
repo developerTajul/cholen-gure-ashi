@@ -554,14 +554,14 @@
         //     $('.search-form-wrapper').removeClass('active');
         // });
 
-        window.onclick = function(e) {
-            if (e.target.matches(".search-form-wrapper")) {
-                $('.search-form-wrapper').removeClass('active');
-                $('body').css('overflow', 'auto');
-                $('body').css('padding-right', '');
-                $('.sticky-header').css('padding-right', '');
-            }
-        }
+        // window.onclick = function(e) {
+        //     if (e.target.matches(".search-form-wrapper")) {
+        //         $('.search-form-wrapper').removeClass('active');
+        //         $('body').css('overflow', 'auto');
+        //         $('body').css('padding-right', '');
+        //         $('.sticky-header').css('padding-right', '');
+        //     }
+        // }
 
         /*
        Jquery Sidebar Toggle
