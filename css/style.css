@@ -11046,6 +11046,7 @@ ul.children {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto !important;
   height: 42px;
 }
 .trip-pagination .nav-links .page-numbers.current {
