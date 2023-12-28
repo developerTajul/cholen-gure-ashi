@@ -10878,6 +10878,7 @@ ul.children {
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 24px;
 }
 @media (max-width: 767px) {
   .category-trip-content-wrap {
