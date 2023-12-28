@@ -11010,6 +11010,10 @@ ul.children {
   }
 }
 
+.category-main-wrap {
+  margin: 0 !important;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
