@@ -6422,13 +6422,13 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area.style-1 .banner-shape-1 {
   position: absolute;
-  top: 23.4%;
+  top: 15%;
   left: 5%;
   animation: fadeInLeft 1s alternate infinite;
 }
 @media (max-width: 1400px) {
   .slider-area.style-1 .banner-shape-1 {
-    top: 14%;
+    top: 10%;
     left: 1%;
   }
 }

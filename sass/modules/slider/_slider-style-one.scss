@@ -15,12 +15,12 @@
     }
     .banner-shape-1{
       position: absolute;
-      top: 23.4%;
+      top: 15%;
       left: 5%;
       -webkit-animation: fadeInLeft 1s alternate infinite;
       animation: fadeInLeft 1s alternate infinite;
       @include rmaxwd(1400){
-        top: 14%;
+        top: 10%;
         left: 1%;
       }
       @include sm{
