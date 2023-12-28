@@ -224,6 +224,11 @@
             flex-direction: column !important;
         }
     }
+    &.category-list{
+        .category-trip-content-wrap{
+            flex-direction: column-reverse !important;
+        }
+    }
 }
 .category-trips-single {
     padding: 0 !important;

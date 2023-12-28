@@ -10992,6 +10992,9 @@ ul.children {
 .category-main-wrap.category-grid .category-trip-content-wrap {
   flex-direction: column !important;
 }
+.category-main-wrap.category-list .category-trip-content-wrap {
+  flex-direction: column-reverse !important;
+}
 
 .category-trips-single {
   padding: 0 !important;
