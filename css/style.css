@@ -4612,7 +4612,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .location-card {
-  visibility: visible !important;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
@@ -5160,7 +5159,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .location-slider-area.style-1 .slick-track .slick-slide {
   margin-top: 0;
-  visibility: visible !important;
 }
 .location-slider-area.style-1 .slick-track .slick-active {
   margin-top: 0px;
