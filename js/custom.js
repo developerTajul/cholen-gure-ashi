@@ -616,20 +616,20 @@
         //     $grid.isotope('layout');
         // });
 
-//         $('.isotope-grid').isotope({
-//             itemSelector: '.isotope-item',
-//             layoutMode: 'fitRows'
-//         });
-//         var $grid = $('.isotope-grid').isotope({
-//             itemSelector: '.isotope-item',
-//             layoutMode: 'fitRows',
-//             masonry: {
-//                 columnWidth: '.isotope-item'
-//             }
-//         });
-//         $grid.imagesLoaded().progress(function() {
-//             $grid.isotope('layout');
-//         });
+        $('.isotope-grid').isotope({
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows'
+        });
+        var $grid = $('.isotope-grid').isotope({
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows',
+            masonry: {
+                columnWidth: '.isotope-item'
+            }
+        });
+        $grid.imagesLoaded().progress(function() {
+            $grid.isotope('layout');
+        });
 
 
 
