@@ -257,3 +257,15 @@
         margin: 0 !important;
     }
 }
+.trip-pagination{
+    .page-numbers{
+        &.current{
+            background-color: $primary-color !important;
+            color: $white !important;
+            border-radius: 8px !important;
+        }
+        &.next{
+            color: $primary-color !important;
+        }
+    }
+}

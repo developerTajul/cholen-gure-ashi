@@ -11027,6 +11027,15 @@ ul.children {
   margin: 0 !important;
 }
 
+.trip-pagination .page-numbers.current {
+  background-color: #3B71FE !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+}
+.trip-pagination .page-numbers.next {
+  color: #3B71FE !important;
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
