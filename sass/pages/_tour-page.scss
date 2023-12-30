@@ -141,6 +141,12 @@
     border-radius: 16px;
     gap: 32px;
     margin: 40px 0 !important;
+    @include md{
+        grid-template-columns: auto auto;
+    }
+    @include sm{
+        grid-template-columns: auto;
+    }
     li{
         padding: 0 !important;
         .wte-trip-fact-icon-wrapper{

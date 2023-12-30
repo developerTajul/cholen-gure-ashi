@@ -10929,6 +10929,16 @@ ul.children {
   gap: 32px;
   margin: 40px 0 !important;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .trip-facts-value {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .trip-facts-value {
+    grid-template-columns: auto;
+  }
+}
 .trip-facts-value li {
   padding: 0 !important;
 }
