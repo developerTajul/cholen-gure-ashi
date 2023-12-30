@@ -10835,6 +10835,7 @@ ul.children {
 .trip-content-area {
   padding: 120px 0;
   padding-bottom: 90px;
+  overflow: hidden;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .trip-content-area {
