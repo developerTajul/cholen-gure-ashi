@@ -10848,6 +10848,9 @@ ul.children {
     padding-bottom: 50px;
   }
 }
+.trip-content-area .entry-footer .edit-link {
+  display: none !important;
+}
 
 .wp-travel-toolbar {
   border-radius: 8px;

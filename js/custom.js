@@ -488,33 +488,6 @@
             perspective: 1500,
         })
 
-        /*
-        Isotope Grid Js
-        ============================*/
-        // $('.portfolio-filter').on('click', 'li', function() {
-        //     $("li").removeClass("active");
-        //     $(this).addClass("active");
-        //     var filterValue = $(this).attr('data-filter');
-        //     $grid.isotope({
-        //         filter: filterValue
-        //     });
-        // });
-
-        // var $grid = $('.isotope-grid').isotope({
-        //     itemSelector: '.masonry-portfolio-item',
-        //     percentPosition: true,
-        //     masonry: {
-        //         columnWidth: '.masonry-portfolio-item',
-        //         columnHeight: '.masonry-portfolio-item',
-        //         rowWidth: '.masonry-portfolio-item',
-        //         rowHeight: '.masonry-portfolio-item',
-
-        //     }
-        // });
-
-        // $grid.imagesLoaded().progress( function() {
-        //     $grid.isotope('layout');
-        // });
 
         $('.isotope-grid').isotope({
             itemSelector: '.isotope-item',
@@ -531,37 +504,6 @@
         //     $grid.isotope('layout');
         // });
 
-
-
-        /*
-       Jquery Header Search
-       ============================*/
-        // $('.search-btn').on('click', function(e) {
-        //     e.preventDefault();
-        //     $('body').css('overflow', 'hidden');
-        //     $('body').css('padding-right', '15px');
-        //     $('.sticky-header').css('padding-right', '15px');
-        //     $('.sticky-header').css('transition', 'unset');
-
-
-        //     $('.search-form-wrapper').addClass('active');
-        // });
-        // $('.search-close').on('click', function(e) {
-        //     e.preventDefault();
-        //     $('body').css('overflow', 'auto');
-        //     $('body').css('padding-right', '');
-        //     $('.sticky-header').css('padding-right', '');
-        //     $('.search-form-wrapper').removeClass('active');
-        // });
-
-        // window.onclick = function(e) {
-        //     if (e.target.matches(".search-form-wrapper")) {
-        //         $('.search-form-wrapper').removeClass('active');
-        //         $('body').css('overflow', 'auto');
-        //         $('body').css('padding-right', '');
-        //         $('.sticky-header').css('padding-right', '');
-        //     }
-        // }
 
         /*
        Jquery Sidebar Toggle
