@@ -11079,6 +11079,12 @@ ul.children {
   }
 }
 
+@media (max-width: 767px) {
+  .wte-related-trips-wrapper {
+    display: none !important;
+  }
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;

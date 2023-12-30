@@ -311,3 +311,8 @@
     }
 
 }
+.wte-related-trips-wrapper{
+    @include rmaxwd(767){
+        display: none !important;
+    }
+}
