@@ -11060,6 +11060,15 @@ ul.children {
   color: #3B71FE !important;
 }
 
+.wp-travel-engine-faq-tab-header .expand-all-button {
+  margin-right: 30px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .wp-travel-engine-faq-tab-header .expand-all-button {
+    margin-top: 20px;
+  }
+}
+
 .tour-details .single-post-item {
   padding: 0px !important;
   margin-bottom: 0;
