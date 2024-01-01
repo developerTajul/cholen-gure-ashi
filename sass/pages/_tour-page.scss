@@ -76,6 +76,7 @@
     border: 1px solid $gray-2;
     margin-bottom: 40px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 .category-trips-single-inner-wrap{
     padding: 0 !important;
@@ -317,7 +318,4 @@
     @include rmaxwd(767){
         display: none !important;
     }
-}
-.wte-filter-foundposts{
-    margin-left: 20px;
 }
