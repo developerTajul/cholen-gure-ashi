@@ -10857,6 +10857,7 @@ ul.children {
   border-radius: 8px;
   border: 1px solid #E7E7E7;
   margin-bottom: 40px;
+  padding-left: 20px;
 }
 
 .category-trips-single-inner-wrap {
@@ -11084,6 +11085,10 @@ ul.children {
   .wte-related-trips-wrapper {
     display: none !important;
   }
+}
+
+.wte-filter-foundposts {
+  margin-left: 20px;
 }
 
 .tour-details .single-post-item {
